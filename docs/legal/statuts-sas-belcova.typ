@@ -872,7 +872,7 @@ Le bénéfice distribuable, tel que défini par la loi, est constitué par le b�
 
 === Réserve légale
 
-Sur le bénéfice de l'exercice, diminué le cas échéant des pertes antérieures, il est prélevé *cinq pour cent (5 %)* pour constituer le fonds de réserve légale. Ce prélèvement cesse d'être obligatoire lorsque le fonds de réserve a atteint le dixième du capital social.
+Sur le bénéfice de l'exercice, diminué le cas échéant des pertes antérieures, il est prélevé *cinq pour cent (5 %)* pour constituer le fonds de réserve légale. Conformément à l'article L. 232-10 du Code de commerce, ce prélèvement cesse d'être obligatoire lorsque le fonds de réserve a atteint le dixième du capital social. La Société étant à capital variable, le capital de référence pour le calcul de ce seuil est le *capital plancher* tel que défini aux présents statuts, soit *#capital-plancher euros* (#capital-plancher €).
 
 === Dividendes
 

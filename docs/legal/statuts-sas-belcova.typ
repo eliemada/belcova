@@ -111,9 +111,10 @@
       v(4pt)
       if use-signatures {
         grid(
-          columns: (1fr, 1fr, 1fr),
-          align: (left, center, right),
-          [#image(paraphe-path, height: paraphe-height) #h(4pt) #image(cofounder-paraphe-path, height: cofounder-paraphe-height)],
+          columns: (1fr, 1fr, 1fr, 1fr),
+          align: (left, left, center, right),
+          [#image(paraphe-path, height: paraphe-height)],
+          [#image(cofounder-paraphe-path, height: cofounder-paraphe-height)],
           [#counter(page).display() / #counter(page).final().first()],
           [#text(style: "italic", size: 7pt)[#founder-last · #cofounder-last]],
         )
@@ -1092,30 +1093,30 @@ Les présents statuts sont soumis au droit français. Toute question non prévue
 
 Fait à *#siege-ville*, le *#date-signature*, en *quatre (4)* exemplaires originaux.
 
-#v(1.5cm)
+#v(0.8cm)
 
 #grid(
   columns: (1fr, 1fr),
-  column-gutter: 2cm,
+  column-gutter: 1.5cm,
   align: center,
   [
     *L'Associé Fondateur 1*\
     *Président*
 
-    #v(0.5cm)
+    #v(0.3cm)
 
     #founder-last #founder-first
 
-    #v(0.8cm)
+    #v(0.3cm)
 
     _« Lu et approuvé »_
 
-    #v(0.5cm)
+    #v(0.3cm)
 
     #if use-signatures {
-      image(signature-path, height: signature-height)
+      image(signature-path, height: 1.8cm)
     } else {
-      v(2.5cm)
+      v(2cm)
       line(length: 80%, stroke: 0.5pt + body-color)
       v(0.3cm)
       text(size: 8pt, fill: muted)[(signature manuscrite)]
@@ -1125,20 +1126,20 @@ Fait à *#siege-ville*, le *#date-signature*, en *quatre (4)* exemplaires origin
     *L'Associé Fondateur 2*\
     *Directeur Général*
 
-    #v(0.5cm)
+    #v(0.3cm)
 
     #cofounder-last #cofounder-first
 
-    #v(0.8cm)
+    #v(0.3cm)
 
     _« Lu et approuvé »_
 
-    #v(0.5cm)
+    #v(0.3cm)
 
     #if use-signatures {
-      image(cofounder-signature-path, height: cofounder-signature-height)
+      image(cofounder-signature-path, height: 1.8cm)
     } else {
-      v(2.5cm)
+      v(2cm)
       line(length: 80%, stroke: 0.5pt + body-color)
       v(0.3cm)
       text(size: 8pt, fill: muted)[(signature manuscrite)]
@@ -1146,7 +1147,7 @@ Fait à *#siege-ville*, le *#date-signature*, en *quatre (4)* exemplaires origin
   ],
 )
 
-#v(1.5cm)
+#v(0.5cm)
 
 #if use-signatures {
   note-box[

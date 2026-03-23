@@ -587,7 +587,9 @@ En cas d'exercice du droit de sortie conjointe, le cessionnaire sera tenu d'acqu
 
 #article[Clause d'entraînement (_drag-along_)]
 
-En cas de projet de cession de la totalité des actions de la Société à un tiers, approuvé par des associés représentant au moins *deux tiers (2/3)* du capital social et des droits de vote, les associés minoritaires seront tenus de céder l'intégralité de leurs actions au même cessionnaire, aux mêmes conditions de prix et modalités.
+En cas de projet de cession de la totalité des actions de la Société à un tiers, approuvé par des associés représentant au moins *quatre-vingts pour cent (80 %)* du capital social et des droits de vote, les associés minoritaires seront tenus de céder l'intégralité de leurs actions au même cessionnaire, aux mêmes conditions de prix et modalités.
+
+Tant que la Société ne compte que *deux (2) associés*, la mise en œuvre de la clause d'entraînement requiert l'accord *unanime* de l'ensemble des associés.
 
 Les associés représentant la majorité requise notifieront aux associés minoritaires le projet de cession au moins *trente (30) jours* avant la date de réalisation envisagée. Le prix de cession devra être au moins égal à la valeur des actions telle que déterminée par un expert indépendant désigné d'un commun accord ou, à défaut, conformément aux dispositions de l'article 1843-4 du Code civil.
 
@@ -631,20 +633,36 @@ Le prix de cession des actions du _Bad Leaver_ est déterminé selon une *échel
 
 === Procédure de qualification _Good Leaver / Bad Leaver_
 
-La qualification de _Good Leaver_ ou _Bad Leaver_ est prononcée par la collectivité des associés, statuant à la majorité des *deux tiers (2/3)* des voix, le Partant ne prenant pas part au vote. La décision doit être motivée par écrit et notifiée au Partant dans un délai de *trente (30) jours* suivant la cessation effective des fonctions.
+Lorsque la Société compte *plus de deux associés*, la qualification de _Good Leaver_ ou _Bad Leaver_ est prononcée par la collectivité des associés, statuant à la majorité des *deux tiers (2/3)* des voix, le Partant ne prenant pas part au vote.
+
+Lorsque la Société ne compte que *deux associés*, la qualification est obligatoirement prononcée par un *expert indépendant* désigné d'un commun accord entre les parties ou, à défaut d'accord dans un délai de *quinze (15) jours*, par ordonnance du Président du Tribunal de commerce compétent, statuant en la forme des référés. L'expert rend sa décision motivée dans un délai de *deux (2) mois* à compter de sa désignation. Les frais d'expertise sont à la charge de la Société.
+
+Dans tous les cas, la décision doit être motivée par écrit et notifiée au Partant dans un délai de *trente (30) jours* suivant la cessation effective des fonctions.
 
 Le Partant dispose d'un délai de *trente (30) jours* à compter de la notification pour contester la qualification. En cas de contestation, les parties s'engagent à recourir à la procédure de médiation prévue aux présents statuts avant toute action judiciaire. En l'absence de contestation dans ce délai, la qualification est réputée définitive.
 
 === Vesting progressif
 
-Les principes généraux du _vesting_ sont les suivants :
+La totalité des actions détenues par chaque Associé Fondateur est soumise au calendrier de _vesting_ suivant :
 
-- Durée standard : *quarante-huit (48) mois*, avec une période initiale (_cliff_) de *douze (12) mois* ;
-- Aucune action n'est acquise pendant les 12 premiers mois (_cliff_) ;
-- Au terme du _cliff_, 25 % des actions sont acquises ;
-- Les actions restantes sont acquises mensuellement, de manière linéaire, sur les 36 mois suivants.
+- *Date de départ du vesting* : la date d'immatriculation de la Société au Registre du Commerce et des Sociétés ;
+- *Durée totale* : *quarante-huit (48) mois* ;
+- *Cliff* : *douze (12) mois* — aucune action n'est considérée comme acquise pendant les 12 premiers mois ;
+- Au terme du _cliff_, *vingt-cinq pour cent (25 %)* des actions de chaque Associé Fondateur sont acquises ;
+- Les actions restantes sont acquises *mensuellement*, de manière linéaire, sur les *trente-six (36) mois* suivants (soit environ 2,08 % par mois).
 
-Les modalités précises du _vesting_ applicables à chaque associé (nombre d'actions concernées, date de départ du _vesting_, conditions de performance le cas échéant, accélération en cas de changement de contrôle) seront déterminées par un *pacte d'associés* ou, à défaut, par décision collective des associés. En cas de contradiction entre les présents statuts et le pacte d'associés, les dispositions des statuts prévaudront.
+=== Actions soumises au vesting
+
+- *#founder-last #founder-first* : la totalité de ses #founder1-actions actions est soumise au vesting ;
+- *#cofounder-last #cofounder-first* : la totalité de ses #cofounder-actions actions est soumise au vesting.
+
+=== Accélération du vesting
+
+En cas de *changement de contrôle* de la Société (cession de plus de 50 % du capital à un tiers, fusion, ou introduction en bourse), la totalité des actions non encore _vestées_ de chaque Associé Fondateur sera immédiatement et intégralement acquise (*single trigger acceleration*).
+
+=== Effet du vesting sur le départ
+
+En cas de départ d'un Associé Fondateur, seules les actions _vestées_ à la date de cessation effective des fonctions sont conservées. Les actions non _vestées_ sont cédées à la Société ou aux autres associés à leur *valeur nominale*.
 
 
 // ════════════════════════════════════════════════════════════════════════════
@@ -680,7 +698,7 @@ Ces seuils seront *réévalués annuellement* par la collectivité des associés
 
 === Rémunération
 
-Le Président peut percevoir une rémunération dont le montant et les modalités sont fixés par décision collective des associés.
+La rémunération du Président et du Directeur Général (fixe, variable, avantages en nature) est fixée par décision collective des associés statuant à l'*unanimité* tant que la Société ne compte que deux associés. Au-delà de deux associés, la rémunération est fixée par décision collective à la majorité simple.
 
 === Cessation des fonctions
 
@@ -994,11 +1012,26 @@ En contrepartie, la Société versera à l'associé concerné une indemnité men
 
 La Société se réserve le droit de *renoncer unilatéralement* à l'application de la clause de non-concurrence, et par conséquent au versement de l'indemnité, à condition d'en notifier l'associé concerné par lettre recommandée avec accusé de réception dans un délai de *quinze (15) jours* suivant la date effective de cessation des fonctions. La renonciation est alors totale et libère immédiatement l'associé de son obligation.
 
+#article[Résolution des blocages (_clause shotgun_)]
+
+En cas de désaccord persistant entre les associés sur une décision stratégique ou opérationnelle, rendant impossible le fonctionnement normal de la Société pendant une durée de plus de *trois (3) mois* (ci-après le « *Blocage* »), tout associé (l'« *Initiateur* ») pourra déclencher la procédure suivante :
+
++ L'Initiateur notifie à l'autre associé (le « *Destinataire* ») une offre ferme et irrévocable de rachat de la totalité de ses actions à un prix par action déterminé librement par l'Initiateur (le « *Prix Proposé* ») ;
++ Le Destinataire dispose d'un délai de *soixante (60) jours* à compter de la réception de la notification pour :
+  - soit *accepter* l'offre et céder la totalité de ses actions à l'Initiateur au Prix Proposé ;
+  - soit *retourner l'offre* et racheter la totalité des actions de l'Initiateur au même Prix Proposé par action ;
++ À défaut de réponse dans le délai de soixante (60) jours, le Destinataire est réputé avoir accepté l'offre de cession ;
++ La cession doit être réalisée dans un délai de *trente (30) jours* suivant l'acceptation ou le retournement de l'offre. Le paiement est effectué en une seule fois, par virement bancaire.
+
+Ce mécanisme garantit l'équité puisque l'Initiateur, ne sachant pas si le Destinataire achètera ou vendra, est incité à proposer un prix juste.
+
+La présente clause n'est applicable que lorsque la Société ne compte que *deux associés*. Elle ne peut être déclenchée pendant les *vingt-quatre (24) premiers mois* suivant l'immatriculation de la Société.
+
 #article[Médiation et arbitrage]
 
 === Médiation préalable obligatoire
 
-Tout litige entre associés, ou entre un associé et la Société, relatif à l'interprétation, l'exécution ou la résiliation des présents statuts, devra, préalablement à toute action judiciaire, être soumis à une tentative de *médiation* menée par un médiateur agréé auprès d'un centre de médiation reconnu (CMAP, CNMA ou équivalent).
+Tout litige entre associés, ou entre un associé et la Société, relatif à l'interprétation, l'exécution ou la résiliation des présents statuts, devra, préalablement à toute action judiciaire ou au déclenchement de la clause shotgun, être soumis à une tentative de *médiation* menée par un médiateur agréé auprès d'un centre de médiation reconnu (CMAP, CNMA ou équivalent).
 
 La médiation aura une durée maximale de *trois (3) mois* à compter de la désignation du médiateur.
 

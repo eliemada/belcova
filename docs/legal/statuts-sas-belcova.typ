@@ -39,7 +39,7 @@
 #let siege-social        = "29 Bis Rue de la Crête, 17110 Saint-Georges-de-Didonne"
 #let siege-ville         = "Saint-Georges-de-Didonne"
 #let capital-initial     = "100"
-#let capital-plancher    = "100"
+#let capital-plancher    = "10"
 #let capital-plafond     = "1 000 000"
 #let nb-actions          = "100"
 #let valeur-nominale     = "1"
@@ -458,7 +458,7 @@ Il pourra être augmenté par des versements successifs des associés ou l'admis
 - *Capital plancher* : le capital social ne pourra être réduit en dessous de *#capital-plancher euros* (#capital-plancher €), soit dix pour cent (10 %) du capital initial.
 - *Capital plafond (autorisé)* : le capital social pourra être augmenté jusqu'à *#capital-plafond euros* (#capital-plafond €) sans modification des statuts.
 
-Toute augmentation du capital dans les limites de la clause de variabilité, y compris par admission de nouveaux associés, est soumise à l'*autorisation préalable* de la collectivité des associés statuant à la majorité des *deux tiers (2/3)* des voix. Chaque associé bénéficie d'un *droit préférentiel de souscription* proportionnel à sa participation, exerçable dans un délai de *trente (30) jours* à compter de la notification du projet d'augmentation.
+Toute augmentation du capital dans les limites de la clause de variabilité est soumise à l'*autorisation préalable* de la collectivité des associés statuant à la majorité des *deux tiers (2/3)* des voix. L'admission de tout nouvel associé par voie de souscription est en outre soumise à la *procédure d'agrément* prévue aux présents statuts, dans les mêmes conditions que pour les cessions à des tiers. Chaque associé bénéficie d'un *droit préférentiel de souscription* proportionnel à sa participation, exerçable dans un délai de *trente (30) jours* à compter de la notification du projet d'augmentation.
 
 L'augmentation ou la réduction du capital sera constatée par le Président, qui modifiera le montant du capital social figurant dans les statuts.
 
@@ -579,7 +579,7 @@ En cas de non-exercice ou d'exercice partiel du droit de préemption, le Cédant
 
 #article[Clause de sortie conjointe (_tag-along_)]
 
-En cas de projet de cession par un ou plusieurs associés représentant plus de *cinquante pour cent (50 %)* du capital social, chaque associé minoritaire aura le droit d'exiger que ses propres actions soient incluses dans la cession, aux mêmes conditions de prix et modalités que celles consenties au(x) cédant(s) majoritaire(s).
+En cas de projet de cession portant sur un nombre d'actions représentant plus de *cinquante pour cent (50 %)* du capital social, que cette cession soit réalisée par un seul ou plusieurs associés agissant de concert, chaque associé non-cédant aura le droit d'exiger que ses propres actions soient incluses dans la cession, aux mêmes conditions de prix et modalités que celles consenties au(x) cédant(s).
 
 L'associé majoritaire cédant devra notifier aux associés minoritaires le projet de cession au moins *trente (30) jours* avant sa réalisation. Les associés minoritaires disposeront d'un délai de *quinze (15) jours* à compter de la réception de cette notification pour exercer leur droit de sortie conjointe.
 
@@ -596,7 +596,7 @@ Les associés représentant la majorité requise notifieront aux associés minor
 Chaque Associé Fondateur s'interdit de céder, transférer, nantir ou de consentir quelque droit que ce soit sur tout ou partie de ses actions pendant une durée de *trois (3) ans* à compter de l'immatriculation de la Société au Registre du Commerce et des Sociétés.
 
 Cette interdiction ne s'applique pas :
-- aux cessions entre associés existants, après agrément ;
+- aux cessions entre associés existants ;
 - aux cessions au profit du conjoint, des ascendants ou descendants du cédant ;
 - aux cessions résultant d'une transmission pour cause de décès ;
 - aux cessions réalisées dans le cadre d'une augmentation de capital au profit d'investisseurs financiers agréée par la collectivité des associés.

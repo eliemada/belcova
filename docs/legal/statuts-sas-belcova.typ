@@ -458,7 +458,9 @@ Il pourra être augmenté par des versements successifs des associés ou l'admis
 - *Capital plancher* : le capital social ne pourra être réduit en dessous de *#capital-plancher euros* (#capital-plancher €), soit dix pour cent (10 %) du capital initial.
 - *Capital plafond (autorisé)* : le capital social pourra être augmenté jusqu'à *#capital-plafond euros* (#capital-plafond €) sans modification des statuts.
 
-Toute augmentation ou réduction du capital dans les limites de la clause de variabilité sera constatée par le Président, qui modifiera le montant du capital social figurant dans les statuts.
+Toute augmentation du capital dans les limites de la clause de variabilité, y compris par admission de nouveaux associés, est soumise à l'*autorisation préalable* de la collectivité des associés statuant à la majorité des *deux tiers (2/3)* des voix. Chaque associé bénéficie d'un *droit préférentiel de souscription* proportionnel à sa participation, exerçable dans un délai de *trente (30) jours* à compter de la notification du projet d'augmentation.
+
+L'augmentation ou la réduction du capital sera constatée par le Président, qui modifiera le montant du capital social figurant dans les statuts.
 
 Au-delà du capital plafond, toute augmentation de capital devra être décidée par la collectivité des associés statuant dans les conditions de majorité requises pour les décisions extraordinaires.
 
@@ -810,7 +812,7 @@ Les décisions suivantes requièrent l'*unanimité* des associés :
 
 Nonobstant toute autre disposition des présents statuts, les décisions suivantes ne pourront être adoptées qu'avec le *consentement exprès* de tout associé détenant au moins *vingt-cinq pour cent (25 %)* du capital social (ci-après le « *Minoritaire Protégé* ») :
 
-+ *Dilution et capital* — toute émission de nouvelles actions, valeurs mobilières ou instruments donnant accès au capital (BSPCE, BSA, obligations convertibles, actions gratuites) susceptible de diluer la participation d'un Associé Fondateur en dessous de *vingt pour cent (20 %)* du capital pleinement dilué ;
++ *Dilution et capital* — toute émission de nouvelles actions, valeurs mobilières ou instruments donnant accès au capital (BSPCE, BSA, obligations convertibles, actions gratuites) susceptible de diluer la participation d'un Associé Fondateur en dessous de *vingt-cinq pour cent (25 %)* du capital pleinement dilué ;
 + *Endettement significatif* — la souscription de tout emprunt, crédit ou engagement hors bilan d'un montant unitaire supérieur à *deux cent mille euros (200 000 €)* ou cumulé supérieur à *cinq cent mille euros (500 000 €)* par exercice social ;
 + *Rémunération des dirigeants* — toute fixation ou modification de la rémunération (fixe, variable, avantages en nature) du Président ou du Directeur Général au-delà de *cent mille euros (100 000 €)* bruts annuels ;
 + *Cession d'actifs stratégiques* — toute cession, licence exclusive ou apport de la propriété intellectuelle essentielle de la Société (code source, marques, brevets) ;

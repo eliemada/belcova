@@ -29,10 +29,10 @@
 // ── Associé Fondateur 2 — Directeur Général ─────────────────────────────
 #let cofounder-first       = "Franklin"
 #let cofounder-last        = "TRANIÉ"
-#let cofounder-nationality = "française"                                    // ← à compléter
-#let cofounder-birthdate   = "[date de naissance]"                          // ← à compléter
-#let cofounder-birthplace  = "[lieu de naissance]"                          // ← à compléter
-#let cofounder-address     = "[adresse complète]"                           // ← à compléter
+#let cofounder-nationality = "française"
+#let cofounder-birthdate   = "11 février 2004"
+#let cofounder-birthplace  = "Neuilly-sur-Seine (Hauts-de-Seine)"
+#let cofounder-address     = "3 Rue de Rouvray, 92200 Neuilly-sur-Seine"
 #let cofounder-actions     = "40"
 
 // ── Société ─────────────────────────────────────────────────────────────
@@ -428,7 +428,7 @@ Les Associés Fondateurs apportent à la Société les sommes suivantes :
 
 Soit un total de *#capital-initial euros* (#capital-initial €), correspondant à *#nb-actions actions*.
 
-Ces sommes ont été déposées sur un compte ouvert au nom de la Société en formation auprès de *[nom de la banque]*, agence de *[ville]*, ainsi qu'il résulte du certificat de dépôt des fonds délivré par ladite banque.
+Ces sommes ont été déposées sur un compte ouvert au nom de la Société en formation auprès de *Shine France* (SIREN 828 701 557), établissement de paiement agréé, ainsi qu'il résulte du certificat de dépôt des fonds délivré par ledit établissement.
 
 #note-box[
   Les fonds seront mis à la disposition du Président dès l'immatriculation de la Société au Registre du Commerce et des Sociétés, sur présentation de l'extrait K-bis.

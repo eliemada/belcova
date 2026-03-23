@@ -1,0 +1,11 @@
+{
+  "echec_apure_bve": [
+    {
+      "identifiant_douane": "FR11111111111111111111",
+      "cause": {
+        "code": "AP001",
+        "description": "BVE inconnu dans le systeme de l operateur"
+      }
+    }
+  ]
+}

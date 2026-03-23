@@ -1,0 +1,9 @@
+{
+  "echec_bve": {
+    "identifiant_detaxe": "01ABCDEF1234567890AB",
+    "cause": {
+      "code": "BV001",
+      "description": "BVE deja existant dans le systeme PABLO"
+    }
+  }
+}

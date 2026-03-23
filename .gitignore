@@ -1,0 +1,30 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Build outputs
+build/
+out2/
+
+# Node
+node_modules/
+
+# Claude Code
+.claude/
+
+# Extracted archives (keep the zip)
+PABLO_EDI_JSD_v1.7/
+
+# Temporary / generated PDFs (keep source .typ files)
+# Uncomment below if you want to ignore compiled PDFs:
+# docs/legal/*.pdf
+
+# Signatures and paraphes (sensitive personal documents)
+docs/legal/signature*.png
+docs/legal/paraphe*.png
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.key

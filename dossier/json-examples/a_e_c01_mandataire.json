@@ -1,0 +1,65 @@
+{
+  "creation_bve": {
+    "identifiant_detaxe": "01ABCDEF1234567890AB",
+    "date_emission": "2026-02-15T14:30:00.000+01:00",
+    "voyageur": {
+      "passeport": "C12345678",
+      "date_expiration_passeport": "15/06/2030",
+      "nom_voyageur": "Smith",
+      "prenom_voyageur": "John",
+      "date_naissance": "22/03/1985",
+      "adresse": "123 Main Street New York NY 10001",
+      "courriel": "john.smith@example.com",
+      "pays_residence": "US",
+      "nationalite": "US"
+    },
+    "schema_commercial": {
+      "type_schema": 1,
+      "detail_schema": {
+        "vendeurs_md": {
+          "vendeur_detaxe": {
+            "identifiant_vendeur": "12345678901234",
+            "nom_vendeur": "Boutique Parisienne",
+            "numero_ticket": "TK20260215001",
+            "date_recu_c": "2026-02-15T14:25:00.000+01:00"
+          },
+          "marchandises": [
+            {
+              "description": "Sac a main en cuir noir",
+              "type": "sac",
+              "marque": "Marque Exemple",
+              "couleur": "noir",
+              "code_produit": 42010000,
+              "quantite": 1,
+              "taux_tva": 20.000,
+              "prix_unitaire_ttc": 450.00,
+              "montant_ttc": 450.00,
+              "montant_tva": 75.00
+            },
+            {
+              "description": "Foulard en soie imprime",
+              "type": "foulard",
+              "marque": "Marque Exemple",
+              "couleur": "bleu",
+              "code_produit": 62141000,
+              "quantite": 2,
+              "taux_tva": 20.000,
+              "prix_unitaire_ttc": 120.00,
+              "montant_ttc": 240.00,
+              "montant_tva": 40.00
+            }
+          ]
+        }
+      }
+    },
+    "transaction": {
+      "montant_remboursement": 95.83,
+      "montant_total_tva": 115.00,
+      "montant_total_ttc": 690.00,
+      "mode_paiement": 1,
+      "detail_paiement": "Carte bancaire",
+      "mode_remboursement": 1,
+      "detail_remboursement": "Virement bancaire"
+    }
+  }
+}

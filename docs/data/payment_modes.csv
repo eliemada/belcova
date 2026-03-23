@@ -1,0 +1,7 @@
+code,label_fr,label_en,description
+1,Carte bancaire,Credit/Debit Card,Payment by Visa Mastercard Amex etc
+2,Especes,Cash,Cash payment in EUR
+3,Cheque,Check,Bank check
+4,Virement,Wire Transfer,Bank wire transfer
+5,Cheque voyage,Traveler's Check,Traveler's check
+6,Autre,Other,Other payment method

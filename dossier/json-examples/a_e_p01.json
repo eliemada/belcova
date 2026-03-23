@@ -1,0 +1,50 @@
+{
+  "creation_bve_secours": {
+    "identifiant_detaxe": "01SECOURS12345678XYZ",
+    "identifiant_attestation": "AT01234567890123456789",
+    "date_emission": "2026-02-14T09:00:00.000+01:00",
+    "voyageur": {
+      "passeport": "P98765432",
+      "date_expiration_passeport": "30/04/2028",
+      "nom_voyageur": "Johnson",
+      "prenom_voyageur": "Emily",
+      "date_naissance": "05/11/1992",
+      "pays_residence": "GB",
+      "nationalite": "GB"
+    },
+    "schema_commercial": {
+      "type_schema": 1,
+      "detail_schema": {
+        "vendeurs_md": {
+          "vendeur_detaxe": {
+            "identifiant_vendeur": "12345678901234",
+            "nom_vendeur": "Boutique Parisienne",
+            "numero_ticket": "TK20260214005",
+            "date_recu_c": "2026-02-14T08:45:00.000+01:00"
+          },
+          "marchandises": [
+            {
+              "description": "Pull en cachemire gris",
+              "type": "pull",
+              "marque": "Cachemire FR",
+              "couleur": "gris",
+              "code_produit": 61101200,
+              "quantite": 1,
+              "taux_tva": 20.000,
+              "prix_unitaire_ttc": 280.00,
+              "montant_ttc": 280.00,
+              "montant_tva": 46.67
+            }
+          ]
+        }
+      }
+    },
+    "transaction": {
+      "montant_remboursement": 38.89,
+      "montant_total_tva": 46.67,
+      "montant_total_ttc": 280.00,
+      "mode_paiement": 1,
+      "mode_remboursement": 1
+    }
+  }
+}

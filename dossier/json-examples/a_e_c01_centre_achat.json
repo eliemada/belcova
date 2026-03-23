@@ -1,0 +1,77 @@
+{
+  "creation_bve": {
+    "identifiant_detaxe": "03CENTRE12345678ABCD",
+    "date_emission": "2026-02-17T16:45:00.000+01:00",
+    "voyageur": {
+      "passeport": "E12345678",
+      "date_expiration_passeport": "05/09/2031",
+      "nom_voyageur": "Wang",
+      "prenom_voyageur": "Li",
+      "date_naissance": "18/12/1988",
+      "adresse": "88 Nanjing Road Shanghai",
+      "pays_residence": "CN",
+      "nationalite": "CN"
+    },
+    "schema_commercial": {
+      "type_schema": 3,
+      "detail_schema": {
+        "identifiant_ca": "11223344556677",
+        "nom_ca": "Centre Commercial Les Halles",
+        "vendeurs_ca": [
+          {
+            "vendeur_detaxe": {
+              "identifiant_vendeur": "12345678901234",
+              "nom_vendeur": "Boutique Mode",
+              "numero_ticket": "TK20260217101",
+              "date_recu_c": "2026-02-17T15:30:00.000+01:00"
+            },
+            "marchandises": [
+              {
+                "description": "Veste en laine bleue",
+                "type": "veste",
+                "marque": "Mode Paris",
+                "couleur": "bleu",
+                "code_produit": 62013000,
+                "quantite": 1,
+                "taux_tva": 20.000,
+                "prix_unitaire_ttc": 350.00,
+                "montant_ttc": 350.00,
+                "montant_tva": 58.33
+              }
+            ]
+          },
+          {
+            "vendeur_detaxe": {
+              "identifiant_vendeur": "99887766554433",
+              "nom_vendeur": "Parfumerie Luxe",
+              "numero_ticket": "TK20260217102",
+              "date_recu_c": "2026-02-17T16:00:00.000+01:00"
+            },
+            "marchandises": [
+              {
+                "description": "Parfum eau de toilette 100ml",
+                "type": "parfum",
+                "marque": "Parfum FR",
+                "code_produit": 33030000,
+                "quantite": 2,
+                "taux_tva": 20.000,
+                "prix_unitaire_ttc": 95.00,
+                "montant_ttc": 190.00,
+                "montant_tva": 31.67
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "transaction": {
+      "montant_remboursement": 75.00,
+      "montant_total_tva": 90.00,
+      "montant_total_ttc": 540.00,
+      "mode_paiement": 1,
+      "detail_paiement": "Carte bancaire",
+      "mode_remboursement": 1,
+      "detail_remboursement": "Virement bancaire"
+    }
+  }
+}

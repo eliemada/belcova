@@ -1,0 +1,23 @@
+sequenceDiagram
+    participant O as Opérateur
+    participant G as GUN
+    participant P as PABLO
+
+    Note over O: Saisie des données BVE
+
+    rect rgb(240, 245, 255)
+        Note over O,P: Création standard (A_E_C01)
+        O->>O: Validation JSD v1.7
+        O->>G: A_E_C01 {creation_bve}
+        G->>P: Transmission
+        P->>P: Contrôle formel
+        alt Succès
+            P-->>G: R_AR_C02
+            G-->>O: R_AR_C02 {id_bve: FR…}
+            Note over O: BVE créé
+        else Échec
+            P-->>G: R_EC_C03
+            G-->>O: R_EC_C03 {cause}
+            Note over O: Correction et renvoi
+        end
+    end

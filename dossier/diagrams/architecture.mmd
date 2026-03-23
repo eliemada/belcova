@@ -1,0 +1,36 @@
+graph TB
+    subgraph platform["Notre Plateforme"]
+        direction TB
+        API["API REST (FastAPI)"]
+        WH["Serveur Webhook"]
+        WORKERS["Workers (Celery)"]
+        VALID["Validation JSD"]
+        DB[("PostgreSQL")]
+
+        API --> VALID
+        API --> WORKERS
+        WH --> VALID
+        WORKERS --> DB
+        API --> DB
+        WH --> DB
+    end
+
+    subgraph gun["GUN (DGDDI)"]
+        SSO["SSO / OAuth2"]
+        RELAY["Relais messages"]
+    end
+
+    subgraph pablo["PABLO"]
+        CTRL["Contrôle BVE"]
+        BVE_SYS["Gestion BVE"]
+    end
+
+    WORKERS -- "Messages ALLER<br/>(A_E_C01, A_E_S01…)" --> SSO
+    SSO --> RELAY
+    RELAY -- "Messages RETOUR<br/>(R_AR_C02, R_E_A01…)" --> WH
+    RELAY --> CTRL
+    CTRL --> BVE_SYS
+
+    style platform fill:#f0f4ff,stroke:#000091,stroke-width:2px
+    style gun fill:#f5f5f5,stroke:#666,stroke-width:2px
+    style pablo fill:#fff3cd,stroke:#856404,stroke-width:2px

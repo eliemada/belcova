@@ -1,0 +1,25 @@
+sequenceDiagram
+    participant P as PABLO
+    participant G as GUN
+    participant O as Opérateur
+
+    Note over P: Envoi quotidien (J+1)
+    P->>G: R_E_A01 {liste des BVE}
+    G->>O: Webhook R_E_A01
+
+    O->>O: Vérification des BVE
+    O->>O: Détection doublons
+    O->>O: Mise à jour en base
+
+    alt BVE traités avec succès
+        O->>G: A_AR_A02 {bve_apure}
+        G->>P: Transmission
+        Note over P: Acquittement reçu
+    end
+
+    alt BVE en erreur
+        O->>G: A_EC_A03 {echec, cause}
+        G->>P: Transmission
+    end
+
+    Note over P,O: Sans acquittement :<br/>PABLO réémet R_E_A01

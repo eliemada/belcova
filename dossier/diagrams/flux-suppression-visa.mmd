@@ -1,0 +1,32 @@
+sequenceDiagram
+    participant O as Opérateur
+    participant G as GUN
+    participant P as PABLO
+
+    rect rgb(240, 245, 255)
+        Note over O,P: Suppression de BVE (A_E_S01)
+        O->>G: A_E_S01 {id_bve, cause}
+        G->>P: Transmission
+        P->>P: Vérification du BVE
+        alt Succès
+            P-->>G: R_AR_S02
+            G-->>O: R_AR_S02 — BVE supprimé
+        else Échec
+            P-->>G: R_EC_S03
+            G-->>O: R_EC_S03 {cause}
+        end
+    end
+
+    rect rgb(255, 245, 235)
+        Note over O,P: Visa UE (A_E_U01) — max 100 BVE
+        O->>G: A_E_U01 {id, pays, date, pdf}
+        G->>P: Transmission
+        P->>P: Montant ≥ 50 000 €<br/>Délai ≤ 6 mois
+        alt Succès
+            P-->>G: R_AR_U02
+            G-->>O: R_AR_U02
+        else Échec
+            P-->>G: R_EC_U03
+            G-->>O: R_EC_U03 {cause}
+        end
+    end

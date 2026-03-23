@@ -1,0 +1,203 @@
+country_code,country_name_en,country_name_fr,eligible,region,notes
+AD,Andorra,Andorre,false,Europe,Customs union with EU
+AE,United Arab Emirates,Emirats Arabes Unis,true,Middle East,
+AF,Afghanistan,Afghanistan,true,Asia,
+AG,Antigua and Barbuda,Antigua-et-Barbuda,true,Caribbean,
+AI,Anguilla,Anguilla,true,Caribbean,British Overseas Territory
+AL,Albania,Albanie,true,Europe,Not EU member
+AM,Armenia,Armenie,true,Asia,
+AO,Angola,Angola,true,Africa,
+AR,Argentina,Argentine,true,South America,
+AS,American Samoa,Samoa americaines,true,Oceania,US territory
+AT,Austria,Autriche,false,Europe,EU member
+AU,Australia,Australie,true,Oceania,
+AW,Aruba,Aruba,true,Caribbean,
+AZ,Azerbaijan,Azerbaidjan,true,Asia,
+BA,Bosnia and Herzegovina,Bosnie-Herzegovine,true,Europe,Not EU member
+BB,Barbados,Barbade,true,Caribbean,
+BD,Bangladesh,Bangladesh,true,Asia,
+BE,Belgium,Belgique,false,Europe,EU member
+BF,Burkina Faso,Burkina Faso,true,Africa,
+BG,Bulgaria,Bulgarie,false,Europe,EU member
+BH,Bahrain,Bahrein,true,Middle East,
+BI,Burundi,Burundi,true,Africa,
+BJ,Benin,Benin,true,Africa,
+BM,Bermuda,Bermudes,true,North America,British Overseas Territory
+BN,Brunei,Brunei,true,Asia,
+BO,Bolivia,Bolivie,true,South America,
+BR,Brazil,Bresil,true,South America,
+BS,Bahamas,Bahamas,true,Caribbean,
+BT,Bhutan,Bhoutan,true,Asia,
+BW,Botswana,Botswana,true,Africa,
+BY,Belarus,Bielorussie,true,Europe,Not EU member
+BZ,Belize,Belize,true,Central America,
+CA,Canada,Canada,true,North America,
+CD,DR Congo,RD Congo,true,Africa,
+CF,Central African Republic,Republique centrafricaine,true,Africa,
+CG,Congo,Congo,true,Africa,
+CH,Switzerland,Suisse,true,Europe,EFTA - not EU
+CI,Ivory Coast,Cote d'Ivoire,true,Africa,
+CL,Chile,Chili,true,South America,
+CM,Cameroon,Cameroun,true,Africa,
+CN,China,Chine,true,Asia,Major tourist source
+CO,Colombia,Colombie,true,South America,
+CR,Costa Rica,Costa Rica,true,Central America,
+CU,Cuba,Cuba,true,Caribbean,
+CV,Cape Verde,Cap-Vert,true,Africa,
+CY,Cyprus,Chypre,false,Europe,EU member
+CZ,Czechia,Tchequie,false,Europe,EU member
+DE,Germany,Allemagne,false,Europe,EU member
+DJ,Djibouti,Djibouti,true,Africa,
+DK,Denmark,Danemark,false,Europe,EU member
+DM,Dominica,Dominique,true,Caribbean,
+DO,Dominican Republic,Republique dominicaine,true,Caribbean,
+DZ,Algeria,Algerie,true,Africa,
+EC,Ecuador,Equateur,true,South America,
+EE,Estonia,Estonie,false,Europe,EU member
+EG,Egypt,Egypte,true,Africa,
+ER,Eritrea,Erythree,true,Africa,
+ES,Spain,Espagne,false,Europe,EU member
+ET,Ethiopia,Ethiopie,true,Africa,
+FI,Finland,Finlande,false,Europe,EU member
+FJ,Fiji,Fidji,true,Oceania,
+FR,France,France,false,Europe,EU member - HOME COUNTRY
+GA,Gabon,Gabon,true,Africa,
+GB,United Kingdom,Royaume-Uni,true,Europe,Post-Brexit - ELIGIBLE
+GD,Grenada,Grenade,true,Caribbean,
+GE,Georgia,Georgie,true,Asia,
+GH,Ghana,Ghana,true,Africa,
+GM,Gambia,Gambie,true,Africa,
+GN,Guinea,Guinee,true,Africa,
+GQ,Equatorial Guinea,Guinee equatoriale,true,Africa,
+GR,Greece,Grece,false,Europe,EU member
+GT,Guatemala,Guatemala,true,Central America,
+GW,Guinea-Bissau,Guinee-Bissau,true,Africa,
+GY,Guyana,Guyana,true,South America,
+HK,Hong Kong,Hong Kong,true,Asia,SAR China - separate customs
+HN,Honduras,Honduras,true,Central America,
+HR,Croatia,Croatie,false,Europe,EU member
+HT,Haiti,Haiti,true,Caribbean,
+HU,Hungary,Hongrie,false,Europe,EU member
+ID,Indonesia,Indonesie,true,Asia,
+IE,Ireland,Irlande,false,Europe,EU member
+IL,Israel,Israel,true,Middle East,
+IN,India,Inde,true,Asia,
+IQ,Iraq,Irak,true,Middle East,
+IR,Iran,Iran,true,Middle East,
+IS,Iceland,Islande,true,Europe,EFTA - not EU
+IT,Italy,Italie,false,Europe,EU member
+JM,Jamaica,Jamaique,true,Caribbean,
+JO,Jordan,Jordanie,true,Middle East,
+JP,Japan,Japon,true,Asia,Major tourist source
+KE,Kenya,Kenya,true,Africa,
+KG,Kyrgyzstan,Kirghizistan,true,Asia,
+KH,Cambodia,Cambodge,true,Asia,
+KI,Kiribati,Kiribati,true,Oceania,
+KM,Comoros,Comores,true,Africa,
+KN,Saint Kitts and Nevis,Saint-Kitts-et-Nevis,true,Caribbean,
+KP,North Korea,Coree du Nord,true,Asia,
+KR,South Korea,Coree du Sud,true,Asia,Major tourist source
+KW,Kuwait,Koweit,true,Middle East,
+KZ,Kazakhstan,Kazakhstan,true,Asia,
+LA,Laos,Laos,true,Asia,
+LB,Lebanon,Liban,true,Middle East,
+LC,Saint Lucia,Sainte-Lucie,true,Caribbean,
+LI,Liechtenstein,Liechtenstein,true,Europe,EFTA - not EU
+LK,Sri Lanka,Sri Lanka,true,Asia,
+LR,Liberia,Liberia,true,Africa,
+LS,Lesotho,Lesotho,true,Africa,
+LT,Lithuania,Lituanie,false,Europe,EU member
+LU,Luxembourg,Luxembourg,false,Europe,EU member
+LV,Latvia,Lettonie,false,Europe,EU member
+LY,Libya,Libye,true,Africa,
+MA,Morocco,Maroc,true,Africa,
+MC,Monaco,Monaco,false,Europe,Customs union with EU
+MD,Moldova,Moldavie,true,Europe,Not EU member
+ME,Montenegro,Montenegro,true,Europe,Not EU member
+MG,Madagascar,Madagascar,true,Africa,
+MH,Marshall Islands,Iles Marshall,true,Oceania,
+MK,North Macedonia,Macedoine du Nord,true,Europe,Not EU member
+ML,Mali,Mali,true,Africa,
+MM,Myanmar,Myanmar,true,Asia,
+MN,Mongolia,Mongolie,true,Asia,
+MO,Macau,Macao,true,Asia,SAR China - separate customs
+MR,Mauritania,Mauritanie,true,Africa,
+MT,Malta,Malte,false,Europe,EU member
+MU,Mauritius,Maurice,true,Africa,
+MV,Maldives,Maldives,true,Asia,
+MW,Malawi,Malawi,true,Africa,
+MX,Mexico,Mexique,true,North America,
+MY,Malaysia,Malaisie,true,Asia,
+MZ,Mozambique,Mozambique,true,Africa,
+NA,Namibia,Namibie,true,Africa,
+NE,Niger,Niger,true,Africa,
+NG,Nigeria,Nigeria,true,Africa,
+NI,Nicaragua,Nicaragua,true,Central America,
+NL,Netherlands,Pays-Bas,false,Europe,EU member
+NO,Norway,Norvege,true,Europe,EFTA - not EU
+NP,Nepal,Nepal,true,Asia,
+NR,Nauru,Nauru,true,Oceania,
+NZ,New Zealand,Nouvelle-Zelande,true,Oceania,
+OM,Oman,Oman,true,Middle East,
+PA,Panama,Panama,true,Central America,
+PE,Peru,Perou,true,South America,
+PG,Papua New Guinea,Papouasie-Nouvelle-Guinee,true,Oceania,
+PH,Philippines,Philippines,true,Asia,
+PK,Pakistan,Pakistan,true,Asia,
+PL,Poland,Pologne,false,Europe,EU member
+PS,Palestine,Palestine,true,Middle East,
+PT,Portugal,Portugal,false,Europe,EU member
+PW,Palau,Palaos,true,Oceania,
+PY,Paraguay,Paraguay,true,South America,
+QA,Qatar,Qatar,true,Middle East,
+RO,Romania,Roumanie,false,Europe,EU member
+RS,Serbia,Serbie,true,Europe,Not EU member
+RU,Russia,Russie,true,Europe,Not EU member
+RW,Rwanda,Rwanda,true,Africa,
+SA,Saudi Arabia,Arabie Saoudite,true,Middle East,Major tourist source
+SB,Solomon Islands,Iles Salomon,true,Oceania,
+SC,Seychelles,Seychelles,true,Africa,
+SD,Sudan,Soudan,true,Africa,
+SE,Sweden,Suede,false,Europe,EU member
+SG,Singapore,Singapour,true,Asia,
+SI,Slovenia,Slovenie,false,Europe,EU member
+SK,Slovakia,Slovaquie,false,Europe,EU member
+SL,Sierra Leone,Sierra Leone,true,Africa,
+SM,San Marino,Saint-Marin,false,Europe,Customs union with EU
+SN,Senegal,Senegal,true,Africa,
+SO,Somalia,Somalie,true,Africa,
+SR,Suriname,Suriname,true,South America,
+SS,South Sudan,Soudan du Sud,true,Africa,
+ST,Sao Tome and Principe,Sao Tome-et-Principe,true,Africa,
+SV,El Salvador,Salvador,true,Central America,
+SY,Syria,Syrie,true,Middle East,
+SZ,Eswatini,Eswatini,true,Africa,
+TD,Chad,Tchad,true,Africa,
+TG,Togo,Togo,true,Africa,
+TH,Thailand,Thailande,true,Asia,
+TJ,Tajikistan,Tadjikistan,true,Asia,
+TL,Timor-Leste,Timor oriental,true,Asia,
+TM,Turkmenistan,Turkmenistan,true,Asia,
+TN,Tunisia,Tunisie,true,Africa,
+TO,Tonga,Tonga,true,Oceania,
+TR,Turkey,Turquie,true,Europe,Not EU member
+TT,Trinidad and Tobago,Trinite-et-Tobago,true,Caribbean,
+TV,Tuvalu,Tuvalu,true,Oceania,
+TW,Taiwan,Taiwan,true,Asia,
+TZ,Tanzania,Tanzanie,true,Africa,
+UA,Ukraine,Ukraine,true,Europe,Not EU member
+UG,Uganda,Ouganda,true,Africa,
+US,United States,Etats-Unis,true,North America,Major tourist source
+UY,Uruguay,Uruguay,true,South America,
+UZ,Uzbekistan,Ouzbekistan,true,Asia,
+VA,Vatican,Vatican,false,Europe,Customs union with EU
+VC,Saint Vincent and the Grenadines,Saint-Vincent-et-les-Grenadines,true,Caribbean,
+VE,Venezuela,Venezuela,true,South America,
+VN,Vietnam,Vietnam,true,Asia,
+VU,Vanuatu,Vanuatu,true,Oceania,
+WS,Samoa,Samoa,true,Oceania,
+XK,Kosovo,Kosovo,true,Europe,Not EU member
+YE,Yemen,Yemen,true,Middle East,
+ZA,South Africa,Afrique du Sud,true,Africa,
+ZM,Zambia,Zambie,true,Africa,
+ZW,Zimbabwe,Zimbabwe,true,Africa,

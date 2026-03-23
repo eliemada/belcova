@@ -1,0 +1,9 @@
+{
+  "supprime_bve": {
+    "identifiant_bve": "FR12345678901234567890",
+    "cause": {
+      "code": "BV004",
+      "description": "Montant TTC errone suite a une erreur de saisie"
+    }
+  }
+}

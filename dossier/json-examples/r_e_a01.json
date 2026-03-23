@@ -1,0 +1,20 @@
+{
+  "apure_bve": [
+    {
+      "identifiant_douane": "FR12345678901234567890",
+      "statut": "CONFIRME",
+      "lieu": "Aeroport Paris Charles de Gaulle Terminal 2E",
+      "date": "2026-02-20T23:30:00.000+01:00"
+    },
+    {
+      "identifiant_douane": "FR98765432109876543210",
+      "statut": "ANNULE",
+      "lieu": "Gare du Nord Eurostar",
+      "date": "2026-02-20T22:15:00.000+01:00",
+      "motif": {
+        "code": "AP001",
+        "description": "Marchandises non presentees au service douanier"
+      }
+    }
+  ]
+}

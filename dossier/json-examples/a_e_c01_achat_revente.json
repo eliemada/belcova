@@ -1,0 +1,56 @@
+{
+  "creation_bve": {
+    "identifiant_detaxe": "02XYZDEF9876543210CD",
+    "date_emission": "2026-02-16T10:15:00.000+01:00",
+    "voyageur": {
+      "passeport": "AB1234567",
+      "date_expiration_passeport": "20/11/2029",
+      "nom_voyageur": "Tanaka",
+      "prenom_voyageur": "Yuki",
+      "date_naissance": "10/07/1990",
+      "pays_residence": "JP",
+      "nationalite": "JP"
+    },
+    "schema_commercial": {
+      "type_schema": 2,
+      "detail_schema": {
+        "vendeurs_ar": [
+          {
+            "vendeur_detaxe": {
+              "identifiant_vendeur": "98765432101234",
+              "nom_vendeur": "Maison de Mode Paris",
+              "numero_ticket": "TK20260216042",
+              "date_recu_c": "2026-02-16T09:50:00.000+01:00",
+              "numero_facture": "FAC2026021601",
+              "date_recu_f": "2026-02-16T10:00:00.000+01:00",
+              "numero_facture_bussiness": "FACB2026021601",
+              "date_recu_f_bussiness": "2026-02-16T10:05:00.000+01:00"
+            },
+            "marchandises": [
+              {
+                "description": "Montre automatique acier",
+                "type": "montre",
+                "marque": "Horlogerie FR",
+                "couleur": "argent",
+                "code_produit": 91021100,
+                "quantite": 1,
+                "taux_tva": 20.000,
+                "prix_unitaire_ttc": 2500.00,
+                "montant_ttc": 2500.00,
+                "montant_tva": 416.67
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "transaction": {
+      "montant_remboursement": 346.39,
+      "montant_total_tva": 416.67,
+      "montant_total_ttc": 2500.00,
+      "mode_paiement": 1,
+      "mode_remboursement": 2,
+      "detail_remboursement": "Cheque"
+    }
+  }
+}

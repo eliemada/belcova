@@ -49,7 +49,7 @@
 //   3. Placez les fichiers dans docs/legal/ et mettez à jour les chemins ci-dessous
 //   4. Mettez `use-signatures` à `true` pour activer
 
-#let use-signatures      = true                           // ✓ signatures activées
+#let use-signatures      = false                          // ✗ images absentes — réactiver après ajout des PNG
 #let signature-path      = "signature.png"                // ← signature fondateur 1 (PNG, fond transparent)
 #let paraphe-path        = "paraphe.png"                  // ← paraphe fondateur 1 (PNG, fond transparent)
 #let signature-height    = 2.5cm

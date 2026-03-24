@@ -5,89 +5,38 @@
 
 #import "template.typ": *
 
-// ── Placeholders — à remplir avant signature ───────────────────────────────
+#import "variables.typ": *
 
-#let company-name        = "BELCOVA"
-#let company-legal-form  = "Société par Actions Simplifiée à Capital Variable"
-#let company-short       = "SAS"
-// ── Associé Fondateur 1 — Président ──────────────────────────────────────
-#let founder-first       = "Elie"
-#let founder-last        = "BRUNO"
-#let founder-nationality = "française"
-#let founder-birthdate   = "12 décembre 2005"
-#let founder-birthplace  = "Royan (Charente-Maritime)"
-#let founder-address     = "29 Bis Rue de la Crête, 17110 Saint-Georges-de-Didonne"
-#let founder1-actions    = "6 000"
+// ── Variables spécifiques aux statuts ────────────────────────────────────
 
-// ── Associé Fondateur 2 — Directeur Général ─────────────────────────────
-#let cofounder-first       = "Franklin"
-#let cofounder-last        = "TRANIÉ"
-#let cofounder-nationality = "française"
-#let cofounder-birthdate   = "11 février 2004"
-#let cofounder-birthplace  = "Neuilly-sur-Seine (Hauts-de-Seine)"
-#let cofounder-address     = "3 Rue de Rouvray, 92200 Neuilly-sur-Seine"
-#let cofounder-actions     = "4 000"
-
-// ── Société ─────────────────────────────────────────────────────────────
-#let siege-social        = "10 Rue de Penthièvre, 75008 Paris"
-#let siege-ville         = "Paris"
-#let capital-initial     = "100"
+// Société (compléments)
 #let capital-plancher    = "10"
 #let capital-plafond     = "1 000 000"
-#let nb-actions          = "10 000"
-#let valeur-nominale     = "0,01"
 #let duree-societe       = "99"
-#let date-signature      = "2 mars 2026"
-#let rcs-ville           = "La Rochelle"
+#let rcs-ville           = "Paris"
 #let exercice-debut      = "1er janvier"
 #let exercice-fin        = "31 décembre"
 
 // ── Seuils de gouvernance ──────────────────────────────────────────────────
-#let seuil-engagement-unitaire = "150 000"
-#let seuil-engagement-cumule   = "300 000"
-#let seuil-cosignature         = "10 000"
-#let seuil-embauche            = "150 000"
+#let seuil-engagement-unitaire = "cent cinquante mille euros (150 000 €)"   // par opération
+#let seuil-engagement-cumule   = "trois cent mille euros (300 000 €)"      // cumulé par exercice
+#let seuil-cosignature         = "dix mille euros (10 000 €)"              // co-signature bancaire
+#let seuil-embauche            = "cent cinquante mille euros (150 000 €)"  // bruts annuels
 
 // ── Délais procéduraux ────────────────────────────────────────────────────
-#let lock-up-duree               = "trois (3)"
-#let delai-agrement              = "trois (3)"
-#let delai-preemption-notif      = "cinq (5)"
-#let delai-preemption-exercice   = "trente (30)"
-#let delai-retrait-preavis       = "six (6)"
-#let delai-retrait-vote          = "deux (2)"
-#let delai-retrait-echelon       = "vingt-quatre (24)"
-#let delai-liberation            = "cinq (5)"
-#let delai-convocation           = "quinze (15)"
-#let delai-cosignature-urgence   = "quarante-huit (48)"
+#let delai-agrement              = "trois (3)"                    // mois
+#let delai-preemption-notif      = "cinq (5)"                     // jours ouvrés
+#let delai-preemption-exercice   = "trente (30)"                  // jours
+#let delai-retrait-preavis       = "six (6)"                      // mois avant clôture exercice
+#let delai-retrait-vote          = "deux (2)"                     // mois — soumission au vote
+#let delai-retrait-echelon       = "vingt-quatre (24)"            // mois — remboursement max
+#let delai-liberation            = "cinq (5)"                     // ans — libération actions
+#let delai-convocation           = "quinze (15)"                  // jours — convocation AG
+#let delai-cosignature-urgence   = "quarante-huit (48)"           // heures — notification urgence
 
 // ── Pourcentages ──────────────────────────────────────────────────────────
-#let seuil-convention-reglementee = "dix pour cent (10 %)"
-#let seuil-convocation            = "dix pour cent (10 %)"
-
-// ── Signature & Paraphe ────────────────────────────────────────────────────
-// Instructions :
-//   1. Signez sur papier blanc, photographiez/scannez en PNG
-//   2. Retirez le fond (https://remove.bg ou Preview.app sur Mac)
-//   3. Placez les fichiers dans docs/legal/ et mettez à jour les chemins ci-dessous
-//   4. Mettez `use-signatures` à `true` pour activer
-
-#let use-signatures      = false                          // ✗ images absentes — réactiver après ajout des PNG
-#let signature-path      = "signature.png"                // ← signature fondateur 1 (PNG, fond transparent)
-#let paraphe-path        = "paraphe.png"                  // ← paraphe fondateur 1 (PNG, fond transparent)
-#let signature-height    = 2.5cm
-#let paraphe-height      = 0.8cm
-#let cofounder-signature-path = "signature_franklin.png"  // ← signature fondateur 2 (PNG, fond transparent)
-#let cofounder-paraphe-path   = "paraphe_franklin.png"    // ← paraphe fondateur 2 (PNG, fond transparent)
-#let cofounder-signature-height = 2.5cm
-#let cofounder-paraphe-height   = 0.8cm
-
-// ── Filigrane (watermark) ──────────────────────────────────────────────────
-// Protège contre la réutilisation abusive du document (pappers.fr, etc.)
-// Options : "CONFIDENTIEL", "EXEMPLAIRE ORIGINAL", "COPIE", "NE PAS DIFFUSER"
-
-#let use-watermark       = false                          // désactivé (pas nécessaire pour le greffe)
-#let watermark-text      = "EXEMPLAIRE ORIGINAL"          // ← texte du filigrane
-#let watermark-opacity   = 4%                             // ← discret mais visible à l'inspection
+#let seuil-convention-reglementee = "dix pour cent (10 %)"        // % des droits de vote
+#let seuil-convocation            = "dix pour cent (10 %)"        // % du capital
 
 // ── Apply Template ───────────────────────────────────────────────────────────
 
@@ -164,7 +113,7 @@
       Conformes aux dispositions des articles L. 227-1 et suivants du Code de commerce \
       et aux articles L. 231-1 et suivants relatifs aux sociétés à capital variable \
       \
-      Associés fondateurs : #founder-last #founder-first (60 %) · #cofounder-last #cofounder-first (40 %)
+      Associés fondateurs : #founder-last #founder-first (#founder1-pct %) · #cofounder-last #cofounder-first (#cofounder-pct %)
     ]
   ]
 ]
@@ -234,7 +183,7 @@
     Né le #founder-birthdate à #founder-birthplace \
     De nationalité #founder-nationality \
     Demeurant au : #founder-address \
-    Souscripteur de *#founder1-actions actions*, soit *60 %* du capital social initial. \
+    Souscripteur de *#founder1-actions actions de catégorie A*, soit *#founder1-pct %* du capital social initial. \
     \
     Ci-après dénommé l'« *Associé Fondateur 1* » ou le « *Président* ».
   ]
@@ -253,7 +202,7 @@
     Né le #cofounder-birthdate à #cofounder-birthplace \
     De nationalité #cofounder-nationality \
     Demeurant au : #cofounder-address \
-    Souscripteur de *#cofounder-actions actions*, soit *40 %* du capital social initial. \
+    Souscripteur de *#cofounder-actions actions de catégorie B*, soit *#cofounder-pct %* du capital social initial. \
     \
     Ci-après dénommé l'« *Associé Fondateur 2* » ou le « *Directeur Général* ».
   ]
@@ -324,9 +273,9 @@ Un an au moins avant la date d'expiration de la Société, le Président devra p
 
 Les Associés Fondateurs apportent à la Société les sommes suivantes :
 
-- *#founder-last #founder-first* apporte la somme de *soixante euros (60 €)*, correspondant à *#founder1-actions actions* d'une valeur nominale de *#valeur-nominale euro* chacune, entièrement souscrites et intégralement libérées ;
+- *#founder-last #founder-first* apporte la somme de *cinquante-cinq euros (55 €)*, correspondant à *#founder1-actions actions de catégorie A* d'une valeur nominale de *#valeur-nominale euro* chacune, entièrement souscrites et intégralement libérées ;
 
-- *#cofounder-last #cofounder-first* apporte la somme de *quarante euros (40 €)*, correspondant à *#cofounder-actions actions* d'une valeur nominale de *#valeur-nominale euro* chacune, entièrement souscrites et intégralement libérées.
+- *#cofounder-last #cofounder-first* apporte la somme de *quarante-cinq euros (45 €)*, correspondant à *#cofounder-actions actions de catégorie B* d'une valeur nominale de *#valeur-nominale euro* chacune, entièrement souscrites et intégralement libérées.
 
 Soit un total de *#capital-initial euros* (#capital-initial €), correspondant à *#nb-actions actions*.
 
@@ -346,10 +295,10 @@ Les actions émises en rémunération d'apports en industrie seront des actions 
 
 === Capital social statutaire
 
-Le capital social initial est fixé à la somme de *#capital-initial euros* (#capital-initial €), divisé en *#nb-actions actions* de *#valeur-nominale euro* de valeur nominale chacune, toutes de même catégorie, entièrement souscrites et intégralement libérées, réparties comme suit :
+Le capital social initial est fixé à la somme de *#capital-initial euros* (#capital-initial €), divisé en *#nb-actions actions* de *#valeur-nominale euro* de valeur nominale chacune, réparties en deux catégories, entièrement souscrites et intégralement libérées, réparties comme suit :
 
-- *#founder-last #founder-first* : #founder1-actions actions, soit 60 % du capital ;
-- *#cofounder-last #cofounder-first* : #cofounder-actions actions, soit 40 % du capital.
+- *#founder-last #founder-first* : #founder1-actions actions de catégorie A, soit #founder1-pct % du capital ;
+- *#cofounder-last #cofounder-first* : #cofounder-actions actions de catégorie B, soit #cofounder-pct % du capital.
 
 === Variabilité du capital
 
@@ -357,7 +306,7 @@ Conformément aux articles L. 231-1 à L. 231-8 du Code de commerce, le capital 
 
 Il pourra être augmenté par des versements successifs des associés ou l'admission de nouveaux associés, et réduit par la reprise totale ou partielle des apports effectués, sans qu'il soit nécessaire de procéder aux formalités de publicité et de modification des statuts prévues pour les augmentations et les réductions de capital.
 
-- *Capital plancher* : le capital social ne pourra être réduit en dessous de *#capital-plancher euros* (#capital-plancher €), soit dix pour cent (10 %) du capital initial.
+- *Capital plancher* : conformément à l'article L. 231-5 du Code de commerce, le capital social ne pourra être réduit en dessous du dixième du capital le plus élevé atteint depuis la constitution de la Société. À la date de constitution, ce plancher est de *#capital-plancher euros* (#capital-plancher €).
 - *Capital plafond (autorisé)* : le capital social pourra être augmenté jusqu'à *#capital-plafond euros* (#capital-plafond €) sans modification des statuts.
 
 Toute augmentation du capital dans les limites de la clause de variabilité est soumise à l'*autorisation préalable* de la collectivité des associés statuant à la majorité des *deux tiers (2/3)* des voix. L'admission de tout nouvel associé par voie de souscription est en outre soumise à la *procédure d'agrément* prévue aux présents statuts, dans les mêmes conditions que pour les cessions à des tiers. Chaque associé bénéficie d'un *droit préférentiel de souscription* proportionnel à sa participation, exerçable dans un délai de *#delai-preemption-exercice jours* à compter de la notification du projet d'augmentation.
@@ -378,15 +327,36 @@ Le remboursement est *conditionné* à la capacité de trésorerie de la Sociét
 
 En cas de refus d'autorisation, l'associé pourra céder ses actions à un tiers ou aux autres associés dans les conditions prévues aux clauses de cession des présents statuts.
 
+// La distinction A/B est purement structurelle : elle permet d'identifier
+// les actions fondateurs et de prévoir une conversion automatique en actions
+// ordinaires lors d'un transfert à un tiers, facilitant l'entrée d'investisseurs.
 #article[Catégories d'actions]
 
-=== Actions ordinaires
+=== Actions de catégorie A
 
-Les actions composant le capital social initial sont des *actions ordinaires*, toutes de même catégorie, conférant chacune les mêmes droits :
-- *Une voix* par action aux décisions collectives ;
-- Le droit au dividende, au prorata du nombre d'actions détenues ;
+Les *#founder1-actions actions de catégorie A*, intégralement souscrites par *#founder-last #founder-first*, confèrent collectivement *#founder1-actions droits de vote* aux décisions collectives, soit un coefficient de *une (1) voix par action*.
+
+Les actions de catégorie A confèrent par ailleurs les droits suivants :
+- Le droit au dividende, au prorata du nombre d'actions détenues (soit #founder1-pct %) ;
 - Le droit préférentiel de souscription aux augmentations de capital ;
-- Le droit au boni de liquidation, au prorata du nombre d'actions détenues.
+- Le droit au boni de liquidation, au prorata du nombre d'actions détenues (soit #founder1-pct %).
+
+=== Actions de catégorie B
+
+Les *#cofounder-actions actions de catégorie B*, intégralement souscrites par *#cofounder-last #cofounder-first*, confèrent collectivement *#cofounder-actions droits de vote* aux décisions collectives, soit un coefficient de *une (1) voix par action*.
+
+Les actions de catégorie B confèrent par ailleurs les droits suivants :
+- Le droit au dividende, au prorata du nombre d'actions détenues (soit #cofounder-pct %) ;
+- Le droit préférentiel de souscription aux augmentations de capital ;
+- Le droit au boni de liquidation, au prorata du nombre d'actions détenues (soit #cofounder-pct %).
+
+=== Droits économiques proportionnels
+
+Les deux catégories d'actions confèrent des *droits économiques identiques par action*. Les dividendes et le boni de liquidation sont répartis proportionnellement au nombre d'actions détenues. Chaque action, quelle que soit sa catégorie, donne droit à une part égale des distributions.
+
+=== Conversion automatique
+
+En cas de cession ou de transfert d'actions à un tiers non-associé, les actions cédées sont *automatiquement converties* en actions ordinaires d'une catégorie unique conférant *une (1) voix par action*. Cette conversion prend effet à la date d'inscription du transfert sur le registre des mouvements de titres.
 
 === Actions de préférence
 
@@ -489,7 +459,7 @@ Cette interdiction ne s'applique pas :
 - aux cessions résultant de la mise en œuvre d'un mécanisme de résolution des blocages entre associés prévu par le pacte d'associés.
 
 #note-box[
-  Des clauses complémentaires relatives aux cessions d'actions (sortie conjointe, entraînement, promesse de cession, _good leaver / bad leaver_, _vesting_) sont prévues dans le pacte d'associés signé entre les Associés Fondateurs à la même date que les présents statuts.
+  Des clauses complémentaires relatives aux cessions d'actions (sortie conjointe, entraînement, promesse de cession, _good leaver / bad leaver_, _vesting_) ainsi que les engagements de non-concurrence des Associés Fondateurs, incluant un plancher d'indemnité de non-concurrence, sont prévus dans le pacte d'associés signé entre les Associés Fondateurs à la même date que les présents statuts.
 ]
 
 
@@ -516,13 +486,19 @@ Le Président représente la Société à l'égard des tiers. La Société est e
 === Limitations de pouvoirs
 
 Toutefois, les décisions suivantes ne pourront être prises par le Président qu'après autorisation préalable de la collectivité des associés statuant à la majorité simple :
-- Tout engagement financier (emprunt, caution, garantie) d'un montant supérieur à *cent cinquante mille euros (#seuil-engagement-unitaire €)* par opération ou *trois cent mille euros (#seuil-engagement-cumule €)* cumulés par exercice social ;
-- Toute acquisition ou cession d'actifs d'une valeur supérieure à *cent cinquante mille euros (#seuil-engagement-unitaire €)* ;
+- Tout engagement financier (emprunt, caution, garantie) d'un montant supérieur à *#seuil-engagement-unitaire* par opération ou *#seuil-engagement-cumule* cumulés par exercice social ;
+- Toute acquisition ou cession d'actifs d'une valeur supérieure à *#seuil-engagement-unitaire* ;
 - Toute prise de participation supérieure à dix pour cent (10 %) du capital d'une autre société ;
 - La conclusion de tout bail commercial d'une durée supérieure à six (6) ans ;
-- L'embauche de tout salarié avec une rémunération annuelle brute supérieure à *cent cinquante mille euros (#seuil-embauche €)*.
+- L'embauche de tout salarié avec une rémunération annuelle brute supérieure à *#seuil-embauche*.
 
 Ces seuils seront *réévalués annuellement* par la collectivité des associés lors de l'approbation des comptes annuels. À défaut de réévaluation, les seuils de l'exercice précédent demeurent applicables. La collectivité des associés pourra également déléguer au Président des autorisations globales par catégorie d'opérations pour un exercice donné.
+
+=== Co-signature bancaire
+
+Toute opération bancaire (paiement, virement, retrait) d'un montant supérieur à *#seuil-cosignature* requiert la *co-signature* du Président et du Directeur Général.
+
+*Exception d'urgence :* En cas d'urgence avérée, le Président ou le Directeur Général peut agir seul pour les opérations dépassant ce seuil, sous réserve d'en informer l'autre dirigeant par écrit dans un délai de *#delai-cosignature-urgence heures* suivant l'opération, en justifiant le caractère urgent de celle-ci.
 
 === Rémunération
 
@@ -587,7 +563,6 @@ La collectivité des associés est seule compétente pour prendre les décisions
 
 === Décisions ordinaires
 
-- Approbation des comptes annuels et affectation du résultat ;
 - Nomination et révocation du Président, des Directeurs Généraux et du Commissaire aux comptes ;
 - Approbation des conventions réglementées ;
 - Fixation de la rémunération du Président ;
@@ -596,6 +571,7 @@ La collectivité des associés est seule compétente pour prendre les décisions
 
 === Décisions extraordinaires
 
+- Approbation des comptes annuels et affectation du résultat ;
 - Modification des statuts (sauf transfert du siège dans les cas prévus) ;
 - Augmentation ou réduction du capital au-delà du capital autorisé ;
 - Émission d'actions de préférence, de valeurs mobilières donnant accès au capital ;
@@ -634,7 +610,7 @@ Les décisions ordinaires sont adoptées à la *majorité simple* des voix des a
 
 === Décisions extraordinaires
 
-Les décisions extraordinaires sont adoptées à la majorité des *deux tiers (2/3)* des voix des associés présents, représentés ou ayant voté par correspondance.
+Les décisions extraordinaires (y compris l'approbation des comptes annuels et l'affectation du résultat) sont adoptées à la majorité des *deux tiers (2/3)* des voix des associés présents, représentés ou ayant voté par correspondance.
 
 === Décisions à l'unanimité
 
@@ -650,7 +626,11 @@ Tant que la Société ne comprend qu'un seul associé, celui-ci exerce les pouvo
 
 #article[Droit de vote — Représentation]
 
-Chaque action donne droit à *une voix* aux décisions collectives, sous réserve des droits particuliers attachés aux actions de préférence qui pourraient être émises ultérieurement.
+Les droits de vote attachés aux actions dépendent de leur catégorie :
+- Les *actions de catégorie A* confèrent collectivement *#founder1-actions droits de vote*, soit 1 voix par action ;
+- Les *actions de catégorie B* confèrent collectivement *#cofounder-actions droits de vote*, soit 1 voix par action.
+
+Le nombre total de droits de vote est de *#nb-actions*, sous réserve des droits particuliers attachés aux actions de préférence qui pourraient être émises ultérieurement.
 
 Un associé peut se faire représenter par un autre associé ou par un tiers muni d'un pouvoir spécial.
 
@@ -849,17 +829,17 @@ Les présents statuts sont soumis au droit français. Toute question non prévue
 
   // Founder 1 row
   [#founder-last #founder-first],
-  [#founder1-actions],
+  [#founder1-actions (cat. A)],
   [#valeur-nominale €],
-  [60 €],
-  [60 €],
+  [55 €],
+  [55 €],
 
   // Founder 2 row
   [#cofounder-last #cofounder-first],
-  [#cofounder-actions],
+  [#cofounder-actions (cat. B)],
   [#valeur-nominale €],
-  [40 €],
-  [40 €],
+  [45 €],
+  [45 €],
 
   // Total row
   table.cell(fill: light-bg)[*TOTAL*],

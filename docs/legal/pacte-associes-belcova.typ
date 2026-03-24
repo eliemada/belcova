@@ -5,121 +5,66 @@
 
 #import "template.typ": *
 
-// ── Placeholders — à remplir avant signature ───────────────────────────────
+#import "variables.typ": *
 
-#let company-name        = "BELCOVA"
-#let company-legal-form  = "Société par Actions Simplifiée à Capital Variable"
-#let company-short       = "SAS"
-// ── Associé Fondateur 1 — Président ──────────────────────────────────────
-#let founder-first       = "Elie"
-#let founder-last        = "BRUNO"
-#let founder-nationality = "française"
-#let founder-birthdate   = "12 décembre 2005"
-#let founder-birthplace  = "Royan (Charente-Maritime)"
-#let founder-address     = "29 Bis Rue de la Crête, 17110 Saint-Georges-de-Didonne"
-#let founder1-actions    = "6 000"
+// ── Variables spécifiques au pacte d'associés ───────────────────────────
 
-// ── Associé Fondateur 2 — Directeur Général ─────────────────────────────
-#let cofounder-first       = "Franklin"
-#let cofounder-last        = "TRANIÉ"
-#let cofounder-nationality = "française"
-#let cofounder-birthdate   = "11 février 2004"
-#let cofounder-birthplace  = "Neuilly-sur-Seine (Hauts-de-Seine)"
-#let cofounder-address     = "3 Rue de Rouvray, 92200 Neuilly-sur-Seine"
-#let cofounder-actions     = "4 000"
-
-// ── Société ─────────────────────────────────────────────────────────────
-#let siege-social        = "10 Rue de Penthièvre, 75008 Paris"
-#let siege-ville         = "Paris"
-#let capital-initial     = "100"
-#let nb-actions          = "10 000"
-#let valeur-nominale     = "0,01"
-#let date-signature      = "2 mars 2026"
-
-// ── Seuils de cession ──────────────────────────────────────────────────────
-#let tag-along-seuil       = "cinquante pour cent (50 %)"
-#let drag-along-seuil      = "quatre-vingts pour cent (80 %)"
-#let minority-seuil        = "vingt-cinq pour cent (25 %)"
+// Seuils de cession
+#let tag-along-seuil       = "cinquante pour cent (50 %)"          // % du capital
+#let drag-along-seuil      = "quatre-vingts pour cent (80 %)"     // % du capital
+#let minority-seuil        = "vingt-cinq pour cent (25 %)"        // % du capital
 
 // ── Vesting ────────────────────────────────────────────────────────────────
-#let vesting-duree         = "quarante-huit (48)"
-#let vesting-cliff         = "douze (12)"
-#let vesting-cliff-pct     = "vingt-cinq pour cent (25 %)"
-#let vesting-post-cliff    = "trente-six (36)"
+#let vesting-duree         = "quarante-huit (48)"                  // mois
+#let vesting-cliff         = "douze (12)"                          // mois
+#let vesting-cliff-pct     = "vingt-cinq pour cent (25 %)"        // % acquis après cliff
+#let vesting-post-cliff    = "trente-six (36)"                     // mois (linéaire)
 
 // ── Good / Bad Leaver ──────────────────────────────────────────────────────
-#let bad-leaver-prix-pct   = "cinquante pour cent (50 %)"
+#let bad-leaver-prix-pct   = "cinquante pour cent (50 %)"          // % de la valeur de marché
 
 // ── BSPCE ──────────────────────────────────────────────────────────────────
-#let bspce-pool            = "quinze pour cent (15 %)"
+#let bspce-pool            = "quinze pour cent (15 %)"             // % du capital pleinement dilué
 
 // ── Non-concurrence ────────────────────────────────────────────────────────
-#let non-compete-duree-dirigeants = "deux (2)"
-#let non-compete-duree-associes   = "un (1)"
-#let non-compete-duree-advisors   = "six (6)"
-#let non-compete-indemnite        = "trente pour cent (30 %)"
-#let non-compete-plancher         = "cinquante pour cent (50 %)"
+#let non-compete-duree-dirigeants = "deux (2)"                     // ans
+#let non-compete-duree-associes   = "un (1)"                       // an
+#let non-compete-duree-advisors   = "six (6)"                      // mois
+#let non-compete-indemnite        = "trente pour cent (30 %)"      // % du salaire brut moyen
+#let non-compete-plancher         = "cinquante pour cent (50 %)"   // % du SMIC mensuel brut
 
 // ── Gouvernance (seuils monétaires) ────────────────────────────────────────
-#let seuil-dette-unitaire      = "deux cent mille euros (200 000 €)"
-#let seuil-dette-cumule        = "cinq cent mille euros (500 000 €)"
-#let seuil-remuneration        = "cent mille euros (100 000 €)"
-#let seuil-info-engagement     = "cinquante mille euros (50 000 €)"
-
-// ── Lock-up ────────────────────────────────────────────────────────────────
-#let lock-up-duree         = "trois (3)"
+#let seuil-dette-unitaire      = "deux cent mille euros (200 000 €)"   // € par opération
+#let seuil-dette-cumule        = "cinq cent mille euros (500 000 €)"   // € cumulé par exercice
+#let seuil-remuneration        = "cent mille euros (100 000 €)"        // € bruts annuels
+#let seuil-info-engagement     = "cinquante mille euros (50 000 €)"    // €
 
 // ── Clause shotgun ─────────────────────────────────────────────────────────
-#let shotgun-delai-blocage        = "trois (3)"
-#let shotgun-delai-declenchement  = "vingt-quatre (24)"
-#let shotgun-delai-info           = "quinze (15)"
-#let shotgun-delai-complement     = "dix (10)"
-#let shotgun-delai-reponse        = "soixante (60)"
-#let shotgun-delai-realisation    = "trente (30)"
-#let shotgun-financement          = "quatre-vingt-dix (90)"
-#let shotgun-echelon-duree        = "douze (12)"
+#let shotgun-delai-blocage        = "trois (3)"                    // mois de blocage avant déclenchement
+#let shotgun-delai-declenchement  = "vingt-quatre (24)"            // mois post-immatriculation
+#let shotgun-delai-info           = "quinze (15)"                  // jours — examen dossier d'info
+#let shotgun-delai-complement     = "dix (10)"                     // jours — réponse compléments
+#let shotgun-delai-reponse        = "soixante (60)"                // jours — acceptation/retournement
+#let shotgun-delai-realisation    = "trente (30)"                  // jours — réalisation cession
+#let shotgun-financement          = "quatre-vingt-dix (90)"        // jours — délai financement
+#let shotgun-echelon-duree        = "douze (12)"                   // mois — paiement échelonné max
 
 // ── Procédure Good / Bad Leaver ────────────────────────────────────────────
-#let leaver-delai-expert         = "quinze (15)"
-#let leaver-delai-decision       = "deux (2)"
-#let leaver-delai-notif          = "trente (30)"
-#let leaver-delai-contestation   = "trente (30)"
+#let leaver-delai-expert         = "quinze (15)"                   // jours — accord sur expert
+#let leaver-delai-decision       = "deux (2)"                      // mois — décision expert
+#let leaver-delai-notif          = "trente (30)"                   // jours — notification qualification
+#let leaver-delai-contestation   = "trente (30)"                   // jours — contestation
 
 // ── Autres durées ──────────────────────────────────────────────────────────
-#let confidentialite-survie      = "trois (3)"
-#let tag-along-notif             = "trente (30)"
-#let tag-along-exercice          = "quinze (15)"
-#let bspce-exercice-depart       = "quatre-vingt-dix (90)"
-#let non-compete-renonciation    = "quinze (15)"
-#let mediation-duree             = "trois (3)"
+#let confidentialite-survie      = "trois (3)"                     // ans post-départ
+#let tag-along-notif             = "trente (30)"                   // jours — notification cession
+#let tag-along-exercice          = "quinze (15)"                   // jours — exercice droit
+#let bspce-exercice-depart       = "quatre-vingt-dix (90)"         // jours post-départ
+#let non-compete-renonciation    = "quinze (15)"                   // jours — renonciation société
+#let mediation-duree             = "trois (3)"                     // mois max
 
 // ── Droits d'information ───────────────────────────────────────────────────
-#let info-delai-preavis          = "dix (10)"
-
-// ── Signature & Paraphe ────────────────────────────────────────────────────
-// Instructions :
-//   1. Signez sur papier blanc, photographiez/scannez en PNG
-//   2. Retirez le fond (https://remove.bg ou Preview.app sur Mac)
-//   3. Placez les fichiers dans docs/legal/ et mettez à jour les chemins ci-dessous
-//   4. Mettez `use-signatures` à `true` pour activer
-
-#let use-signatures      = false                          // ✗ images absentes — réactiver après ajout des PNG
-#let signature-path      = "signature.png"                // ← signature fondateur 1 (PNG, fond transparent)
-#let paraphe-path        = "paraphe.png"                  // ← paraphe fondateur 1 (PNG, fond transparent)
-#let signature-height    = 2.5cm
-#let paraphe-height      = 0.8cm
-#let cofounder-signature-path = "signature_franklin.png"  // ← signature fondateur 2 (PNG, fond transparent)
-#let cofounder-paraphe-path   = "paraphe_franklin.png"    // ← paraphe fondateur 2 (PNG, fond transparent)
-#let cofounder-signature-height = 2.5cm
-#let cofounder-paraphe-height   = 0.8cm
-
-// ── Filigrane (watermark) ──────────────────────────────────────────────────
-// Protège contre la réutilisation abusive du document (pappers.fr, etc.)
-// Options : "CONFIDENTIEL", "EXEMPLAIRE ORIGINAL", "COPIE", "NE PAS DIFFUSER"
-
-#let use-watermark       = false                          // désactivé
-#let watermark-text      = "EXEMPLAIRE ORIGINAL"          // ← texte du filigrane
-#let watermark-opacity   = 4%                             // ← discret mais visible à l'inspection
+#let info-delai-preavis          = "dix (10)"                      // jours ouvrés
 
 // ── Apply Template ───────────────────────────────────────────────────────────
 
@@ -196,7 +141,7 @@
       Pacte établi en date du #date-signature \
       Document confidentiel — Non déposé au greffe \
       \
-      Associés fondateurs : #founder-last #founder-first (60 %) · #cofounder-last #cofounder-first (40 %)
+      Associés fondateurs : #founder-last #founder-first (#founder1-pct %) · #cofounder-last #cofounder-first (#cofounder-pct %)
     ]
   ]
 ]
@@ -465,6 +410,8 @@ Dans tous les cas, l'obligation est limitée dans son objet aux activités de d�
 
 En contrepartie, la Société versera à l'associé concerné une indemnité mensuelle égale à *#non-compete-indemnite* de la moyenne mensuelle de sa dernière rémunération brute perçue au cours des douze (12) derniers mois.
 
+Cette indemnité mensuelle ne pourra en aucun cas être inférieure à *#non-compete-plancher du SMIC mensuel brut* en vigueur à la date de cessation effective des fonctions, y compris dans l'hypothèse où la rémunération du débiteur de l'obligation serait nulle.
+
 // ⚠ AVERTISSEMENT JURIDIQUE — Délai de renonciation de 15 jours
 // Pour les mandataires sociaux purs (non salariés), ce délai est valide.
 // Cependant, si l'associé cumule mandat social et contrat de travail,
@@ -499,6 +446,14 @@ En cas de désaccord persistant entre les associés sur une décision stratégiq
 + La cession doit être réalisée dans un délai de *#shotgun-delai-realisation jours* suivant l'acceptation ou le retournement de l'offre. Le paiement est effectué en une seule fois, par virement bancaire.
 
 Ce mécanisme garantit l'équité puisque l'Initiateur, ne sachant pas si le Destinataire achètera ou vendra, est incité à proposer un prix juste.
+
+=== Délai de financement et modalités de paiement en cas de retournement
+
+En cas de retournement de l'offre par le Destinataire, celui-ci bénéficie d'un délai de *#shotgun-financement jours* à compter de la notification du retournement pour réunir le financement nécessaire à l'acquisition. Pendant ce délai, le retournement demeure ferme et irrévocable.
+
+À l'expiration du délai de financement, si le Destinataire n'est pas en mesure de justifier de la disponibilité des fonds nécessaires, le retournement est réputé caduc et le Destinataire est réputé avoir accepté l'offre initiale de cession. La cession de ses actions à l'Initiateur devra alors être réalisée dans un délai de *#shotgun-delai-realisation jours* suivant l'expiration du délai de financement, au Prix Proposé.
+
+Le Destinataire exerçant le retournement peut proposer un paiement du prix en *trois (3) échéances* sur une durée maximale de *#shotgun-echelon-duree mois*, selon l'échéancier suivant : un tiers (1/3) du prix à la date de réalisation de la cession, un tiers (1/3) à six (6) mois et le solde à #shotgun-echelon-duree mois. Le paiement échelonné est garanti par un *nantissement de premier rang* sur la totalité des actions acquises, constitué au jour de la réalisation de la cession. En cas de défaut de paiement d'une échéance, la totalité du solde restant dû devient immédiatement exigible.
 
 La présente clause n'est applicable que lorsque la Société ne compte que *deux associés*. Elle ne peut être déclenchée pendant les *#shotgun-delai-declenchement premiers mois* suivant l'immatriculation de la Société.
 

@@ -47,6 +47,7 @@
 #let template(
   company-name: "SOCIÉTÉ",
   company-short: "SAS",
+  document-type: "Statuts",
   use-watermark: false,
   watermark-text: "EXEMPLAIRE ORIGINAL",
   watermark-opacity: 4%,
@@ -81,7 +82,7 @@
         grid(
           columns: (1fr, 1fr),
           align: (left, right),
-          smallcaps[Statuts — #company-name #company-short],
+          smallcaps[#document-type — #company-name #company-short],
           [Page #counter(page).display() sur #counter(page).final().first()],
         )
         v(2pt)

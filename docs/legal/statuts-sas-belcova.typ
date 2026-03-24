@@ -191,7 +191,7 @@
   #v(0.5cm)
 
   #note-box[
-    Les présents statuts ont été rédigés dans une optique d'évolutivité, anticipant l'entrée future d'associés (business angels, fonds d'investissement) et la mise en place d'instruments d'intéressement (BSPCE, BSA, actions gratuites). Ils intègrent les meilleures pratiques du droit des sociétés français en vigueur en 2026 et prévoient des dispositions protectrices pour l'ensemble des associés fondateurs.
+    Les présents statuts ont été rédigés dans une optique d'évolutivité, anticipant l'entrée future d'associés (business angels, fonds d'investissement) et la mise en place d'instruments d'intéressement (BSPCE, BSA, actions gratuites). Ils sont complétés par un *pacte d'associés* signé à la même date, qui organise les relations entre les Associés Fondateurs (sortie conjointe, entraînement, _vesting_, droits protecteurs, confidentialité, non-concurrence, résolution des blocages).
   ]
 
   #v(0.5cm)
@@ -457,25 +457,9 @@ Si les droits de préemption exercés portent sur un nombre d'actions supérieur
 
 En cas de non-exercice ou d'exercice partiel du droit de préemption, le Cédant pourra librement céder les actions non préemptées au cessionnaire pressenti, aux conditions notifiées, sous réserve de l'obtention de l'agrément prévu à l'article ci-dessus.
 
-#article[Clause de sortie conjointe (_tag-along_)]
-
-En cas de projet de cession portant sur un nombre d'actions représentant plus de *cinquante pour cent (50 %)* du capital social, que cette cession soit réalisée par un seul ou plusieurs associés agissant de concert, chaque associé non-cédant aura le droit d'exiger que ses propres actions soient incluses dans la cession, aux mêmes conditions de prix et modalités que celles consenties au(x) cédant(s).
-
-L'associé majoritaire cédant devra notifier aux associés minoritaires le projet de cession au moins *trente (30) jours* avant sa réalisation. Les associés minoritaires disposeront d'un délai de *quinze (15) jours* à compter de la réception de cette notification pour exercer leur droit de sortie conjointe.
-
-En cas d'exercice du droit de sortie conjointe, le cessionnaire sera tenu d'acquérir l'ensemble des actions offertes (actions du cédant et des associés exerçant le tag-along). À défaut, la cession ne pourra avoir lieu.
-
-#article[Clause d'entraînement (_drag-along_)]
-
-En cas de projet de cession de la totalité des actions de la Société à un tiers, approuvé par des associés représentant au moins *quatre-vingts pour cent (80 %)* du capital social et des droits de vote, les associés minoritaires seront tenus de céder l'intégralité de leurs actions au même cessionnaire, aux mêmes conditions de prix et modalités.
-
-Tant que la Société ne compte que *deux (2) associés*, la mise en œuvre de la clause d'entraînement requiert l'accord *unanime* de l'ensemble des associés.
-
-Les associés représentant la majorité requise notifieront aux associés minoritaires le projet de cession au moins *trente (30) jours* avant la date de réalisation envisagée. Le prix de cession devra être au moins égal à la valeur des actions telle que déterminée par un expert indépendant désigné d'un commun accord ou, à défaut, conformément aux dispositions de l'article 1843-4 du Code civil.
-
 #article[Clause d'inaliénabilité (_lock-up_)]
 
-Chaque Associé Fondateur s'interdit de céder, transférer, nantir ou de consentir quelque droit que ce soit sur tout ou partie de ses actions pendant une durée de *trois (3) ans* à compter de l'immatriculation de la Société au Registre du Commerce et des Sociétés.
+Conformément à l'article L. 227-13 du Code de commerce, chaque Associé Fondateur s'interdit de céder, transférer, nantir ou de consentir quelque droit que ce soit sur tout ou partie de ses actions pendant une durée de *trois (3) ans* à compter de l'immatriculation de la Société au Registre du Commerce et des Sociétés.
 
 Cette interdiction ne s'applique pas :
 - aux cessions entre associés existants ;
@@ -483,66 +467,9 @@ Cette interdiction ne s'applique pas :
 - aux cessions résultant d'une transmission pour cause de décès ;
 - aux cessions réalisées dans le cadre d'une augmentation de capital au profit d'investisseurs financiers agréée par la collectivité des associés.
 
-#article[Promesse de cession — _Good Leaver / Bad Leaver_]
-
-=== Principe
-
-Tout associé qui cesserait d'exercer ses fonctions au sein de la Société ou de lui apporter une collaboration effective (le « *Partant* ») sera tenu de céder tout ou partie de ses actions selon les conditions ci-dessous, selon la qualification de son départ.
-
-=== _Good Leaver_ (Départ de bonne foi)
-
-Est considéré comme _Good Leaver_ l'associé dont le départ résulte :
-- d'un licenciement sans cause réelle et sérieuse ;
-- d'une incapacité physique ou mentale durable ;
-- d'un commun accord avec les autres associés ;
-- du décès de l'associé.
-
-Le _Good Leaver_ cédera ses actions à un prix égal à leur *valeur de marché*, déterminée par un expert indépendant conformément à l'article 1843-4 du Code civil.
-
-=== _Bad Leaver_ (Départ fautif)
-
-Est considéré comme _Bad Leaver_ l'associé dont le départ résulte :
-- d'une démission volontaire avant l'expiration de la période d'inaliénabilité ;
-- d'un licenciement pour faute grave ou lourde ;
-- d'une révocation de ses fonctions de dirigeant pour juste motif ;
-- d'une violation des clauses de non-concurrence ou de confidentialité.
-
-Le prix de cession des actions du _Bad Leaver_ est déterminé selon une *échelle graduée* :
-- *Faute grave, fraude ou violation majeure* (non-concurrence, confidentialité, détournement) : prix égal à la *valeur nominale* des actions ;
-- *Autres cas de Bad Leaver* (démission volontaire pendant le lock-up, révocation pour juste motif non constitutif de fraude) : prix égal à *cinquante pour cent (50 %)* de la valeur de marché des actions, telle que déterminée par un expert indépendant conformément à l'article 1843-4 du Code civil.
-
-=== Procédure de qualification _Good Leaver / Bad Leaver_
-
-Lorsque la Société compte *plus de deux associés*, la qualification de _Good Leaver_ ou _Bad Leaver_ est prononcée par la collectivité des associés, statuant à la majorité des *deux tiers (2/3)* des voix, le Partant ne prenant pas part au vote.
-
-Lorsque la Société ne compte que *deux associés*, la qualification est obligatoirement prononcée par un *expert indépendant* désigné d'un commun accord entre les parties ou, à défaut d'accord dans un délai de *quinze (15) jours*, par ordonnance du Président du Tribunal de commerce compétent, statuant en la forme des référés. L'expert rend sa décision motivée dans un délai de *deux (2) mois* à compter de sa désignation. Les frais d'expertise sont à la charge de la Société.
-
-Dans tous les cas, la décision doit être motivée par écrit et notifiée au Partant dans un délai de *trente (30) jours* suivant la cessation effective des fonctions.
-
-Le Partant dispose d'un délai de *trente (30) jours* à compter de la notification pour contester la qualification. En cas de contestation, les parties s'engagent à recourir à la procédure de médiation prévue aux présents statuts avant toute action judiciaire. En l'absence de contestation dans ce délai, la qualification est réputée définitive.
-
-=== Vesting progressif
-
-La totalité des actions détenues par chaque Associé Fondateur est soumise au calendrier de _vesting_ suivant :
-
-- *Date de départ du vesting* : la date d'immatriculation de la Société au Registre du Commerce et des Sociétés ;
-- *Durée totale* : *quarante-huit (48) mois* ;
-- *Cliff* : *douze (12) mois* — aucune action n'est considérée comme acquise pendant les 12 premiers mois ;
-- Au terme du _cliff_, *vingt-cinq pour cent (25 %)* des actions de chaque Associé Fondateur sont acquises ;
-- Les actions restantes sont acquises *mensuellement*, de manière linéaire, sur les *trente-six (36) mois* suivants (soit environ 2,08 % par mois).
-
-=== Actions soumises au vesting
-
-- *#founder-last #founder-first* : la totalité de ses #founder1-actions actions est soumise au vesting ;
-- *#cofounder-last #cofounder-first* : la totalité de ses #cofounder-actions actions est soumise au vesting.
-
-=== Accélération du vesting
-
-En cas de *changement de contrôle* de la Société (cession de plus de 50 % du capital à un tiers, fusion, ou introduction en bourse), la totalité des actions non encore _vestées_ de chaque Associé Fondateur sera immédiatement et intégralement acquise (*single trigger acceleration*).
-
-=== Effet du vesting sur le départ
-
-En cas de départ d'un Associé Fondateur, seules les actions _vestées_ à la date de cessation effective des fonctions sont conservées. Les actions non _vestées_ sont cédées à la Société ou aux autres associés à leur *valeur nominale*.
+#note-box[
+  Des clauses complémentaires relatives aux cessions d'actions (sortie conjointe, entraînement, promesse de cession, _good leaver / bad leaver_, _vesting_) sont prévues dans le pacte d'associés signé entre les Associés Fondateurs à la même date que les présents statuts.
+]
 
 
 // ════════════════════════════════════════════════════════════════════════════
@@ -611,16 +538,6 @@ Le Comité stratégique est un organe consultatif qui a pour mission :
 - De superviser la mise en place des instruments d'intéressement (BSPCE, BSA).
 
 Les modalités de fonctionnement du Comité stratégique (convocation, quorum, périodicité) seront déterminées par la décision collective instituant ledit comité.
-
-#article[Droit d'information renforcé de l'associé minoritaire]
-
-Tout associé détenant au moins *vingt-cinq pour cent (25 %)* du capital social dispose d'un droit d'information renforcé comprenant :
-
-- La communication trimestrielle d'un *tableau de bord* incluant le chiffre d'affaires, les charges, la trésorerie disponible et les engagements hors bilan ;
-- L'accès permanent aux comptes bancaires de la Société en consultation (_read-only_) ;
-- La communication préalable de tout projet de recrutement, de tout engagement financier supérieur à *cinquante mille euros (50 000 €)*, et de tout projet de partenariat stratégique, au moins *dix (10) jours ouvrés* avant toute décision.
-
-Ce droit d'information est *incessible* et attaché à la qualité d'Associé Fondateur.
 
 #article[Conventions réglementées]
 
@@ -706,25 +623,6 @@ Les décisions suivantes requièrent l'*unanimité* des associés :
 - Transformation de la Société en une société d'une autre forme ;
 - Modification de la répartition des bénéfices.
 
-=== Droits protecteurs de l'associé minoritaire (_protective provisions_)
-
-Nonobstant toute autre disposition des présents statuts, les décisions suivantes ne pourront être adoptées qu'avec le *consentement exprès* de tout associé détenant au moins *vingt-cinq pour cent (25 %)* du capital social (ci-après le « *Minoritaire Protégé* ») :
-
-+ *Dilution et capital* — toute émission de nouvelles actions, valeurs mobilières ou instruments donnant accès au capital (BSPCE, BSA, obligations convertibles, actions gratuites) susceptible de diluer la participation d'un Associé Fondateur en dessous de *vingt-cinq pour cent (25 %)* du capital pleinement dilué ;
-+ *Endettement significatif* — la souscription de tout emprunt, crédit ou engagement hors bilan d'un montant unitaire supérieur à *deux cent mille euros (200 000 €)* ou cumulé supérieur à *cinq cent mille euros (500 000 €)* par exercice social ;
-+ *Rémunération des dirigeants* — toute fixation ou modification de la rémunération (fixe, variable, avantages en nature) du Président ou du Directeur Général au-delà de *cent mille euros (100 000 €)* bruts annuels ;
-+ *Cession d'actifs stratégiques* — toute cession, licence exclusive ou apport de la propriété intellectuelle essentielle de la Société (code source, marques, brevets) ;
-+ *Opérations de restructuration* — toute fusion, scission, apport partiel d'actif, ou cession de la totalité ou de la quasi-totalité des actifs de la Société ;
-+ *Dissolution* — toute dissolution anticipée volontaire de la Société ;
-+ *Changement d'objet social* — toute modification substantielle de l'objet social ;
-+ *Distribution de dividendes* — toute mise en distribution de bénéfices au cours des trois (3) premiers exercices suivant l'immatriculation, sauf décision unanime.
-
-Ce droit de consentement constitue un droit attaché à la qualité d'Associé Fondateur et subsistera aussi longtemps que le Minoritaire Protégé détiendra au moins *vingt-cinq pour cent (25 %)* du capital social. Il ne pourra être supprimé ou modifié qu'à l'unanimité des associés.
-
-#note-box[
-  Les _protective provisions_ visent à protéger l'associé minoritaire contre les décisions unilatérales qui pourraient affecter substantiellement la valeur de sa participation ou la gouvernance de la Société. Elles n'entravent pas la gestion courante, qui demeure du ressort du Président.
-]
-
 === Associé unique
 
 Tant que la Société ne comprend qu'un seul associé, celui-ci exerce les pouvoirs dévolus à la collectivité des associés. Ses décisions sont consignées sur un registre des décisions de l'associé unique.
@@ -804,17 +702,13 @@ La Société confirme qu'elle remplit les conditions d'éligibilité au disposit
 - Ne pas résulter d'une concentration, restructuration, extension ou reprise d'activité préexistante ;
 - Avoir son capital détenu directement et de manière continue pour au moins vingt-cinq pour cent (25 %) par des personnes physiques ou par des sociétés elles-mêmes détenues à 75 % au moins par des personnes physiques.
 
-=== Pool BSPCE
+=== Conditions d'émission
 
-Un pool de BSPCE représentant jusqu'à *quinze pour cent (15 %)* du capital social pleinement dilué pourra être constitué par la collectivité des associés. Ce pool pourra être réparti entre les bénéficiaires selon un calendrier et des conditions d'exercice déterminés par la décision d'émission.
+Les conditions d'émission des BSPCE (nombre, prix d'exercice, calendrier de _vesting_, pool maximal, conditions d'exercice et de caducité) seront déterminées par la décision collective d'émission.
 
-=== Conditions d'exercice
-
-Les BSPCE donnent droit à la souscription d'actions ordinaires de la Société à un prix fixé lors de l'attribution. Le prix d'exercice ne pourra être inférieur à la valeur réelle des actions à la date d'attribution, telle qu'évaluée par le Président, le cas échéant avec l'assistance d'un expert indépendant, en tenant compte d'une éventuelle décote d'illiquidité.
-
-Les BSPCE seront soumis à un calendrier de _vesting_ déterminé par la décision d'émission, avec un _cliff_ minimum de douze (12) mois.
-
-En cas de départ du bénéficiaire, les BSPCE non encore _vestés_ seront caducs. Les BSPCE vestés pourront être exercés dans un délai de *quatre-vingt-dix (90) jours* suivant la date de cessation des fonctions, sauf en cas de _Bad Leaver_ où ils seront caducs immédiatement.
+#note-box[
+  Les conditions détaillées relatives au pool BSPCE et aux règles applicables en cas de départ d'un bénéficiaire sont précisées dans le pacte d'associés.
+]
 
 #article[Bons de Souscription d'Actions (BSA) et actions gratuites]
 
@@ -864,64 +758,13 @@ Après paiement des dettes et remboursement du capital, le solde est partagé en
 
 = Titre IX — Dispositions Diverses
 
-#article[Confidentialité]
+#article[Litiges]
 
-Chaque associé s'engage à considérer comme strictement confidentiel et à ne pas divulguer à des tiers, sans l'accord préalable et écrit du Président, toute information relative aux affaires de la Société, notamment les informations financières, commerciales, techniques, stratégiques et technologiques, les données clients, les algorithmes, le code source et les méthodes de travail.
+Tout litige relatif à l'interprétation ou à l'exécution des présents statuts sera soumis aux tribunaux compétents du ressort du siège social de la Société.
 
-Cette obligation de confidentialité survivra à la perte de la qualité d'associé pendant une durée de *trois (3) ans*.
-
-La violation de cette obligation pourra constituer un juste motif de révocation et/ou de qualification en _Bad Leaver_.
-
-#article[Non-concurrence]
-
-Chaque associé exerçant des fonctions opérationnelles au sein de la Société s'engage, pendant toute la durée de ses fonctions et après la cessation de ses fonctions, à ne pas exercer, directement ou indirectement, une activité concurrente à l'objet social de la Société, dans les limites suivantes :
-
-=== Durée et périmètre selon la catégorie de l'associé
-
-- *Dirigeants (Président, Directeur Général)* : deux (2) ans, en France et dans les pays de l'Union européenne où la Société est active ;
-- *Associés opérationnels non-dirigeants* : un (1) an, limité à la France ;
-- *Advisors et consultants* : six (6) mois, limité à la France.
-
-Dans tous les cas, l'obligation est limitée dans son objet aux activités de détaxe et de remboursement de TVA aux voyageurs.
-
-=== Contrepartie financière
-
-En contrepartie, la Société versera à l'associé concerné une indemnité mensuelle égale à *trente pour cent (30 %)* de la moyenne mensuelle de sa dernière rémunération brute perçue au cours des douze (12) derniers mois.
-
-=== Faculté de renonciation
-
-La Société se réserve le droit de *renoncer unilatéralement* à l'application de la clause de non-concurrence, et par conséquent au versement de l'indemnité, à condition d'en notifier l'associé concerné par lettre recommandée avec accusé de réception dans un délai de *quinze (15) jours* suivant la date effective de cessation des fonctions. La renonciation est alors totale et libère immédiatement l'associé de son obligation.
-
-#article[Résolution des blocages (_clause shotgun_)]
-
-En cas de désaccord persistant entre les associés sur une décision stratégique ou opérationnelle, rendant impossible le fonctionnement normal de la Société pendant une durée de plus de *trois (3) mois* (ci-après le « *Blocage* »), tout associé (l'« *Initiateur* ») pourra déclencher la procédure suivante :
-
-+ L'Initiateur notifie à l'autre associé (le « *Destinataire* ») une offre ferme et irrévocable de rachat de la totalité de ses actions à un prix par action déterminé librement par l'Initiateur (le « *Prix Proposé* ») ;
-+ Le Destinataire dispose d'un délai de *soixante (60) jours* à compter de la réception de la notification pour :
-  - soit *accepter* l'offre et céder la totalité de ses actions à l'Initiateur au Prix Proposé ;
-  - soit *retourner l'offre* et racheter la totalité des actions de l'Initiateur au même Prix Proposé par action ;
-+ À défaut de réponse dans le délai de soixante (60) jours, le Destinataire est réputé avoir accepté l'offre de cession ;
-+ La cession doit être réalisée dans un délai de *trente (30) jours* suivant l'acceptation ou le retournement de l'offre. Le paiement est effectué en une seule fois, par virement bancaire.
-
-Ce mécanisme garantit l'équité puisque l'Initiateur, ne sachant pas si le Destinataire achètera ou vendra, est incité à proposer un prix juste.
-
-La présente clause n'est applicable que lorsque la Société ne compte que *deux associés*. Elle ne peut être déclenchée pendant les *vingt-quatre (24) premiers mois* suivant l'immatriculation de la Société.
-
-#article[Médiation et arbitrage]
-
-=== Médiation préalable obligatoire
-
-Tout litige entre associés, ou entre un associé et la Société, relatif à l'interprétation, l'exécution ou la résiliation des présents statuts, devra, préalablement à toute action judiciaire ou au déclenchement de la clause shotgun, être soumis à une tentative de *médiation* menée par un médiateur agréé auprès d'un centre de médiation reconnu (CMAP, CNMA ou équivalent).
-
-La médiation aura une durée maximale de *trois (3) mois* à compter de la désignation du médiateur.
-
-=== Arbitrage (optionnel)
-
-À défaut d'accord amiable à l'issue de la médiation, les parties pourront soumettre le litige à l'arbitrage selon le règlement du Centre de Médiation et d'Arbitrage de Paris (CMAP), par un arbitre unique nommé conformément audit règlement.
-
-=== Juridiction compétente
-
-À défaut de clause compromissoire ou en cas de mesure urgente ou conservatoire, les tribunaux compétents seront ceux du ressort du siège social de la Société.
+#note-box[
+  Les engagements des associés en matière de confidentialité, non-concurrence, résolution des blocages et médiation sont prévus dans le pacte d'associés signé entre les Associés Fondateurs à la même date que les présents statuts.
+]
 
 #article[Élection de domicile]
 

@@ -196,6 +196,14 @@ L'associé majoritaire cédant devra notifier aux associés minoritaires le proj
 
 En cas d'exercice du droit de sortie conjointe, le cessionnaire sera tenu d'acquérir l'ensemble des actions offertes (actions du cédant et des associés exerçant le tag-along). À défaut, la cession ne pourra avoir lieu.
 
+// ⚠ AVERTISSEMENT JURIDIQUE — Références à l'article 1843-4 du Code civil dans le pacte
+// Depuis l'ordonnance du 31/07/2014, l'art. 1843-4 C. civ. distingue les cessions
+// prévues par la loi (al. I) et celles prévues par les statuts (al. II). Un pacte
+// d'associés (convention extra-statutaire) ne déclenche pas directement l'art. 1843-4.
+// Les références ci-dessous fonctionnent comme renvoi conventionnel (contractuellement
+// valide), mais l'expert désigné dans ce cadre n'a pas exactement les mêmes pouvoirs
+// qu'en application directe de la loi. Ce point est courant en pratique mais
+// juridiquement imprécis — à clarifier lors d'une future révision du pacte.
 #article[Clause d'entraînement (_drag-along_)]
 
 En cas de projet de cession de la totalité des actions de la Société à un tiers, approuvé par des associés représentant au moins *quatre-vingts pour cent (80 %)* du capital social et des droits de vote, les associés minoritaires seront tenus de céder l'intégralité de leurs actions au même cessionnaire, aux mêmes conditions de prix et modalités.
@@ -212,7 +220,8 @@ Cette interdiction ne s'applique pas :
 - aux cessions entre associés existants ;
 - aux cessions au profit du conjoint, des ascendants ou descendants du cédant ;
 - aux cessions résultant d'une transmission pour cause de décès ;
-- aux cessions réalisées dans le cadre d'une augmentation de capital au profit d'investisseurs financiers agréée par la collectivité des associés.
+- aux cessions réalisées dans le cadre d'une augmentation de capital au profit d'investisseurs financiers agréée par la collectivité des associés ;
+- aux cessions résultant de la mise en œuvre de la clause de résolution des blocages (_clause shotgun_) prévue au Titre VI du présent Pacte.
 
 
 // ════════════════════════════════════════════════════════════════════════════
@@ -245,6 +254,15 @@ Est considéré comme _Bad Leaver_ l'associé dont le départ résulte :
 - d'une révocation de ses fonctions de dirigeant pour juste motif ;
 - d'une violation des clauses de non-concurrence ou de confidentialité.
 
+// ⚠ AVERTISSEMENT JURIDIQUE — Bad Leaver au nominal (faute grave)
+// La Cour de cassation (Cass. Com. 21/06/2023, n° 21-21.875) qualifie les clauses
+// de bad leaver de clauses pénales au sens de l'art. 1231-5 C. civ., susceptibles
+// de réduction judiciaire si « manifestement excessives ». Le rachat au nominal (1 €)
+// pour des actions valant potentiellement bien plus est à haut risque de modération.
+// Envisager 25-30 % de la valeur de marché pour réduire ce risque.
+// De plus, si l'associé est également salarié, le rachat au nominal déclenché par
+// un motif disciplinaire (faute grave) risque d'être requalifié en sanction pécuniaire
+// prohibée (art. L. 1331-2 C. trav. ; CA Paris, 12/05/2022).
 Le prix de cession des actions du _Bad Leaver_ est déterminé selon une *échelle graduée* :
 - *Faute grave, fraude ou violation majeure* (non-concurrence, confidentialité, détournement) : prix égal à la *valeur nominale* des actions ;
 - *Autres cas de Bad Leaver* (démission volontaire pendant le lock-up, révocation pour juste motif non constitutif de fraude) : prix égal à *cinquante pour cent (50 %)* de la valeur de marché des actions, telle que déterminée par un expert indépendant conformément à l'article 1843-4 du Code civil.
@@ -257,7 +275,7 @@ Lorsque la Société ne compte que *deux associés*, la qualification est obliga
 
 Dans tous les cas, la décision doit être motivée par écrit et notifiée au Partant dans un délai de *trente (30) jours* suivant la cessation effective des fonctions.
 
-Le Partant dispose d'un délai de *trente (30) jours* à compter de la notification pour contester la qualification. En cas de contestation, les parties s'engagent à recourir à la procédure de médiation prévue aux présents statuts avant toute action judiciaire. En l'absence de contestation dans ce délai, la qualification est réputée définitive.
+Le Partant dispose d'un délai de *trente (30) jours* à compter de la notification pour contester la qualification. En cas de contestation, les parties s'engagent à recourir à la procédure de médiation prévue au présent Pacte avant toute action judiciaire. En l'absence de contestation dans ce délai, la qualification est réputée définitive.
 
 #article[Vesting progressif]
 
@@ -274,6 +292,12 @@ La totalité des actions détenues par chaque Associé Fondateur est soumise au 
 - *#founder-last #founder-first* : la totalité de ses #founder1-actions actions est soumise au vesting ;
 - *#cofounder-last #cofounder-first* : la totalité de ses #cofounder-actions actions est soumise au vesting.
 
+// ⚠ NOTE — Single-trigger vs. double-trigger acceleration
+// Le single-trigger est protecteur pour les fondateurs en phase d'amorçage.
+// Cependant, les investisseurs (VC) négocient généralement un double-trigger
+// (changement de contrôle + départ involontaire dans les 12-24 mois suivants)
+// pour maintenir la rétention des fondateurs post-acquisition.
+// Anticiper cette renégociation lors d'une future levée de fonds.
 === Accélération du vesting
 
 En cas de *changement de contrôle* de la Société (cession de plus de 50 % du capital à un tiers, fusion, ou introduction en bourse), la totalité des actions non encore _vestées_ de chaque Associé Fondateur sera immédiatement et intégralement acquise (*single trigger acceleration*).
@@ -302,7 +326,7 @@ Nonobstant toute autre disposition des Statuts ou du présent Pacte, les décisi
 + *Changement d'objet social* — toute modification substantielle de l'objet social ;
 + *Distribution de dividendes* — toute mise en distribution de bénéfices au cours des trois (3) premiers exercices suivant l'immatriculation, sauf décision unanime.
 
-Ce droit de consentement constitue un droit attaché à la qualité d'Associé Fondateur et subsistera aussi longtemps que le Minoritaire Protégé détiendra au moins *vingt-cinq pour cent (25 %)* du capital social. Il ne pourra être supprimé ou modifié qu'à l'unanimité des associés.
+Ce droit de consentement constitue un droit attaché à la qualité d'Associé Fondateur et subsistera aussi longtemps que le Minoritaire Protégé détiendra au moins *vingt-cinq pour cent (25 %)* du capital social pleinement dilué. Il ne pourra être supprimé ou modifié qu'à l'unanimité des associés.
 
 #note-box[
   Les _protective provisions_ visent à protéger l'associé minoritaire contre les décisions unilatérales qui pourraient affecter substantiellement la valeur de sa participation ou la gouvernance de la Société. Elles n'entravent pas la gestion courante, qui demeure du ressort du Président.
@@ -329,12 +353,19 @@ Ce droit d'information est *incessible* et attaché à la qualité d'Associé Fo
 
 Les Parties conviennent de constituer un pool de bons de souscription de parts de créateur d'entreprise (BSPCE) représentant jusqu'à *quinze pour cent (15 %)* du capital social pleinement dilué de la Société.
 
-Les conditions d'émission et d'attribution des BSPCE seront déterminées conformément aux dispositions des articles L. 228-36-1 et suivants du Code de commerce et aux autorisations prévues dans les Statuts.
+Les conditions d'émission et d'attribution des BSPCE seront déterminées conformément aux dispositions de l'article 163 bis G du Code général des impôts et des articles L. 228-91 et suivants du Code de commerce, ainsi qu'aux autorisations prévues dans les Statuts.
 
 Les conditions d'exercice des BSPCE sont les suivantes :
 
 - *Prix d'exercice* : le prix d'exercice de chaque BSPCE sera au moins égal à la *juste valeur de marché* des actions sous-jacentes à la date d'attribution, telle que déterminée par le conseil d'administration ou la collectivité des associés ;
 - *Vesting* : chaque attribution de BSPCE sera soumise à un calendrier de vesting comprenant un _cliff_ minimum de *douze (12) mois* ;
+// ⚠ AVERTISSEMENT JURIDIQUE — Caducité des BSPCE vestés en cas de Bad Leaver
+// Pour les bénéficiaires salariés, la suppression de BSPCE déjà vestés pour motif
+// disciplinaire risque d'être requalifiée en sanction pécuniaire prohibée
+// (art. L. 1331-2 C. trav. ; Cass. Soc. 21/10/2009, n° 08-42.026).
+// Envisager : (1) distinguer mandataires sociaux vs. salariés, (2) pour les salariés,
+// ne rendre caducs que les BSPCE non vestés, ou (3) réduire le délai d'exercice
+// des BSPCE vestés (ex. 30 jours) plutôt que les annuler.
 - *Effet du départ* : en cas de départ du bénéficiaire, les BSPCE non _vestés_ seront caducs de plein droit ; les BSPCE _vestés_ pourront être exercés dans un délai de *quatre-vingt-dix (90) jours* suivant la date de cessation effective des fonctions, sauf en cas de qualification en _Bad Leaver_, auquel cas l'ensemble des BSPCE (vestés et non vestés) seront immédiatement caducs.
 
 
@@ -346,6 +377,12 @@ Les conditions d'exercice des BSPCE sont les suivantes :
 
 #article[Confidentialité]
 
+// ⚠ AVERTISSEMENT JURIDIQUE — Exclusions manquantes dans la clause de confidentialité
+// La clause ne prévoit pas les exclusions classiques : (1) informations devenues
+// publiques autrement que par le fait du débiteur, (2) informations détenues par
+// l'associé antérieurement à son entrée au capital, (3) informations reçues d'un
+// tiers non lié par une obligation de confidentialité. L'absence de ces exclusions
+// pourrait fragiliser la clause sur le terrain de la proportionnalité.
 Chaque associé s'engage à considérer comme strictement confidentiel et à ne pas divulguer à des tiers, sans l'accord préalable et écrit du Président, toute information relative aux affaires de la Société, notamment les informations financières, commerciales, techniques, stratégiques et technologiques, les données clients, les algorithmes, le code source et les méthodes de travail.
 
 Cette obligation de confidentialité survivra à la perte de la qualité d'associé pendant une durée de *trois (3) ans*.
@@ -368,6 +405,16 @@ Dans tous les cas, l'obligation est limitée dans son objet aux activités de d�
 
 En contrepartie, la Société versera à l'associé concerné une indemnité mensuelle égale à *trente pour cent (30 %)* de la moyenne mensuelle de sa dernière rémunération brute perçue au cours des douze (12) derniers mois.
 
+// ⚠ AVERTISSEMENT JURIDIQUE — Délai de renonciation de 15 jours
+// Pour les mandataires sociaux purs (non salariés), ce délai est valide.
+// Cependant, si l'associé cumule mandat social et contrat de travail,
+// la Cass. Soc. 26/01/2022 impose la renonciation au plus tard à la date
+// de départ effectif du salarié. Le délai de 15 jours post-départ serait
+// alors inopposable. Envisager d'ajouter une clause d'adaptation automatique
+// en cas de cumul mandat/contrat de travail.
+// De même, si la rémunération du débiteur est nulle (fréquent en phase
+// d'amorçage), la contrepartie de 30 % vaut zéro — prévoir un plancher
+// minimum (ex. pourcentage du SMIC).
 === Faculté de renonciation
 
 La Société se réserve le droit de *renoncer unilatéralement* à l'application de la clause de non-concurrence, et par conséquent au versement de l'indemnité, à condition d'en notifier l'associé concerné par lettre recommandée avec accusé de réception dans un délai de *quinze (15) jours* suivant la date effective de cessation des fonctions. La renonciation est alors totale et libère immédiatement l'associé de son obligation.
@@ -383,7 +430,8 @@ La Société se réserve le droit de *renoncer unilatéralement* à l'applicatio
 
 En cas de désaccord persistant entre les associés sur une décision stratégique ou opérationnelle, rendant impossible le fonctionnement normal de la Société pendant une durée de plus de *trois (3) mois* (ci-après le « *Blocage* »), tout associé (l'« *Initiateur* ») pourra déclencher la procédure suivante :
 
-+ L'Initiateur notifie à l'autre associé (le « *Destinataire* ») une offre ferme et irrévocable de rachat de la totalité de ses actions à un prix par action déterminé librement par l'Initiateur (le « *Prix Proposé* ») ;
++ Préalablement à l'envoi de l'offre, l'Initiateur communique au Destinataire un *dossier d'information* comprenant au minimum : (i) les comptes sociaux les plus récents ou, à défaut, une situation comptable intermédiaire datant de moins de trois (3) mois, (ii) la situation de trésorerie à jour, (iii) la liste des contrats en cours et des négociations significatives en cours, et (iv) tout événement susceptible d'affecter substantiellement la valeur de la Société. Le Destinataire dispose d'un délai de *quinze (15) jours* à compter de la réception du dossier d'information pour demander des compléments d'information, auxquels l'Initiateur doit répondre dans un délai de *dix (10) jours* ;
++ L'Initiateur notifie au Destinataire, par lettre recommandée avec accusé de réception et par courrier électronique avec accusé de lecture, une offre ferme et irrévocable de rachat de la totalité de ses actions à un prix par action déterminé librement par l'Initiateur (le « *Prix Proposé* ») ;
 + Le Destinataire dispose d'un délai de *soixante (60) jours* à compter de la réception de la notification pour :
   - soit *accepter* l'offre et céder la totalité de ses actions à l'Initiateur au Prix Proposé ;
   - soit *retourner l'offre* et racheter la totalité des actions de l'Initiateur au même Prix Proposé par action ;

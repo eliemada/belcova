@@ -260,9 +260,9 @@ La Société a pour objet, en France et à l'étranger :
 
 - La conception, le développement, l'édition et la commercialisation de logiciels, applications mobiles, plateformes numériques et solutions SaaS ;
 - L'exploitation d'une plateforme numérique de remboursement de taxe sur la valeur ajoutée (TVA) au profit des voyageurs non-résidents de l'Union européenne, conformément à la réglementation douanière applicable ;
-- L'activité d'opérateur de détaxe agréé par la Direction Générale des Douanes et Droits Indirects (DGDDI) dans le cadre du système PABLO ;
+- L'activité d'opérateur de détaxe au sens des articles 202 E et suivants de l'annexe IV du Code général des impôts, dans le cadre du système PABLO de la Direction Générale des Douanes et Droits Indirects (DGDDI), sous réserve de l'obtention de l'agrément requis ;
 - La fourniture de services technologiques aux commerçants, détaillants et entreprises, notamment pour la gestion des bordereaux de vente à l'exportation et la conformité douanière et fiscale ;
-- La fourniture de services de paiement, de transfert de fonds et de services financiers connexes, en conformité avec la réglementation bancaire et financière applicable ;
+- La fourniture de services de paiement, de transfert de fonds et de services financiers connexes, sous réserve de l'obtention des agréments, autorisations ou enregistrements requis par la réglementation applicable, notamment auprès de l'Autorité de contrôle prudentiel et de résolution (ACPR) ;
 - Le conseil, la formation et l'assistance aux entreprises en matière de technologies numériques, de conformité réglementaire et d'optimisation fiscale ;
 - La prise de participations dans toute société ou entreprise, par tous moyens, la gestion de ces participations et, plus généralement, toutes opérations de holding ;
 - Et plus généralement, toutes opérations industrielles, commerciales, financières, civiles, mobilières ou immobilières, pouvant se rattacher directement ou indirectement à l'un des objets spécifiés ci-dessus ou à tout objet similaire ou connexe, de nature à favoriser le développement de la Société.
@@ -465,7 +465,8 @@ Cette interdiction ne s'applique pas :
 - aux cessions entre associés existants ;
 - aux cessions au profit du conjoint, des ascendants ou descendants du cédant ;
 - aux cessions résultant d'une transmission pour cause de décès ;
-- aux cessions réalisées dans le cadre d'une augmentation de capital au profit d'investisseurs financiers agréée par la collectivité des associés.
+- aux cessions réalisées dans le cadre d'une augmentation de capital au profit d'investisseurs financiers agréée par la collectivité des associés ;
+- aux cessions résultant de la mise en œuvre d'un mécanisme de résolution des blocages entre associés prévu par le pacte d'associés.
 
 #note-box[
   Des clauses complémentaires relatives aux cessions d'actions (sortie conjointe, entraînement, promesse de cession, _good leaver / bad leaver_, _vesting_) sont prévues dans le pacte d'associés signé entre les Associés Fondateurs à la même date que les présents statuts.
@@ -660,6 +661,13 @@ Le Président établit, à la clôture de chaque exercice, les comptes annuels (
 
 Les comptes annuels sont soumis à l'approbation de la collectivité des associés dans un délai de *six (6) mois* à compter de la clôture de l'exercice.
 
+// ⚠ NOTE — Dispense de rapport de gestion pour les petites entreprises
+// Depuis la loi PACTE (2019), les « petites entreprises » au sens de l'art. L. 230-1
+// C. com. (ne dépassant pas 2 sur 3 : bilan 6 M€, CA 12 M€, 50 salariés) sont
+// dispensées du rapport de gestion (art. L. 232-1 IV). BELCOVA en bénéficie
+// certainement dans ses premières années. L'obligation statutaire ci-dessous est
+// plus exigeante que la loi — le Président ne sera pas en faute s'il ne le produit
+// pas tant que la dispense légale s'applique.
 Le Président établit un rapport de gestion exposant la situation de la Société au cours de l'exercice écoulé, son évolution prévisible, les événements importants survenus entre la date de clôture de l'exercice et la date à laquelle il est établi, ainsi que ses activités en matière de recherche et de développement.
 
 #article[Affectation et répartition des résultats]
@@ -668,6 +676,13 @@ Le bénéfice distribuable, tel que défini par la loi, est constitué par le b�
 
 === Réserve légale
 
+// ⚠ AVERTISSEMENT JURIDIQUE — Réserve légale et capital de référence
+// L'utilisation du capital plancher comme référence pour le seuil de la réserve
+// légale (10 % de 10 € = 1 €) est une interprétation minoritaire. L'ANSA
+// (Association Nationale des Sociétés par Actions) retient le capital effectif
+// à la date de clôture de l'exercice comme référence. La question n'est pas
+// définitivement tranchée par la jurisprudence. Si le capital augmente
+// significativement, l'écart entre les deux interprétations deviendra important.
 Sur le bénéfice de l'exercice, diminué le cas échéant des pertes antérieures, il est prélevé *cinq pour cent (5 %)* pour constituer le fonds de réserve légale. Conformément à l'article L. 232-10 du Code de commerce, ce prélèvement cesse d'être obligatoire lorsque le fonds de réserve a atteint le dixième du capital social. La Société étant à capital variable, le capital de référence pour le calcul de ce seuil est le *capital plancher* tel que défini aux présents statuts, soit *#capital-plancher euros* (#capital-plancher €).
 
 === Dividendes
@@ -700,7 +715,7 @@ La Société confirme qu'elle remplit les conditions d'éligibilité au disposit
 - Être soumise à l'impôt sur les sociétés en France ;
 - Avoir été créée depuis moins de quinze (15) ans ;
 - Ne pas résulter d'une concentration, restructuration, extension ou reprise d'activité préexistante ;
-- Avoir son capital détenu directement et de manière continue pour au moins vingt-cinq pour cent (25 %) par des personnes physiques ou par des sociétés elles-mêmes détenues à 75 % au moins par des personnes physiques.
+- Avoir son capital détenu directement et de manière continue pour au moins quinze pour cent (15 %) par des personnes physiques ou par des sociétés elles-mêmes détenues à 75 % au moins par des personnes physiques.
 
 === Conditions d'émission
 
@@ -741,7 +756,7 @@ La Société est dissoute :
 
 Si du fait de pertes constatées dans les documents comptables, les capitaux propres de la Société deviennent inférieurs à la moitié du capital social, le Président doit, dans les quatre (4) mois suivant l'approbation des comptes ayant fait apparaître cette perte, consulter les associés à l'effet de décider s'il y a lieu à dissolution anticipée de la Société.
 
-Si la dissolution n'est pas prononcée, la Société est tenue, au plus tard à la clôture du deuxième exercice suivant celui au cours duquel la constatation des pertes est intervenue, de réduire son capital d'un montant au moins égal à celui des pertes qui n'ont pu être imputées sur les réserves.
+Si la dissolution n'est pas prononcée, la Société est tenue de reconstituer ses capitaux propres dans les conditions et délais prévus à l'article L. 225-248 du Code de commerce, tel que modifié par la loi n° 2023-171 du 9 mars 2023.
 
 #article[Liquidation]
 

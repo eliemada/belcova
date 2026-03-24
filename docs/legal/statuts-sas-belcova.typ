@@ -17,7 +17,7 @@
 #let founder-birthdate   = "12 décembre 2005"
 #let founder-birthplace  = "Royan (Charente-Maritime)"
 #let founder-address     = "29 Bis Rue de la Crête, 17110 Saint-Georges-de-Didonne"
-#let founder1-actions    = "60"
+#let founder1-actions    = "6 000"
 
 // ── Associé Fondateur 2 — Directeur Général ─────────────────────────────
 #let cofounder-first       = "Franklin"
@@ -26,7 +26,7 @@
 #let cofounder-birthdate   = "11 février 2004"
 #let cofounder-birthplace  = "Neuilly-sur-Seine (Hauts-de-Seine)"
 #let cofounder-address     = "3 Rue de Rouvray, 92200 Neuilly-sur-Seine"
-#let cofounder-actions     = "40"
+#let cofounder-actions     = "4 000"
 
 // ── Société ─────────────────────────────────────────────────────────────
 #let siege-social        = "10 Rue de Penthièvre, 75008 Paris"
@@ -34,13 +34,35 @@
 #let capital-initial     = "100"
 #let capital-plancher    = "10"
 #let capital-plafond     = "1 000 000"
-#let nb-actions          = "100"
-#let valeur-nominale     = "1"
+#let nb-actions          = "10 000"
+#let valeur-nominale     = "0,01"
 #let duree-societe       = "99"
 #let date-signature      = "2 mars 2026"
 #let rcs-ville           = "La Rochelle"
 #let exercice-debut      = "1er janvier"
 #let exercice-fin        = "31 décembre"
+
+// ── Seuils de gouvernance ──────────────────────────────────────────────────
+#let seuil-engagement-unitaire = "150 000"
+#let seuil-engagement-cumule   = "300 000"
+#let seuil-cosignature         = "10 000"
+#let seuil-embauche            = "150 000"
+
+// ── Délais procéduraux ────────────────────────────────────────────────────
+#let lock-up-duree               = "trois (3)"
+#let delai-agrement              = "trois (3)"
+#let delai-preemption-notif      = "cinq (5)"
+#let delai-preemption-exercice   = "trente (30)"
+#let delai-retrait-preavis       = "six (6)"
+#let delai-retrait-vote          = "deux (2)"
+#let delai-retrait-echelon       = "vingt-quatre (24)"
+#let delai-liberation            = "cinq (5)"
+#let delai-convocation           = "quinze (15)"
+#let delai-cosignature-urgence   = "quarante-huit (48)"
+
+// ── Pourcentages ──────────────────────────────────────────────────────────
+#let seuil-convention-reglementee = "dix pour cent (10 %)"
+#let seuil-convocation            = "dix pour cent (10 %)"
 
 // ── Signature & Paraphe ────────────────────────────────────────────────────
 // Instructions :
@@ -324,7 +346,7 @@ Les actions émises en rémunération d'apports en industrie seront des actions 
 
 === Capital social statutaire
 
-Le capital social initial est fixé à la somme de *#capital-initial euros* (#capital-initial €), divisé en *#nb-actions actions* de *#valeur-nominale euro* de valeur nominale chacune, entièrement souscrites et intégralement libérées, toutes de même catégorie, réparties comme suit :
+Le capital social initial est fixé à la somme de *#capital-initial euros* (#capital-initial €), divisé en *#nb-actions actions* de *#valeur-nominale euro* de valeur nominale chacune, toutes de même catégorie, entièrement souscrites et intégralement libérées, réparties comme suit :
 
 - *#founder-last #founder-first* : #founder1-actions actions, soit 60 % du capital ;
 - *#cofounder-last #cofounder-first* : #cofounder-actions actions, soit 40 % du capital.
@@ -338,7 +360,7 @@ Il pourra être augmenté par des versements successifs des associés ou l'admis
 - *Capital plancher* : le capital social ne pourra être réduit en dessous de *#capital-plancher euros* (#capital-plancher €), soit dix pour cent (10 %) du capital initial.
 - *Capital plafond (autorisé)* : le capital social pourra être augmenté jusqu'à *#capital-plafond euros* (#capital-plafond €) sans modification des statuts.
 
-Toute augmentation du capital dans les limites de la clause de variabilité est soumise à l'*autorisation préalable* de la collectivité des associés statuant à la majorité des *deux tiers (2/3)* des voix. L'admission de tout nouvel associé par voie de souscription est en outre soumise à la *procédure d'agrément* prévue aux présents statuts, dans les mêmes conditions que pour les cessions à des tiers. Chaque associé bénéficie d'un *droit préférentiel de souscription* proportionnel à sa participation, exerçable dans un délai de *trente (30) jours* à compter de la notification du projet d'augmentation.
+Toute augmentation du capital dans les limites de la clause de variabilité est soumise à l'*autorisation préalable* de la collectivité des associés statuant à la majorité des *deux tiers (2/3)* des voix. L'admission de tout nouvel associé par voie de souscription est en outre soumise à la *procédure d'agrément* prévue aux présents statuts, dans les mêmes conditions que pour les cessions à des tiers. Chaque associé bénéficie d'un *droit préférentiel de souscription* proportionnel à sa participation, exerçable dans un délai de *#delai-preemption-exercice jours* à compter de la notification du projet d'augmentation.
 
 L'augmentation ou la réduction du capital sera constatée par le Président, qui modifiera le montant du capital social figurant dans les statuts.
 
@@ -348,29 +370,27 @@ Au-delà du capital plafond, toute augmentation de capital devra être décidée
 
 Le retrait d'un associé par voie de reprise de ses apports est soumis à l'*autorisation préalable* de la collectivité des associés, statuant à la majorité des *deux tiers (2/3)* des voix, l'associé demandeur ne prenant pas part au vote.
 
-La demande de retrait est notifiée au Président par lettre recommandée avec accusé de réception au moins *six (6) mois* avant la clôture de l'exercice social en cours. Le Président soumet la demande au vote de la collectivité des associés dans un délai de *deux (2) mois*.
+La demande de retrait est notifiée au Président par lettre recommandée avec accusé de réception au moins *#delai-retrait-preavis mois* avant la clôture de l'exercice social en cours. Le Président soumet la demande au vote de la collectivité des associés dans un délai de *#delai-retrait-vote mois*.
 
 En cas d'autorisation, le retrait prendra effet à la clôture de l'exercice au cours duquel la demande aura été formulée. Le prix de remboursement sera déterminé conformément aux dispositions de l'article 1843-4 du Code civil, à défaut d'accord entre les parties.
 
-Le remboursement est *conditionné* à la capacité de trésorerie de la Société : il ne pourra être effectué si la trésorerie disponible, après remboursement, deviendrait inférieure à trois (3) mois de charges d'exploitation courantes. Dans ce cas, le remboursement sera échelonné sur une durée maximale de vingt-quatre (24) mois.
+Le remboursement est *conditionné* à la capacité de trésorerie de la Société : il ne pourra être effectué si la trésorerie disponible, après remboursement, deviendrait inférieure à trois (3) mois de charges d'exploitation courantes. Dans ce cas, le remboursement sera échelonné sur une durée maximale de #delai-retrait-echelon mois.
 
 En cas de refus d'autorisation, l'associé pourra céder ses actions à un tiers ou aux autres associés dans les conditions prévues aux clauses de cession des présents statuts.
 
 #article[Catégories d'actions]
 
-La Société peut émettre, sur décision collective extraordinaire des associés, des actions de catégories différentes, notamment :
+=== Actions ordinaires
 
-=== Actions ordinaires (catégorie A)
-
-Les actions ordinaires confèrent à leurs titulaires :
-- Le droit de vote aux décisions collectives, à raison d'une voix par action ;
-- Le droit au dividende ;
+Les actions composant le capital social initial sont des *actions ordinaires*, toutes de même catégorie, conférant chacune les mêmes droits :
+- *Une voix* par action aux décisions collectives ;
+- Le droit au dividende, au prorata du nombre d'actions détenues ;
 - Le droit préférentiel de souscription aux augmentations de capital ;
-- Le droit au boni de liquidation, au prorata de leur participation.
+- Le droit au boni de liquidation, au prorata du nombre d'actions détenues.
 
 === Actions de préférence
 
-La Société pourra émettre des actions de préférence, avec ou sans droit de vote, assorties de droits particuliers de toute nature, à titre temporaire ou permanent, conformément aux articles L. 228-11 et suivants du Code de commerce.
+La Société pourra émettre, sur décision collective extraordinaire des associés, des *actions de préférence*, avec ou sans droit de vote, assorties de droits particuliers de toute nature, à titre temporaire ou permanent, conformément aux articles L. 228-11 et suivants du Code de commerce.
 
 Les actions de préférence pourront notamment conférer :
 - Un droit à dividende prioritaire et/ou majoré ;
@@ -386,7 +406,7 @@ Les conditions d'émission et les droits attachés à chaque catégorie d'action
 
 Les actions composant le capital initial sont *intégralement libérées* à la constitution, ainsi qu'il résulte du certificat de dépôt des fonds.
 
-Pour les *émissions ultérieures* d'actions, les actions souscrites en numéraire devront être libérées de la moitié au moins de leur valeur nominale lors de la souscription. Le surplus sera libéré en une ou plusieurs fois, dans un délai maximum de cinq (5) ans à compter de la date d'émission, sur appel du Président.
+Pour les *émissions ultérieures* d'actions, les actions souscrites en numéraire devront être libérées de la moitié au moins de leur valeur nominale lors de la souscription. Le surplus sera libéré en une ou plusieurs fois, dans un délai maximum de #delai-liberation ans à compter de la date d'émission, sur appel du Président.
 
 À défaut de libération dans les délais prévus, les actions non libérées pourront faire l'objet d'une vente forcée dans les conditions prévues par la loi, après mise en demeure restée infructueuse.
 
@@ -429,11 +449,11 @@ Toute cession d'actions à un tiers non-associé, à quelque titre que ce soit (
 
 Le projet de cession est notifié au Président par lettre recommandée avec accusé de réception ou par voie électronique avec accusé de réception, en indiquant le nombre d'actions dont la cession est envisagée, l'identité du cessionnaire pressenti, le prix et les conditions de la cession.
 
-Le Président dispose d'un délai de *trois (3) mois* à compter de la réception de la notification pour faire connaître sa décision. À défaut de réponse dans ce délai, l'agrément est réputé acquis.
+Le Président dispose d'un délai de *#delai-agrement mois* à compter de la réception de la notification pour faire connaître sa décision. À défaut de réponse dans ce délai, l'agrément est réputé acquis.
 
 === Refus d'agrément
 
-En cas de refus d'agrément, les associés sont tenus, dans un délai de *trois (3) mois* à compter de la notification du refus, d'acquérir ou de faire acquérir les actions à un prix déterminé dans les conditions prévues à l'article 1843-4 du Code civil.
+En cas de refus d'agrément, les associés sont tenus, dans un délai de *#delai-agrement mois* à compter de la notification du refus, d'acquérir ou de faire acquérir les actions à un prix déterminé dans les conditions prévues à l'article 1843-4 du Code civil.
 
 À défaut d'accord, le prix sera fixé par un expert désigné soit par les parties, soit à défaut d'accord entre elles, par ordonnance du Président du Tribunal de commerce compétent, statuant en la forme des référés.
 
@@ -451,7 +471,7 @@ En cas de projet de cession d'actions par un associé (le « *Cédant* »), les 
 
 Le Cédant notifie au Président son intention de céder, en précisant le nombre d'actions, le prix unitaire, l'identité du cessionnaire pressenti et les conditions de la cession.
 
-Le Président en informe les autres associés dans un délai de *cinq (5) jours ouvrés*. Chaque associé dispose d'un délai de *trente (30) jours* à compter de cette notification pour exercer son droit de préemption, par lettre recommandée avec accusé de réception ou par voie électronique avec accusé de réception adressée au Président.
+Le Président en informe les autres associés dans un délai de *#delai-preemption-notif jours ouvrés*. Chaque associé dispose d'un délai de *#delai-preemption-exercice jours* à compter de cette notification pour exercer son droit de préemption, par lettre recommandée avec accusé de réception ou par voie électronique avec accusé de réception adressée au Président.
 
 Si les droits de préemption exercés portent sur un nombre d'actions supérieur au nombre d'actions offertes, les actions seront réparties proportionnellement à la participation de chaque associé ayant exercé son droit.
 
@@ -459,7 +479,7 @@ En cas de non-exercice ou d'exercice partiel du droit de préemption, le Cédant
 
 #article[Clause d'inaliénabilité (_lock-up_)]
 
-Conformément à l'article L. 227-13 du Code de commerce, chaque Associé Fondateur s'interdit de céder, transférer, nantir ou de consentir quelque droit que ce soit sur tout ou partie de ses actions pendant une durée de *trois (3) ans* à compter de l'immatriculation de la Société au Registre du Commerce et des Sociétés.
+Conformément à l'article L. 227-13 du Code de commerce, chaque Associé Fondateur s'interdit de céder, transférer, nantir ou de consentir quelque droit que ce soit sur tout ou partie de ses actions pendant une durée de *#lock-up-duree ans* à compter de l'immatriculation de la Société au Registre du Commerce et des Sociétés.
 
 Cette interdiction ne s'applique pas :
 - aux cessions entre associés existants ;
@@ -496,11 +516,11 @@ Le Président représente la Société à l'égard des tiers. La Société est e
 === Limitations de pouvoirs
 
 Toutefois, les décisions suivantes ne pourront être prises par le Président qu'après autorisation préalable de la collectivité des associés statuant à la majorité simple :
-- Tout engagement financier (emprunt, caution, garantie) d'un montant supérieur à *cent cinquante mille euros (150 000 €)* par opération ou *trois cent mille euros (300 000 €)* cumulés par exercice social ;
-- Toute acquisition ou cession d'actifs d'une valeur supérieure à *cent cinquante mille euros (150 000 €)* ;
+- Tout engagement financier (emprunt, caution, garantie) d'un montant supérieur à *cent cinquante mille euros (#seuil-engagement-unitaire €)* par opération ou *trois cent mille euros (#seuil-engagement-cumule €)* cumulés par exercice social ;
+- Toute acquisition ou cession d'actifs d'une valeur supérieure à *cent cinquante mille euros (#seuil-engagement-unitaire €)* ;
 - Toute prise de participation supérieure à dix pour cent (10 %) du capital d'une autre société ;
 - La conclusion de tout bail commercial d'une durée supérieure à six (6) ans ;
-- L'embauche de tout salarié avec une rémunération annuelle brute supérieure à *cent cinquante mille euros (150 000 €)*.
+- L'embauche de tout salarié avec une rémunération annuelle brute supérieure à *cent cinquante mille euros (#seuil-embauche €)*.
 
 Ces seuils seront *réévalués annuellement* par la collectivité des associés lors de l'approbation des comptes annuels. À défaut de réévaluation, les seuils de l'exercice précédent demeurent applicables. La collectivité des associés pourra également déléguer au Président des autorisations globales par catégorie d'opérations pour un exercice donné.
 
@@ -542,7 +562,7 @@ Les modalités de fonctionnement du Comité stratégique (convocation, quorum, p
 
 #article[Conventions réglementées]
 
-Toute convention intervenant directement ou par personne interposée entre la Société et son Président, l'un de ses dirigeants, l'un de ses associés disposant d'une fraction des droits de vote supérieure à dix pour cent (10 %) ou, s'il s'agit d'une société associée, la société la contrôlant, doit être portée à la connaissance du Commissaire aux comptes, le cas échéant, et soumise à l'approbation de la collectivité des associés.
+Toute convention intervenant directement ou par personne interposée entre la Société et son Président, l'un de ses dirigeants, l'un de ses associés disposant d'une fraction des droits de vote supérieure à #seuil-convention-reglementee ou, s'il s'agit d'une société associée, la société la contrôlant, doit être portée à la connaissance du Commissaire aux comptes, le cas échéant, et soumise à l'approbation de la collectivité des associés.
 
 Le Président ou le dirigeant intéressé ne peut pas prendre part au vote sur l'approbation de la convention.
 
@@ -598,13 +618,13 @@ Le recours à la visioconférence et aux moyens de consultation électronique es
 
 === Convocation
 
-Les associés sont convoqués par le Président ou, le cas échéant, par le Commissaire aux comptes, ou par un associé représentant au moins dix pour cent (10 %) du capital social.
+Les associés sont convoqués par le Président ou, le cas échéant, par le Commissaire aux comptes, ou par un associé représentant au moins #seuil-convocation du capital social.
 
-La convocation est adressée par tout moyen, y compris par courrier électronique, au moins *quinze (15) jours* avant la date de la consultation. Elle indique l'ordre du jour, le lieu (physique ou lien de visioconférence), la date et l'heure de la réunion, ainsi que les documents nécessaires à l'information des associés.
+La convocation est adressée par tout moyen, y compris par courrier électronique, au moins *#delai-convocation jours* avant la date de la consultation. Elle indique l'ordre du jour, le lieu (physique ou lien de visioconférence), la date et l'heure de la réunion, ainsi que les documents nécessaires à l'information des associés.
 
 === Droit de communication
 
-Tout associé a le droit de prendre connaissance, au siège social ou par voie électronique, des documents nécessaires pour lui permettre de se prononcer en connaissance de cause, au moins *quinze (15) jours* avant toute consultation.
+Tout associé a le droit de prendre connaissance, au siège social ou par voie électronique, des documents nécessaires pour lui permettre de se prononcer en connaissance de cause, au moins *#delai-convocation jours* avant toute consultation.
 
 #article[Conditions de quorum et de majorité]
 
@@ -630,7 +650,7 @@ Tant que la Société ne comprend qu'un seul associé, celui-ci exerce les pouvo
 
 #article[Droit de vote — Représentation]
 
-Chaque action donne droit à une voix, sauf dispositions particulières applicables aux actions de préférence.
+Chaque action donne droit à *une voix* aux décisions collectives, sous réserve des droits particuliers attachés aux actions de préférence qui pourraient être émises ultérieurement.
 
 Un associé peut se faire représenter par un autre associé ou par un tiers muni d'un pouvoir spécial.
 

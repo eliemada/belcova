@@ -29,8 +29,8 @@
 #let cofounder-actions     = "40"
 
 // ── Société ─────────────────────────────────────────────────────────────
-#let siege-social        = "29 Bis Rue de la Crête, 17110 Saint-Georges-de-Didonne"
-#let siege-ville         = "Saint-Georges-de-Didonne"
+#let siege-social        = "10 Rue de Penthièvre, 75008 Paris"
+#let siege-ville         = "Paris"
 #let capital-initial     = "100"
 #let capital-plancher    = "10"
 #let capital-plafond     = "1 000 000"

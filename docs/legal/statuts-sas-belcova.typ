@@ -20,7 +20,7 @@
 // ── Seuils de gouvernance ──────────────────────────────────────────────────
 #let seuil-engagement-unitaire = "cent cinquante mille euros (150 000 €)"   // par opération
 #let seuil-engagement-cumule   = "trois cent mille euros (300 000 €)"      // cumulé par exercice
-#let seuil-cosignature         = "dix mille euros (10 000 €)"              // co-signature bancaire
+#let seuil-cosignature         = "cinquante mille euros (50 000 €)"        // co-signature bancaire
 #let seuil-embauche            = "cent cinquante mille euros (150 000 €)"  // bruts annuels
 
 // ── Délais procéduraux ────────────────────────────────────────────────────

@@ -516,7 +516,7 @@ Le premier Directeur Général de la Société est *#cofounder-last #cofounder-f
 
 Le Directeur Général dispose des mêmes pouvoirs de représentation que le Président à l'égard des tiers, sauf limitation expressément prévue par la décision de nomination ou par les présents statuts. Il est soumis aux mêmes limitations de pouvoirs que le Président prévues à l'article ci-dessus.
 
-Le Directeur Général peut être révoqué par décision collective des associés statuant à la majorité des *deux tiers (2/3)* des voix. Si la révocation intervient sans juste motif, le Directeur Général révoqué pourra prétendre à des dommages-intérêts.
+Le Directeur Général peut être révoqué par décision collective des associés statuant à la *majorité simple* des voix. Si la révocation intervient sans juste motif, le Directeur Général révoqué pourra prétendre à des dommages-intérêts.
 
 === Directeurs Généraux Délégués
 

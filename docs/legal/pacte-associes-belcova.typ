@@ -407,19 +407,15 @@ En contrepartie, la Société versera à l'associé concerné une indemnité men
 
 Cette indemnité mensuelle ne pourra en aucun cas être inférieure à *#non-compete-plancher du SMIC mensuel brut* en vigueur à la date de cessation effective des fonctions, y compris dans l'hypothèse où la rémunération du débiteur de l'obligation serait nulle.
 
-// ⚠ AVERTISSEMENT JURIDIQUE — Délai de renonciation de 15 jours
-// Pour les mandataires sociaux purs (non salariés), ce délai est valide.
-// Cependant, si l'associé cumule mandat social et contrat de travail,
-// la Cass. Soc. 26/01/2022 impose la renonciation au plus tard à la date
-// de départ effectif du salarié. Le délai de 15 jours post-départ serait
-// alors inopposable. Envisager d'ajouter une clause d'adaptation automatique
-// en cas de cumul mandat/contrat de travail.
-// De même, si la rémunération du débiteur est nulle (fréquent en phase
-// d'amorçage), la contrepartie de 30 % vaut zéro — prévoir un plancher
-// minimum (ex. pourcentage du SMIC).
+// ✓ CORRIGÉ — Clause d'adaptation ajoutée pour cumul mandat/contrat de travail
+// (Cass. Soc. 26/01/2022). Plancher SMIC prévu à l'alinéa « Contrepartie financière ».
 === Faculté de renonciation
 
 La Société se réserve le droit de *renoncer unilatéralement* à l'application de la clause de non-concurrence, et par conséquent au versement de l'indemnité, à condition d'en notifier l'associé concerné par lettre recommandée avec accusé de réception dans un délai de *#non-compete-renonciation jours* suivant la date effective de cessation des fonctions. La renonciation est alors totale et libère immédiatement l'associé de son obligation.
+
+=== Adaptation en cas de cumul mandat social et contrat de travail
+
+Lorsqu'un associé cumule un mandat social et un contrat de travail au sein de la Société, la renonciation à la clause de non-concurrence devra être notifiée au plus tard à la date de cessation effective des fonctions salariées, conformément à la jurisprudence applicable (Cass. Soc. 26 janvier 2022). En cas de conflit entre les stipulations du présent Pacte et celles du contrat de travail relatives à la non-concurrence, les stipulations les plus protectrices du débiteur de l'obligation prévaudront.
 
 
 // ════════════════════════════════════════════════════════════════════════════

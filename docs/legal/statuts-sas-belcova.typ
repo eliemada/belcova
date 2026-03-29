@@ -563,6 +563,7 @@ La collectivité des associés est seule compétente pour prendre les décisions
 
 === Décisions ordinaires
 
+- Approbation des comptes annuels et affectation du résultat ;
 - Nomination et révocation du Président, des Directeurs Généraux et du Commissaire aux comptes ;
 - Approbation des conventions réglementées ;
 - Fixation de la rémunération du Président ;
@@ -571,7 +572,6 @@ La collectivité des associés est seule compétente pour prendre les décisions
 
 === Décisions extraordinaires
 
-- Approbation des comptes annuels et affectation du résultat ;
 - Modification des statuts (sauf transfert du siège dans les cas prévus) ;
 - Augmentation ou réduction du capital au-delà du capital autorisé ;
 - Émission d'actions de préférence, de valeurs mobilières donnant accès au capital ;
@@ -610,7 +610,7 @@ Les décisions ordinaires sont adoptées à la *majorité simple* des voix des a
 
 === Décisions extraordinaires
 
-Les décisions extraordinaires (y compris l'approbation des comptes annuels et l'affectation du résultat) sont adoptées à la majorité des *deux tiers (2/3)* des voix des associés présents, représentés ou ayant voté par correspondance.
+Les décisions extraordinaires sont adoptées à la majorité des *deux tiers (2/3)* des voix des associés présents, représentés ou ayant voté par correspondance.
 
 === Décisions à l'unanimité
 

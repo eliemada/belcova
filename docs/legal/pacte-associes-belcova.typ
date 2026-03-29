@@ -376,13 +376,14 @@ Les conditions d'exercice des BSPCE sont les suivantes :
 
 #article[Confidentialité]
 
-// ⚠ AVERTISSEMENT JURIDIQUE — Exclusions manquantes dans la clause de confidentialité
-// La clause ne prévoit pas les exclusions classiques : (1) informations devenues
-// publiques autrement que par le fait du débiteur, (2) informations détenues par
-// l'associé antérieurement à son entrée au capital, (3) informations reçues d'un
-// tiers non lié par une obligation de confidentialité. L'absence de ces exclusions
-// pourrait fragiliser la clause sur le terrain de la proportionnalité.
+// ✓ CORRIGÉ — Exclusions classiques ajoutées à la clause de confidentialité.
 Chaque associé s'engage à considérer comme strictement confidentiel et à ne pas divulguer à des tiers, sans l'accord préalable et écrit du Président, toute information relative aux affaires de la Société, notamment les informations financières, commerciales, techniques, stratégiques et technologiques, les données clients, les algorithmes, le code source et les méthodes de travail.
+
+Ne sont pas considérées comme confidentielles les informations qui :
+- sont ou deviennent accessibles au public autrement que par le fait du débiteur de l'obligation ;
+- étaient déjà en la possession légitime de l'associé avant son entrée au capital de la Société, sous réserve qu'il puisse en apporter la preuve ;
+- ont été reçues d'un tiers non lié par une obligation de confidentialité envers la Société ;
+- doivent être divulguées en vertu d'une obligation légale, réglementaire ou d'une décision judiciaire, sous réserve d'en informer préalablement le Président dans la mesure du possible.
 
 Cette obligation de confidentialité survivra à la perte de la qualité d'associé pendant une durée de *#confidentialite-survie ans*.
 

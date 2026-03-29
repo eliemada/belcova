@@ -21,6 +21,7 @@
 #let vesting-post-cliff    = "trente-six (36)"                     // mois (linéaire)
 
 // ── Good / Bad Leaver ──────────────────────────────────────────────────────
+#let bad-leaver-grave-pct  = "vingt-cinq pour cent (25 %)"         // % de la valeur de marché (faute grave)
 #let bad-leaver-prix-pct   = "cinquante pour cent (50 %)"          // % de la valeur de marché
 
 // ── BSPCE ──────────────────────────────────────────────────────────────────
@@ -259,17 +260,10 @@ Est considéré comme _Bad Leaver_ l'associé dont le départ résulte :
 - d'une révocation de ses fonctions de dirigeant pour juste motif ;
 - d'une violation des clauses de non-concurrence ou de confidentialité.
 
-// ⚠ AVERTISSEMENT JURIDIQUE — Bad Leaver au nominal (faute grave)
-// La Cour de cassation (Cass. Com. 21/06/2023, n° 21-21.875) qualifie les clauses
-// de bad leaver de clauses pénales au sens de l'art. 1231-5 C. civ., susceptibles
-// de réduction judiciaire si « manifestement excessives ». Le rachat au nominal (0,01 €)
-// pour des actions valant potentiellement bien plus est à haut risque de modération.
-// Envisager 25-30 % de la valeur de marché pour réduire ce risque.
-// De plus, si l'associé est également salarié, le rachat au nominal déclenché par
-// un motif disciplinaire (faute grave) risque d'être requalifié en sanction pécuniaire
-// prohibée (art. L. 1331-2 C. trav. ; CA Paris, 12/05/2022).
+// ✓ CORRIGÉ — Bad Leaver : prix plancher à 25 % de la valeur de marché (faute grave)
+// au lieu du nominal, conformément à Cass. Com. 21/06/2023, n° 21-21.875.
 Le prix de cession des actions du _Bad Leaver_ est déterminé selon une *échelle graduée* :
-- *Faute grave, fraude ou violation majeure* (non-concurrence, confidentialité, détournement) : prix égal à la *valeur nominale* des actions ;
+- *Faute grave, fraude ou violation majeure* (non-concurrence, confidentialité, détournement) : prix égal à *#bad-leaver-grave-pct* de la valeur de marché des actions, telle que déterminée par un expert indépendant conformément à l'article 1843-4 du Code civil ;
 - *Autres cas de Bad Leaver* (démission volontaire pendant le lock-up, révocation pour juste motif non constitutif de fraude) : prix égal à *#bad-leaver-prix-pct* de la valeur de marché des actions, telle que déterminée par un expert indépendant conformément à l'article 1843-4 du Code civil.
 
 === Procédure de qualification _Good Leaver / Bad Leaver_

@@ -246,8 +246,10 @@ Tout associé qui cesserait d'exercer ses fonctions au sein de la Société ou d
 
 Est considéré comme _Good Leaver_ l'associé dont le départ résulte :
 - d'un licenciement sans cause réelle et sérieuse ;
+- d'une révocation du mandat social (Président ou Directeur Général) sans juste motif ;
 - d'une incapacité physique ou mentale durable ;
 - d'un commun accord avec les autres associés ;
+- d'une démission volontaire postérieure à l'expiration de la période de _cliff_ prévue au calendrier de vesting ;
 - du décès de l'associé.
 
 Le _Good Leaver_ cédera ses actions à un prix égal à leur *valeur de marché*, déterminée par un expert indépendant conformément à l'article 1843-4 du Code civil.
@@ -255,7 +257,7 @@ Le _Good Leaver_ cédera ses actions à un prix égal à leur *valeur de marché
 === _Bad Leaver_ (Départ fautif)
 
 Est considéré comme _Bad Leaver_ l'associé dont le départ résulte :
-- d'une démission volontaire avant l'expiration de la période d'inaliénabilité ;
+- d'une démission volontaire avant l'expiration de la période de _cliff_ prévue au calendrier de vesting ;
 - d'un licenciement pour faute grave ou lourde ;
 - d'une révocation de ses fonctions de dirigeant pour juste motif ;
 - d'une violation des clauses de non-concurrence ou de confidentialité.
@@ -264,7 +266,7 @@ Est considéré comme _Bad Leaver_ l'associé dont le départ résulte :
 // au lieu du nominal, conformément à Cass. Com. 21/06/2023, n° 21-21.875.
 Le prix de cession des actions du _Bad Leaver_ est déterminé selon une *échelle graduée* :
 - *Faute grave, fraude ou violation majeure* (non-concurrence, confidentialité, détournement) : prix égal à *#bad-leaver-grave-pct* de la valeur de marché des actions, telle que déterminée par un expert indépendant conformément à l'article 1843-4 du Code civil ;
-- *Autres cas de Bad Leaver* (démission volontaire pendant le lock-up, révocation pour juste motif non constitutif de fraude) : prix égal à *#bad-leaver-prix-pct* de la valeur de marché des actions, telle que déterminée par un expert indépendant conformément à l'article 1843-4 du Code civil.
+- *Autres cas de Bad Leaver* (démission volontaire avant l'expiration du cliff, révocation pour juste motif non constitutif de fraude) : prix égal à *#bad-leaver-prix-pct* de la valeur de marché des actions, telle que déterminée par un expert indépendant conformément à l'article 1843-4 du Code civil.
 
 === Procédure de qualification _Good Leaver / Bad Leaver_
 
@@ -301,9 +303,15 @@ La totalité des actions détenues par chaque Associé Fondateur est soumise au 
 
 En cas de *changement de contrôle* de la Société (cession de plus de 50 % du capital à un tiers, fusion, ou introduction en bourse), la totalité des actions non encore _vestées_ de chaque Associé Fondateur sera immédiatement et intégralement acquise (*single trigger acceleration*).
 
+=== Accélération du vesting en cas de départ qualifié _Good Leaver_
+
+En cas de départ d'un Associé Fondateur qualifié de _Good Leaver_, celui-ci bénéficie d'une accélération de *douze (12) mois* de vesting supplémentaires, calculée à compter de la date de cessation effective des fonctions. Les actions ainsi accélérées sont réputées _vestées_ et cédées aux conditions de prix du _Good Leaver_ (valeur de marché).
+
 === Effet du vesting sur le départ
 
-En cas de départ d'un Associé Fondateur, seules les actions _vestées_ à la date de cessation effective des fonctions sont conservées. Les actions non _vestées_ sont cédées à la Société ou aux autres associés à leur *valeur nominale*.
+En cas de départ d'un Associé Fondateur qualifié de *_Good Leaver_*, les actions _vestées_ (y compris celles résultant de l'accélération prévue ci-dessus) sont conservées ou cédées à leur *valeur de marché*. Les actions non _vestées_ excédant l'accélération sont cédées à la Société ou aux autres associés à leur *valeur nominale*.
+
+En cas de départ d'un Associé Fondateur qualifié de *_Bad Leaver_*, seules les actions _vestées_ à la date de cessation effective des fonctions sont conservées, aux conditions de prix du _Bad Leaver_. Les actions non _vestées_ sont cédées à la Société ou aux autres associés à leur *valeur nominale*.
 
 
 // ════════════════════════════════════════════════════════════════════════════
@@ -323,7 +331,8 @@ Nonobstant toute autre disposition des Statuts ou du présent Pacte, les décisi
 + *Opérations de restructuration* — toute fusion, scission, apport partiel d'actif, ou cession de la totalité ou de la quasi-totalité des actifs de la Société ;
 + *Dissolution* — toute dissolution anticipée volontaire de la Société ;
 + *Changement d'objet social* — toute modification substantielle de l'objet social ;
-+ *Distribution de dividendes* — toute mise en distribution de bénéfices au cours des trois (3) premiers exercices suivant l'immatriculation, sauf décision unanime.
++ *Distribution de dividendes* — toute mise en distribution de bénéfices au cours des trois (3) premiers exercices suivant l'immatriculation, sauf décision unanime ;
++ *Révocation d'un Associé Fondateur dirigeant* — toute révocation du mandat social (Président ou Directeur Général) d'un Associé Fondateur, sauf révocation pour juste motif prononcée sur le fondement d'une décision motivée d'un expert indépendant désigné conformément à la procédure de qualification _Good Leaver / Bad Leaver_ prévue au Titre II du présent Pacte.
 
 Ce droit de consentement constitue un droit attaché à la qualité d'Associé Fondateur et subsistera aussi longtemps que le Minoritaire Protégé détiendra au moins *#minority-seuil* du capital social pleinement dilué. Il ne pourra être supprimé ou modifié qu'à l'unanimité des associés.
 
@@ -358,14 +367,11 @@ Les conditions d'exercice des BSPCE sont les suivantes :
 
 - *Prix d'exercice* : le prix d'exercice de chaque BSPCE sera au moins égal à la *juste valeur de marché* des actions sous-jacentes à la date d'attribution, telle que déterminée par le conseil d'administration ou la collectivité des associés ;
 - *Vesting* : chaque attribution de BSPCE sera soumise à un calendrier de vesting comprenant un _cliff_ minimum de *#vesting-cliff mois* ;
-// ⚠ AVERTISSEMENT JURIDIQUE — Caducité des BSPCE vestés en cas de Bad Leaver
-// Pour les bénéficiaires salariés, la suppression de BSPCE déjà vestés pour motif
-// disciplinaire risque d'être requalifiée en sanction pécuniaire prohibée
-// (art. L. 1331-2 C. trav. ; Cass. Soc. 21/10/2009, n° 08-42.026).
-// Envisager : (1) distinguer mandataires sociaux vs. salariés, (2) pour les salariés,
-// ne rendre caducs que les BSPCE non vestés, ou (3) réduire le délai d'exercice
-// des BSPCE vestés (ex. 30 jours) plutôt que les annuler.
-- *Effet du départ* : en cas de départ du bénéficiaire, les BSPCE non _vestés_ seront caducs de plein droit ; les BSPCE _vestés_ pourront être exercés dans un délai de *#bspce-exercice-depart jours* suivant la date de cessation effective des fonctions, sauf en cas de qualification en _Bad Leaver_, auquel cas l'ensemble des BSPCE (vestés et non vestés) seront immédiatement caducs.
+// ✓ CORRIGÉ — Les BSPCE vestés survivent au Bad Leaver avec délai d'exercice réduit.
+// Conforme à la jurisprudence (Cass. Soc. 21/10/2009, n° 08-42.026) : la suppression
+// de BSPCE déjà vestés pour motif disciplinaire risque d'être requalifiée en sanction
+// pécuniaire prohibée (art. L. 1331-2 C. trav.) pour les bénéficiaires salariés.
+- *Effet du départ* : en cas de départ du bénéficiaire, les BSPCE non _vestés_ seront caducs de plein droit. Les BSPCE _vestés_ pourront être exercés dans un délai de *#bspce-exercice-depart jours* suivant la date de cessation effective des fonctions. En cas de qualification en _Bad Leaver_, les BSPCE non _vestés_ seront caducs de plein droit ; les BSPCE _vestés_ pourront être exercés dans un délai réduit de *trente (30) jours* suivant la notification de la qualification.
 
 
 // ════════════════════════════════════════════════════════════════════════════

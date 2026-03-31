@@ -676,14 +676,16 @@ Le bénéfice distribuable, tel que défini par la loi, est constitué par le b�
 
 === Réserve légale
 
-// ⚠ AVERTISSEMENT JURIDIQUE — Réserve légale et capital de référence
-// L'utilisation du capital plancher comme référence pour le seuil de la réserve
-// légale (10 % de 10 € = 1 €) est une interprétation minoritaire. L'ANSA
-// (Association Nationale des Sociétés par Actions) retient le capital effectif
-// à la date de clôture de l'exercice comme référence. La question n'est pas
-// définitivement tranchée par la jurisprudence. Si le capital augmente
-// significativement, l'écart entre les deux interprétations deviendra important.
-Sur le bénéfice de l'exercice, diminué le cas échéant des pertes antérieures, il est prélevé *cinq pour cent (5 %)* pour constituer le fonds de réserve légale. Conformément à l'article L. 232-10 du Code de commerce, ce prélèvement cesse d'être obligatoire lorsque le fonds de réserve a atteint le dixième du capital social. La Société étant à capital variable, le capital de référence pour le calcul de ce seuil est le *capital plancher* tel que défini aux présents statuts, soit *#capital-plancher euros* (#capital-plancher €).
+// ℹ Réserve légale et capital de référence
+// La réserve légale est un prélèvement obligatoire de 5 % sur le bénéfice net,
+// mis de côté chaque année jusqu'à atteindre 10 % du capital social. Ce n'est
+// pas de l'argent perdu : ça reste dans les fonds propres de la société, mais
+// ce n'est pas distribuable en dividendes. Avec un capital de 100 €, le seuil
+// est de 10 € (atteint quasi immédiatement). Après une levée portant le capital
+// à 200 K€, le seuil monte à 20 K€ — quelques exercices bénéficiaires suffisent.
+// On retient le capital effectif à la clôture (position ANSA, majoritaire en
+// doctrine), et non le capital plancher, pour éviter toute contestation future.
+Sur le bénéfice de l'exercice, diminué le cas échéant des pertes antérieures, il est prélevé *cinq pour cent (5 %)* pour constituer le fonds de réserve légale. Conformément à l'article L. 232-10 du Code de commerce, ce prélèvement cesse d'être obligatoire lorsque le fonds de réserve a atteint le dixième du capital social. La Société étant à capital variable, le capital de référence pour le calcul de ce seuil est le *capital social effectif* à la date de clôture de l'exercice considéré.
 
 === Dividendes
 

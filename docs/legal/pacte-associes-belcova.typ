@@ -340,15 +340,21 @@ Ce droit de consentement constitue un droit attaché à la qualité d'Associé F
   Les _protective provisions_ visent à protéger l'associé minoritaire contre les décisions unilatérales qui pourraient affecter substantiellement la valeur de sa participation ou la gouvernance de la Société. Elles n'entravent pas la gestion courante, qui demeure du ressort du Président.
 ]
 
-#article[Droit d'information renforcé de l'associé minoritaire]
+#article[Droit d'information renforcé des Associés Fondateurs]
 
 Tout associé détenant au moins *#minority-seuil* du capital social dispose d'un droit d'information renforcé comprenant :
 
 - La communication trimestrielle d'un *tableau de bord* incluant le chiffre d'affaires, les charges, la trésorerie disponible et les engagements hors bilan ;
-- L'accès permanent aux comptes bancaires de la Société en consultation (_read-only_) ;
-- La communication préalable de tout projet de recrutement, de tout engagement financier supérieur à *#seuil-info-engagement*, et de tout projet de partenariat stratégique, au moins *#info-delai-preavis jours ouvrés* avant toute décision.
+- L'accès permanent et complet aux comptes bancaires de la Société, sans préjudice du droit de co-signature prévu aux Statuts ;
+- La communication préalable de tout projet de recrutement, de tout engagement financier supérieur à *#seuil-info-engagement*, et de tout projet de partenariat stratégique, au moins *#info-delai-preavis jours ouvrés* avant toute décision ;
+- La notification, dans un délai de *dix (10) jours ouvrés* à compter de la première interaction formelle portant sur les conditions commerciales, de toute *négociation commerciale significative* en cours, et notamment : tout prospect ou client susceptible de représenter plus de *dix pour cent (10 %)* du chiffre d'affaires annuel de la Société (par référence au dernier exercice clos ou, à défaut, au budget prévisionnel approuvé par les associés), et tout contrat-cadre en cours de négociation. Cette notification inclut l'identité du tiers, la nature et l'enjeu estimé de la négociation, et son état d'avancement. Tout changement substantiel dans l'avancement d'une négociation précédemment notifiée devra faire l'objet d'une mise à jour dans les mêmes conditions ;
+- La notification, dans un délai de *quarante-huit (48) heures*, de toute lettre d'intention (_LOI_) reçue ou émise, de tout litige, mise en demeure, assignation, contrôle fiscal ou social, ou événement susceptible d'affecter substantiellement la valeur ou la situation de la Société.
 
-Ce droit d'information est *incessible* et attaché à la qualité d'Associé Fondateur.
+Les informations communiquées au titre du présent article sont couvertes par l'obligation de confidentialité prévue au Titre V du présent Pacte.
+
+Ce droit d'information constitue une *obligation réciproque* : chaque Associé Fondateur dirigeant est tenu de communiquer les informations visées ci-dessus à l'autre Associé Fondateur dirigeant. Ce droit est *incessible* et attaché à la qualité d'Associé Fondateur.
+
+En cas de manquement à l'obligation de notification prévue au présent article, si la clause de résolution des blocages (Titre VI) est déclenchée dans les *douze (12) mois* suivant le manquement, le Destinataire pourra exiger la *suspension de la procédure shotgun* jusqu'à ce que l'information omise soit communiquée et qu'un nouveau délai de *#shotgun-delai-info jours* soit accordé à compter de cette communication. En outre, toute omission délibérée d'une information *substantielle* — c'est-à-dire une information dont la connaissance aurait été de nature à influencer l'appréciation du prix proposé ou la décision d'accepter ou de retourner l'offre — dans le dossier d'information prévu au Titre VI constitue un manquement grave susceptible d'entraîner la *nullité de la procédure shotgun* engagée, prononcée par le tribunal compétent saisi par la partie lésée.
 
 
 // ════════════════════════════════════════════════════════════════════════════

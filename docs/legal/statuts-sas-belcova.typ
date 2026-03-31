@@ -248,17 +248,17 @@ Dans tous les actes et documents émanant de la Société et destinés aux tiers
 
 Le siège social est fixé au : *#siege-social*.
 
-Il pourra être transféré en tout autre endroit du même département ou d'un département limitrophe par simple décision du Président, sous réserve de ratification par la collectivité des associés lors de la plus prochaine décision collective.
+Il pourra être transféré en tout autre endroit du même département ou d'un département limitrophe par décision conjointe du Président et du Directeur Général, sous réserve de ratification par la collectivité des associés lors de la plus prochaine décision collective.
 
 Le transfert du siège social en tout autre lieu sera décidé par décision collective extraordinaire des associés.
 
-La Société peut établir des agences, succursales, bureaux, dépôts et comptoirs en tous lieux et dans tous pays, par décision du Président.
+La Société peut établir des agences, succursales, bureaux, dépôts et comptoirs en tous lieux et dans tous pays, par décision conjointe du Président et du Directeur Général.
 
 #article[Durée]
 
 La durée de la Société est fixée à *#duree-societe ans* à compter de la date de son immatriculation au Registre du Commerce et des Sociétés, sauf dissolution anticipée ou prorogation décidée par la collectivité des associés.
 
-Un an au moins avant la date d'expiration de la Société, le Président devra provoquer une décision collective des associés à l'effet de décider si la Société doit être prorogée.
+Un an au moins avant la date d'expiration de la Société, le Président ou le Directeur Général devra provoquer une décision collective des associés à l'effet de décider si la Société doit être prorogée.
 
 
 // ════════════════════════════════════════════════════════════════════════════
@@ -311,7 +311,7 @@ Il pourra être augmenté par des versements successifs des associés ou l'admis
 
 Toute augmentation du capital dans les limites de la clause de variabilité est soumise à l'*autorisation préalable* de la collectivité des associés statuant à la majorité des *deux tiers (2/3)* des voix. L'admission de tout nouvel associé par voie de souscription est en outre soumise à la *procédure d'agrément* prévue aux présents statuts, dans les mêmes conditions que pour les cessions à des tiers. Chaque associé bénéficie d'un *droit préférentiel de souscription* proportionnel à sa participation, exerçable dans un délai de *#delai-preemption-exercice jours* à compter de la notification du projet d'augmentation.
 
-L'augmentation ou la réduction du capital sera constatée par le Président, qui modifiera le montant du capital social figurant dans les statuts.
+L'augmentation ou la réduction du capital sera constatée conjointement par le Président et le Directeur Général, qui modifieront le montant du capital social figurant dans les statuts.
 
 Au-delà du capital plafond, toute augmentation de capital devra être décidée par la collectivité des associés statuant dans les conditions de majorité requises pour les décisions extraordinaires.
 
@@ -319,7 +319,7 @@ Au-delà du capital plafond, toute augmentation de capital devra être décidée
 
 Le retrait d'un associé par voie de reprise de ses apports est soumis à l'*autorisation préalable* de la collectivité des associés, statuant à la majorité des *deux tiers (2/3)* des voix, l'associé demandeur ne prenant pas part au vote.
 
-La demande de retrait est notifiée au Président par lettre recommandée avec accusé de réception au moins *#delai-retrait-preavis mois* avant la clôture de l'exercice social en cours. Le Président soumet la demande au vote de la collectivité des associés dans un délai de *#delai-retrait-vote mois*.
+La demande de retrait est notifiée au Président et au Directeur Général par lettre recommandée avec accusé de réception au moins *#delai-retrait-preavis mois* avant la clôture de l'exercice social en cours. Le Président ou le Directeur Général soumet la demande au vote de la collectivité des associés dans un délai de *#delai-retrait-vote mois*.
 
 En cas d'autorisation, le retrait prendra effet à la clôture de l'exercice au cours duquel la demande aura été formulée. Le prix de remboursement sera déterminé conformément aux dispositions de l'article 1843-4 du Code civil, à défaut d'accord entre les parties.
 
@@ -376,7 +376,7 @@ Les conditions d'émission et les droits attachés à chaque catégorie d'action
 
 Les actions composant le capital initial sont *intégralement libérées* à la constitution, ainsi qu'il résulte du certificat de dépôt des fonds.
 
-Pour les *émissions ultérieures* d'actions, les actions souscrites en numéraire devront être libérées de la moitié au moins de leur valeur nominale lors de la souscription. Le surplus sera libéré en une ou plusieurs fois, dans un délai maximum de #delai-liberation ans à compter de la date d'émission, sur appel du Président.
+Pour les *émissions ultérieures* d'actions, les actions souscrites en numéraire devront être libérées de la moitié au moins de leur valeur nominale lors de la souscription. Le surplus sera libéré en une ou plusieurs fois, dans un délai maximum de #delai-liberation ans à compter de la date d'émission, sur appel du Président ou du Directeur Général.
 
 À défaut de libération dans les délais prévus, les actions non libérées pourront faire l'objet d'une vente forcée dans les conditions prévues par la loi, après mise en demeure restée infructueuse.
 
@@ -407,7 +407,7 @@ En cas de démembrement de la propriété des actions, le droit de vote appartie
 
 La Société tient un registre des mouvements de titres, sous forme électronique ou papier, sur lequel sont inscrits, dans l'ordre chronologique, les souscriptions, achats, ventes, cessions, transmissions, échanges, nantissements et conversions d'actions. Ce registre peut être tenu sur un support numérique sécurisé.
 
-Les transferts de propriété des actions résultent de leur inscription sur le registre des mouvements de titres de la Société. Cette inscription est effectuée par le Président ou son délégataire sur production d'un ordre de mouvement signé par le cédant ou son mandataire.
+Les transferts de propriété des actions résultent de leur inscription sur le registre des mouvements de titres de la Société. Cette inscription est effectuée par le Président, le Directeur Général, ou leur délégataire, sur production d'un ordre de mouvement signé par le cédant ou son mandataire.
 
 #article[Clause d'agrément]
 
@@ -417,9 +417,9 @@ Toute cession d'actions à un tiers non-associé, à quelque titre que ce soit (
 
 === Procédure
 
-Le projet de cession est notifié au Président par lettre recommandée avec accusé de réception ou par voie électronique avec accusé de réception, en indiquant le nombre d'actions dont la cession est envisagée, l'identité du cessionnaire pressenti, le prix et les conditions de la cession.
+Le projet de cession est notifié au Président et au Directeur Général par lettre recommandée avec accusé de réception ou par voie électronique avec accusé de réception, en indiquant le nombre d'actions dont la cession est envisagée, l'identité du cessionnaire pressenti, le prix et les conditions de la cession.
 
-Le Président dispose d'un délai de *#delai-agrement mois* à compter de la réception de la notification pour faire connaître sa décision. À défaut de réponse dans ce délai, l'agrément est réputé acquis.
+Le Président ou le Directeur Général dispose d'un délai de *#delai-agrement mois* à compter de la réception de la notification pour faire connaître la décision de la Société. À défaut de réponse dans ce délai, l'agrément est réputé acquis.
 
 === Refus d'agrément
 
@@ -439,9 +439,9 @@ En cas de projet de cession d'actions par un associé (le « *Cédant* »), les 
 
 === Procédure
 
-Le Cédant notifie au Président son intention de céder, en précisant le nombre d'actions, le prix unitaire, l'identité du cessionnaire pressenti et les conditions de la cession.
+Le Cédant notifie au Président et au Directeur Général son intention de céder, en précisant le nombre d'actions, le prix unitaire, l'identité du cessionnaire pressenti et les conditions de la cession.
 
-Le Président en informe les autres associés dans un délai de *#delai-preemption-notif jours ouvrés*. Chaque associé dispose d'un délai de *#delai-preemption-exercice jours* à compter de cette notification pour exercer son droit de préemption, par lettre recommandée avec accusé de réception ou par voie électronique avec accusé de réception adressée au Président.
+Le Président ou le Directeur Général en informe les autres associés dans un délai de *#delai-preemption-notif jours ouvrés*. Le dirigeant ayant reçu la notification du Cédant en transmet copie à l'autre dirigeant dans un délai de *quarante-huit (48) heures*. Chaque associé dispose d'un délai de *#delai-preemption-exercice jours* à compter de cette notification pour exercer son droit de préemption, par lettre recommandée avec accusé de réception ou par voie électronique avec accusé de réception adressée au Président ou au Directeur Général.
 
 Si les droits de préemption exercés portent sur un nombre d'actions supérieur au nombre d'actions offertes, les actions seront réparties proportionnellement à la participation de chaque associé ayant exercé son droit.
 
@@ -594,7 +594,7 @@ Le recours à la visioconférence et aux moyens de consultation électronique es
 
 === Convocation
 
-Les associés sont convoqués par le Président ou, le cas échéant, par le Commissaire aux comptes, ou par un associé représentant au moins #seuil-convocation du capital social.
+Les associés sont convoqués par le Président, le Directeur Général, ou, le cas échéant, par le Commissaire aux comptes, ou par un associé représentant au moins #seuil-convocation du capital social.
 
 La convocation est adressée par tout moyen, y compris par courrier électronique, au moins *#delai-convocation jours* avant la date de la consultation. Elle indique l'ordre du jour, le lieu (physique ou lien de visioconférence), la date et l'heure de la réunion, ainsi que les documents nécessaires à l'information des associés.
 
@@ -640,7 +640,7 @@ Les décisions collectives sont constatées par des procès-verbaux établis sur
 
 Les procès-verbaux indiquent la date et le mode de consultation, l'ordre du jour, l'identité des associés présents ou représentés, un résumé des débats, le texte des résolutions mises aux voix et le résultat des votes.
 
-Les copies ou extraits de procès-verbaux sont certifiés conformes par le Président.
+Les copies ou extraits de procès-verbaux sont certifiés conformes par le Président ou le Directeur Général.
 
 
 // ════════════════════════════════════════════════════════════════════════════
@@ -657,7 +657,7 @@ Exceptionnellement, le premier exercice social commencera à la date d'immatricu
 
 #article[Comptes annuels]
 
-Le Président établit, à la clôture de chaque exercice, les comptes annuels (bilan, compte de résultat, annexe) conformément aux dispositions légales et réglementaires en vigueur.
+Le Président établit, conjointement avec le Directeur Général, à la clôture de chaque exercice, les comptes annuels (bilan, compte de résultat, annexe) conformément aux dispositions légales et réglementaires en vigueur.
 
 Les comptes annuels sont soumis à l'approbation de la collectivité des associés dans un délai de *six (6) mois* à compter de la clôture de l'exercice.
 
@@ -668,7 +668,7 @@ Les comptes annuels sont soumis à l'approbation de la collectivité des associ�
 // certainement dans ses premières années. L'obligation statutaire ci-dessous est
 // plus exigeante que la loi — le Président ne sera pas en faute s'il ne le produit
 // pas tant que la dispense légale s'applique.
-Le Président établit un rapport de gestion exposant la situation de la Société au cours de l'exercice écoulé, son évolution prévisible, les événements importants survenus entre la date de clôture de l'exercice et la date à laquelle il est établi, ainsi que ses activités en matière de recherche et de développement.
+Le Président établit, conjointement avec le Directeur Général, un rapport de gestion exposant la situation de la Société au cours de l'exercice écoulé, son évolution prévisible, les événements importants survenus entre la date de clôture de l'exercice et la date à laquelle il est établi, ainsi que ses activités en matière de recherche et de développement.
 
 #article[Affectation et répartition des résultats]
 
@@ -756,7 +756,7 @@ La Société est dissoute :
 - Par décision judiciaire ;
 - Pour toute autre cause prévue par la loi.
 
-Si du fait de pertes constatées dans les documents comptables, les capitaux propres de la Société deviennent inférieurs à la moitié du capital social, le Président doit, dans les quatre (4) mois suivant l'approbation des comptes ayant fait apparaître cette perte, consulter les associés à l'effet de décider s'il y a lieu à dissolution anticipée de la Société.
+Si du fait de pertes constatées dans les documents comptables, les capitaux propres de la Société deviennent inférieurs à la moitié du capital social, le Président ou le Directeur Général doit, dans les quatre (4) mois suivant l'approbation des comptes ayant fait apparaître cette perte, consulter les associés à l'effet de décider s'il y a lieu à dissolution anticipée de la Société.
 
 Si la dissolution n'est pas prononcée, la Société est tenue de reconstituer ses capitaux propres dans les conditions et délais prévus à l'article L. 225-248 du Code de commerce, tel que modifié par la loi n° 2023-171 du 9 mars 2023.
 

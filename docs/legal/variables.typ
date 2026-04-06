@@ -29,7 +29,7 @@
 #let cofounder-pct         = "45"                                // % du capital
 
 // ── Capital & Siège ─────────────────────────────────────────────────────
-#let siege-social        = "10 Rue de Penthièvre, 75008 Paris"
+#let siege-social        = "58 Rue de Monceau, 75008 Paris"
 #let siege-ville         = "Paris"
 #let capital-initial     = "100"
 #let nb-actions          = "10 000"

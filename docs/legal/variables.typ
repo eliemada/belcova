@@ -34,7 +34,8 @@
 #let capital-initial     = "100"
 #let nb-actions          = "10 000"
 #let valeur-nominale     = "0,01"
-#let date-signature      = "2 mars 2026"
+#let date-document       = "6 avril 2026"
+#let date-signature      = [#underline[#h(3.2cm)]]
 
 // ── Lock-up ──────────────────────────────────────────────────────────────
 #let lock-up-duree       = "trois (3)"                           // ans
@@ -46,7 +47,7 @@
 //   3. Placez les fichiers dans docs/legal/ et mettez à jour les chemins ci-dessous
 //   4. Mettez `use-signatures` à `true` pour activer
 
-#let use-signatures      = false                          // ✗ images absentes — réactiver après ajout des PNG
+#let use-signatures      = false                          // désactivé — signatures manuscrites uniquement
 #let signature-path      = "signature.png"                // ← signature fondateur 1 (PNG, fond transparent)
 #let paraphe-path        = "paraphe.png"                  // ← paraphe fondateur 1 (PNG, fond transparent)
 #let signature-height    = 2.5cm

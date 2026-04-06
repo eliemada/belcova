@@ -94,18 +94,13 @@
         set text(size: 7pt, fill: muted)
         line(length: 100%, stroke: 0.3pt + muted)
         v(4pt)
-        if use-signatures and paraphe-path != none and cofounder-paraphe-path != none {
-          grid(
-            columns: (1fr, 1fr, 1fr, 1fr),
-            align: (left, left, center, right),
-            [#image(paraphe-path, height: paraphe-height)],
-            [#image(cofounder-paraphe-path, height: cofounder-paraphe-height)],
-            [#counter(page).display() / #counter(page).final().first()],
-            [#text(style: "italic", size: 7pt)[#founder-last · #cofounder-last]],
-          )
-        } else {
-          align(center)[_Paraphes : \_\_\_\_\_\_\_\_ / \_\_\_\_\_\_\_\_  #h(2cm) #counter(page).display() / #counter(page).final().first()_]
-        }
+        grid(
+          columns: (1fr, auto, auto),
+          align: (left, center, right),
+          [],
+          [#counter(page).display() / #counter(page).final().first()],
+          [#text(style: "italic", size: 7pt)[#founder-last · #cofounder-last]],
+        )
       }
     },
   )

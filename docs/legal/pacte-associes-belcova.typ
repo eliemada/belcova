@@ -139,7 +139,7 @@
     #v(2cm)
 
     #text(size: 9pt, fill: muted)[
-      Pacte établi en date du #date-signature \
+      Pacte établi en date du #date-document \
       Document confidentiel — Non déposé au greffe \
       \
       Associés fondateurs : #founder-last #founder-first (#founder1-pct %) · #cofounder-last #cofounder-first (#cofounder-pct %)
@@ -174,7 +174,7 @@
 
   #v(0.5cm)
 
-  Les Parties sont les associés fondateurs de la société *#company-name*, #company-legal-form, dont les statuts constitutifs ont été signés le *#date-signature* (ci-après les « *Statuts* » et la « *Société* »).
+  Les Parties sont les associés fondateurs de la société *#company-name*, #company-legal-form, dont les statuts constitutifs ont été signés le *#date-document* (ci-après les « *Statuts* » et la « *Société* »).
 
   Le présent Pacte a pour objet d'organiser les relations entre les Parties et de compléter les Statuts par des stipulations que les Parties souhaitent conserver confidentielles.
 
@@ -518,7 +518,7 @@ Pour l'exécution du présent pacte, chaque partie fait élection de domicile à
 
 #v(1.5cm)
 
-Fait à *#siege-ville*, le *#date-signature*, en *deux (2)* exemplaires originaux.
+Fait à *#siege-ville*, le *#date-signature*.
 
 #v(0.8cm)
 
@@ -578,10 +578,10 @@ Fait à *#siege-ville*, le *#date-signature*, en *deux (2)* exemplaires originau
 
 #if use-signatures {
   note-box[
-    *Document signé numériquement.* Les paraphes des deux Associés Fondateurs figurent en pied de chaque page. Les signatures complètes figurent ci-dessus.
+    *Document signé numériquement.* Les signatures complètes figurent ci-dessus.
   ]
 } else {
   note-box[
-    *Rappel :* Chaque page du présent pacte doit être paraphée par les deux Associés Fondateurs. La dernière page doit être signée avec la mention manuscrite « Lu et approuvé ».
+    *Rappel :* La dernière page du présent pacte doit être signée avec la mention manuscrite « Lu et approuvé ».
   ]
 }

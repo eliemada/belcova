@@ -109,7 +109,7 @@
     #v(2cm)
 
     #text(size: 9pt, fill: muted)[
-      Statuts établis en date du #date-signature \
+      Statuts établis en date du #date-document \
       Conformes aux dispositions des articles L. 227-1 et suivants du Code de commerce \
       et aux articles L. 231-1 et suivants relatifs aux sociétés à capital variable \
       \
@@ -162,7 +162,7 @@
   #v(0.5cm)
 
   #note-box[
-    Les présents statuts ont été rédigés dans une optique d'évolutivité, anticipant l'entrée future d'associés (business angels, fonds d'investissement) et la mise en place d'instruments d'intéressement (BSPCE, BSA, actions gratuites). Ils sont complétés par un *pacte d'associés* signé à la même date, qui organise les relations entre les Associés Fondateurs (sortie conjointe, entraînement, _vesting_, droits protecteurs, confidentialité, non-concurrence, résolution des blocages).
+    Les présents statuts ont été rédigés dans une optique d'évolutivité, anticipant l'entrée future d'associés (business angels, fonds d'investissement) et la mise en place d'instruments d'intéressement (BSPCE, BSA, actions gratuites). Ils sont complétés par un *pacte d'associés* signé le *#date-document*, qui organise les relations entre les Associés Fondateurs (sortie conjointe, entraînement, _vesting_, droits protecteurs, confidentialité, non-concurrence, résolution des blocages).
   ]
 
   #v(0.5cm)
@@ -459,7 +459,7 @@ Cette interdiction ne s'applique pas :
 - aux cessions résultant de la mise en œuvre d'un mécanisme de résolution des blocages entre associés prévu par le pacte d'associés.
 
 #note-box[
-  Des clauses complémentaires relatives aux cessions d'actions (sortie conjointe, entraînement, promesse de cession, _good leaver / bad leaver_, _vesting_) ainsi que les engagements de non-concurrence des Associés Fondateurs, incluant un plancher d'indemnité de non-concurrence, sont prévus dans le pacte d'associés signé entre les Associés Fondateurs à la même date que les présents statuts.
+  Des clauses complémentaires relatives aux cessions d'actions (sortie conjointe, entraînement, promesse de cession, _good leaver / bad leaver_, _vesting_) ainsi que les engagements de non-concurrence des Associés Fondateurs, incluant un plancher d'indemnité de non-concurrence, sont prévus dans le pacte d'associés signé par les Associés Fondateurs le *#date-document*.
 ]
 
 
@@ -780,7 +780,7 @@ Après paiement des dettes et remboursement du capital, le solde est partagé en
 Tout litige relatif à l'interprétation ou à l'exécution des présents statuts sera soumis aux tribunaux compétents du ressort du siège social de la Société.
 
 #note-box[
-  Les engagements des associés en matière de confidentialité, non-concurrence, résolution des blocages et médiation sont prévus dans le pacte d'associés signé entre les Associés Fondateurs à la même date que les présents statuts.
+  Les engagements des associés en matière de confidentialité, non-concurrence, résolution des blocages et médiation sont prévus dans le pacte d'associés signé par les Associés Fondateurs le *#date-document*.
 ]
 
 #article[Élection de domicile]
@@ -866,7 +866,7 @@ Les présents statuts sont soumis au droit français. Toute question non prévue
 
 #v(1.5cm)
 
-Fait à *#siege-ville*, le *#date-signature*, en *quatre (4)* exemplaires originaux.
+Fait à *#siege-ville*, le *#date-signature*.
 
 #v(0.8cm)
 
@@ -926,10 +926,10 @@ Fait à *#siege-ville*, le *#date-signature*, en *quatre (4)* exemplaires origin
 
 #if use-signatures {
   note-box[
-    *Document signé numériquement.* Les paraphes des deux Associés Fondateurs figurent en pied de chaque page. Les signatures complètes figurent ci-dessus.
+    *Document signé numériquement.* Les signatures complètes figurent ci-dessus.
   ]
 } else {
   note-box[
-    *Rappel :* Chaque page des présents statuts doit être paraphée par les deux Associés Fondateurs. La dernière page doit être signée avec la mention manuscrite « Lu et approuvé ».
+    *Rappel :* La dernière page des présents statuts doit être signée avec la mention manuscrite « Lu et approuvé ».
   ]
 }

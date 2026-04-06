@@ -48,8 +48,8 @@
 //   4. Mettez `use-signatures` à `true` pour activer
 
 #let use-signatures      = false                          // désactivé — signatures manuscrites uniquement
-#let signature-path      = "signature.png"                // ← signature fondateur 1 (PNG, fond transparent)
-#let paraphe-path        = "paraphe.png"                  // ← paraphe fondateur 1 (PNG, fond transparent)
+#let signature-path      = "signature_elie.png"            // ← signature fondateur 1 (PNG, fond transparent)
+#let paraphe-path        = "paraphe_elie.png"              // ← paraphe fondateur 1 (PNG, fond transparent)
 #let signature-height    = 2.5cm
 #let paraphe-height      = 0.8cm
 #let cofounder-signature-path = "signature_franklin.png"  // ← signature fondateur 2 (PNG, fond transparent)

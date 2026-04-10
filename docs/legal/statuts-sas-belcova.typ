@@ -157,7 +157,7 @@
 
   Les présents statuts sont établis en vue de la constitution d'une Société par Actions Simplifiée à capital variable, conformément aux dispositions des articles L. 227-1 à L. 227-20 et L. 231-1 à L. 231-8 du Code de commerce.
 
-  La société a pour ambition de développer une solution logicielle de référence à destination des commerçants français et européens, afin de simplifier et digitaliser la gestion des formalités administratives, douanières et fiscales liées à leurs activités commerciales et à leurs ventes à l'exportation.
+  La société a pour ambition de développer une solution logicielle de référence, composée d'une plateforme web à destination des commerçants français et européens et d'une application mobile à destination des voyageurs internationaux, afin de simplifier et digitaliser la gestion des formalités administratives, douanières et fiscales liées aux ventes à l'exportation et à l'expérience des voyageurs non-résidents.
 
   #v(0.5cm)
 
@@ -231,6 +231,7 @@ La Société a pour objet, en France et à l'étranger :
 
 - La conception, le développement, l'édition et la commercialisation de logiciels, applications mobiles, plateformes numériques et solutions SaaS ;
 - L'édition et l'exploitation de solutions logicielles et de plateformes numériques à destination des commerçants, détaillants et entreprises, facilitant la gestion dématérialisée de leurs formalités administratives, douanières et fiscales, notamment dans le cadre de leurs ventes à l'exportation ;
+- L'édition, le développement et l'exploitation d'applications mobiles, de sites web et de services numériques à destination des particuliers, notamment des voyageurs internationaux non-résidents de l'Union européenne, leur offrant des outils de suivi dématérialisé, d'information et d'accompagnement relatifs à leurs achats réalisés auprès des commerçants partenaires de la Société ;
 - La fourniture de services technologiques aux commerçants, détaillants et entreprises, notamment pour la gestion des bordereaux de vente à l'exportation, la digitalisation des processus commerciaux et la mise en conformité douanière et fiscale ;
 - Le conseil, la formation et l'assistance aux entreprises en matière de technologies numériques, de transformation digitale, de conformité réglementaire et d'optimisation fiscale ;
 - La prise de participations dans toute société ou entreprise, par tous moyens, la gestion de ces participations et, plus généralement, toutes opérations de holding ;

@@ -157,7 +157,7 @@
 
   Les présents statuts sont établis en vue de la constitution d'une Société par Actions Simplifiée à capital variable, conformément aux dispositions des articles L. 227-1 à L. 227-20 et L. 231-1 à L. 231-8 du Code de commerce.
 
-  La société a pour ambition de devenir un opérateur de détaxe de référence en France et en Europe, en proposant une plateforme technologique moderne de remboursement de TVA pour les voyageurs internationaux, en conformité avec le système PABLO de la Direction Générale des Douanes et Droits Indirects (DGDDI).
+  La société a pour ambition de développer une solution logicielle de référence à destination des commerçants français et européens, afin de simplifier et digitaliser la gestion des formalités administratives, douanières et fiscales liées à leurs activités commerciales et à leurs ventes à l'exportation.
 
   #v(0.5cm)
 
@@ -165,16 +165,16 @@
     Les présents statuts ont été rédigés dans une optique d'évolutivité, anticipant l'entrée future d'associés (business angels, fonds d'investissement) et la mise en place d'instruments d'intéressement (BSPCE, BSA, actions gratuites). Ils sont complétés par un *pacte d'associés* signé le *#date-document*, qui organise les relations entre les Associés Fondateurs (sortie conjointe, entraînement, _vesting_, droits protecteurs, confidentialité, non-concurrence, résolution des blocages).
   ]
 
-  #v(0.5cm)
+  #v(0.3cm)
 
   #text(weight: "bold", fill: primary)[Associés fondateurs :]
 
-  #v(0.3cm)
+  #v(0.2cm)
 
   #block(
     width: 100%,
     fill: light-bg,
-    inset: 15pt,
+    inset: 10pt,
     radius: 3pt,
     stroke: 0.5pt + accent,
   )[
@@ -188,12 +188,12 @@
     Ci-après dénommé l'« *Associé Fondateur 1* » ou le « *Président* ».
   ]
 
-  #v(0.3cm)
+  #v(0.2cm)
 
   #block(
     width: 100%,
     fill: light-bg,
-    inset: 15pt,
+    inset: 10pt,
     radius: 3pt,
     stroke: 0.5pt + accent,
   )[
@@ -207,7 +207,7 @@
     Ci-après dénommé l'« *Associé Fondateur 2* » ou le « *Directeur Général* ».
   ]
 
-  #v(0.3cm)
+  #v(0.2cm)
 
   _Ci-après désignés ensemble les « *Associés Fondateurs* »._
 ]
@@ -230,11 +230,9 @@ La Société est constituée entre deux associés fondateurs. Elle pourra foncti
 La Société a pour objet, en France et à l'étranger :
 
 - La conception, le développement, l'édition et la commercialisation de logiciels, applications mobiles, plateformes numériques et solutions SaaS ;
-- L'exploitation d'une plateforme numérique de remboursement de taxe sur la valeur ajoutée (TVA) au profit des voyageurs non-résidents de l'Union européenne, conformément à la réglementation douanière applicable ;
-- L'activité d'opérateur de détaxe au sens des articles 202 E et suivants de l'annexe IV du Code général des impôts, dans le cadre du système PABLO de la Direction Générale des Douanes et Droits Indirects (DGDDI), sous réserve de l'obtention de l'agrément requis ;
-- La fourniture de services technologiques aux commerçants, détaillants et entreprises, notamment pour la gestion des bordereaux de vente à l'exportation et la conformité douanière et fiscale ;
-- La fourniture de services de paiement, de transfert de fonds et de services financiers connexes, sous réserve de l'obtention des agréments, autorisations ou enregistrements requis par la réglementation applicable, notamment auprès de l'Autorité de contrôle prudentiel et de résolution (ACPR) ;
-- Le conseil, la formation et l'assistance aux entreprises en matière de technologies numériques, de conformité réglementaire et d'optimisation fiscale ;
+- L'édition et l'exploitation de solutions logicielles et de plateformes numériques à destination des commerçants, détaillants et entreprises, facilitant la gestion dématérialisée de leurs formalités administratives, douanières et fiscales, notamment dans le cadre de leurs ventes à l'exportation ;
+- La fourniture de services technologiques aux commerçants, détaillants et entreprises, notamment pour la gestion des bordereaux de vente à l'exportation, la digitalisation des processus commerciaux et la mise en conformité douanière et fiscale ;
+- Le conseil, la formation et l'assistance aux entreprises en matière de technologies numériques, de transformation digitale, de conformité réglementaire et d'optimisation fiscale ;
 - La prise de participations dans toute société ou entreprise, par tous moyens, la gestion de ces participations et, plus généralement, toutes opérations de holding ;
 - Et plus généralement, toutes opérations industrielles, commerciales, financières, civiles, mobilières ou immobilières, pouvant se rattacher directement ou indirectement à l'un des objets spécifiés ci-dessus ou à tout objet similaire ou connexe, de nature à favoriser le développement de la Société.
 
@@ -279,7 +277,7 @@ Les Associés Fondateurs apportent à la Société les sommes suivantes :
 
 Soit un total de *#capital-initial euros* (#capital-initial €), correspondant à *#nb-actions actions*.
 
-Ces sommes ont été déposées sur un compte ouvert au nom de la Société en formation auprès de *Shine France* (SIREN 828 701 557), établissement de paiement agréé, ainsi qu'il résulte du certificat de dépôt des fonds délivré par ledit établissement.
+Les fonds correspondants aux apports en numéraire ont été déposés par chacun des associés, sur le compte ouvert au nom de la Société en formation auprès de l'étude notariale de Maître Quentin Fourez, située 1, place Maréchal Gallieni, 27500 Pont-Audemer, ainsi qu'il résulte du certificat établi par le notaire dépositaire des fonds, sur présentation notamment de l'état des souscriptions mentionnant la somme versée par les associés. L'état des souscriptions joint aux présents statuts est certifié sincère et véritable par le représentant légal de la société.
 
 #note-box[
   Les fonds seront mis à la disposition du Président dès l'immatriculation de la Société au Registre du Commerce et des Sociétés, sur présentation de l'extrait K-bis.
@@ -851,8 +849,29 @@ Les présents statuts sont soumis au droit français. Toute question non prévue
   table.cell(fill: light-bg)[*#capital-initial €*],
 )
 
-#v(2cm)
+#v(1.5cm)
 
+// ════════════════════════════════════════════════════════════════════════════
+//  ANNEXE — ÉTAT DES ACTES ACCOMPLIS POUR LE COMPTE DE LA SOCIÉTÉ EN FORMATION
+// ════════════════════════════════════════════════════════════════════════════
+
+#align(center)[
+  #text(size: 12pt, weight: "bold", fill: primary)[État des actes accomplis au nom de la Société en formation avant la signature des statuts]
+  #v(4pt)
+  #line(length: 40%, stroke: 0.5pt + accent)
+]
+
+#v(0.5cm)
+
+Les actes suivants ont été accomplis pour le compte de la Société en formation :
+
+- Dépôt du capital social auprès d'un office notarial ;
+
+- Ouverture d'un compte courant professionnel au nom de la Société en formation, auprès d'un établissement de paiement agréé par l'Autorité de Contrôle Prudentiel et de Résolution (ACPR).
+
+Les soussignés déclarent approuver ces actes et les engagements qui en résultent, lesquels seront repris par la Société dès son immatriculation au Registre du Commerce et des Sociétés.
+
+#pagebreak()
 
 // ════════════════════════════════════════════════════════════════════════════
 //  SIGNATURES

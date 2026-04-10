@@ -95,7 +95,7 @@
         line(length: 100%, stroke: 0.3pt + muted)
         v(4pt)
         grid(
-          columns: (1fr, auto, auto),
+          columns: (1fr, auto, 1fr),
           align: (left, center, right),
           [],
           [#counter(page).display() / #counter(page).final().first()],

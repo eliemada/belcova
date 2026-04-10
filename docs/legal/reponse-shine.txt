@@ -1,0 +1,62 @@
+Objet : Dossier BELCOVA — Précisions sur l'activité et le statut réglementaire
+
+Bonjour,
+
+Merci pour votre retour concernant le dossier BELCOVA. Nous vous apportons ci-dessous les précisions demandées, ainsi que des clarifications complémentaires sur notre statut réglementaire afin de lever toute ambiguïté.
+
+— Sur notre activité —
+
+BELCOVA est une startup technologique qui développe une plateforme logicielle (SaaS) destinée aux commerçants, dans le domaine de la détaxe à destination des voyageurs non-résidents de l'Union européenne, en lien avec le système PABLO de la Direction Générale des Douanes et Droits Indirects (DGDDI).
+
+Concrètement, notre activité opérationnelle, à ce jour et pour les 12 à 18 prochains mois, consiste exclusivement en :
+
+- Édition d'un logiciel SaaS : conception et exploitation d'une plateforme web et d'une application mobile permettant aux commerçants de gérer l'émission de bordereaux de vente à l'exportation (BVE) et d'offrir aux voyageurs éligibles une expérience de suivi de leur dossier de détaxe ;
+
+- Services technologiques aux commerçants : mise à disposition d'outils de gestion des bordereaux, de rapprochement comptable et de conformité douanière et fiscale ;
+
+- Conseil et accompagnement des commerçants et détaillants sur l'optimisation des flux de détaxe et la mise en conformité de leurs processus.
+
+Notre modèle de revenus repose sur des abonnements SaaS facturés aux commerçants partenaires et, à terme, sur une commission de service technologique prélevée par opération traitée via la plateforme.
+
+— Sur les avoirs clients —
+
+Pour répondre précisément à votre question : les avoirs clients (c'est-à-dire les remboursements de TVA destinés aux voyageurs) ne transiteront PAS par notre compte Shine.
+
+Le compte Shine sera exclusivement utilisé pour les flux d'exploitation courants de la société :
+- Encaissement des abonnements SaaS et commissions facturés aux commerçants ;
+- Paiement des charges d'exploitation (salaires, prestataires, hébergement, outils, loyers) ;
+- Règlement des impôts, taxes et cotisations sociales ;
+- Mouvements entre associés et société (apports, comptes courants d'associés).
+
+En aucun cas le compte Shine n'hébergera de fonds appartenant à des tiers, ni ne servira de support à une activité de collecte ou de reversement de fonds pour compte de tiers.
+
+— Sur notre statut réglementaire (précision importante) —
+
+Nous tenons à préciser qu'à ce jour, BELCOVA :
+
+- N'exerce AUCUNE activité de service de paiement au sens de la directive DSP2 et des articles L. 521-1 et suivants du Code monétaire et financier ;
+- Ne dispose d'AUCUN agrément ni enregistrement auprès de l'ACPR ;
+- Ne dispose d'AUCUN agrément d'opérateur de détaxe auprès de la DGDDI ;
+- Ne collecte, ne détient et ne reverse aucun fonds appartenant à des tiers.
+
+Les mentions figurant dans l'objet social de nos statuts relatives aux « services de paiement » et à l'« activité d'opérateur de détaxe » correspondent à des développements futurs et conditionnels, dont la mise en œuvre effective est subordonnée à l'obtention préalable des agréments requis (notamment ACPR pour d'éventuels services de paiement, et DGDDI pour l'activité d'opérateur de détaxe au sens des articles 202 E et suivants de l'annexe IV du Code général des impôts).
+
+Ces projets s'inscrivent dans un horizon de 12 à 24 mois minimum et, le moment venu, s'appuieront sur une architecture bancaire dédiée et distincte, conforme aux exigences réglementaires de cantonnement des fonds de tiers, mise en place avec un établissement de crédit partenaire approprié. Le compte Shine n'a donc pas vocation à héberger le moindre flux réglementé, ni à être utilisé pour l'exercice de services de paiement.
+
+Dans l'immédiat et pour toute la phase couverte par notre relation bancaire avec Shine, BELCOVA fonctionnera strictement comme une société éditrice de logiciels (SaaS B2B) en phase de structuration et de développement de son MVP. Les seuls flux attendus sur le compte Shine sont ceux d'une société de technologie classique au stade early-stage.
+
+— Documents —
+
+Le projet de statuts mis à jour, intégrant la mention obligatoire relative au dépôt des fonds auprès de Maître Quentin FOUREZ, notaire situé 1 place Maréchal Gallieni, 27500 Pont-Audemer, vous a été renvoyé ce jour via notre espace client.
+
+Nous restons bien entendu à votre entière disposition pour tout complément d'information ou pour un échange téléphonique avec votre équipe conformité si cela peut faciliter la validation du dossier.
+
+Bien cordialement,
+
+Elie BRUNO
+Président — BELCOVA SAS
+
+eliebruno.com
+contact@eliebruno.com
+linkedin.com/in/elie-bruno
+github.com/eliemada

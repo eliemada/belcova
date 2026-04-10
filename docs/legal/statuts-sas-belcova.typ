@@ -277,7 +277,7 @@ Les Associés Fondateurs apportent à la Société les sommes suivantes :
 
 Soit un total de *#capital-initial euros* (#capital-initial €), correspondant à *#nb-actions actions*.
 
-Les fonds correspondants aux apports en numéraire ont été déposés par chacun des associés, sur le compte ouvert au nom de la Société en formation auprès de l'étude notariale de Maître Quentin Fourez, située 1, place Maréchal Gallieni, 27500 Pont-Audemer, ainsi qu'il résulte du certificat établi par le notaire dépositaire des fonds, sur présentation notamment de l'état des souscriptions mentionnant la somme versée par les associés. L'état des souscriptions joint aux présents statuts est certifié sincère et véritable par le représentant légal de la société.
+Les fonds correspondants aux apports en numéraire seront déposés par chacun des associés sur le compte ouvert au nom de la Société en formation auprès de l'étude notariale dépositaire désignée en annexe aux présents statuts, ainsi qu'il résultera du certificat établi par le notaire dépositaire des fonds, sur présentation notamment de l'état des souscriptions mentionnant la somme versée par les associés. L'état des souscriptions joint aux présents statuts est certifié sincère et véritable par le représentant légal de la Société. Les coordonnées précises de l'étude notariale dépositaire figurent dans l'annexe au dépôt de capital établie lors de la constitution de la Société.
 
 #note-box[
   Les fonds seront mis à la disposition du Président dès l'immatriculation de la Société au Registre du Commerce et des Sociétés, sur présentation de l'extrait K-bis.

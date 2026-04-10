@@ -11,7 +11,7 @@
 
 // Société (compléments)
 #let capital-plancher    = "10"
-#let capital-plafond     = "1 000 000"
+#let capital-plafond     = "100 000"
 #let duree-societe       = "99"
 #let rcs-ville           = "Paris"
 #let exercice-debut      = "1er janvier"

@@ -5,7 +5,7 @@
 
 // ── Société ─────────────────────────────────────────────────────────────
 #let company-name        = "BELCOVA"
-#let company-legal-form  = "Société par Actions Simplifiée à Capital Variable"
+#let company-legal-form  = "Société par Actions Simplifiée"
 #let company-short       = "SAS"
 
 // ── Associé Fondateur 1 — Président ──────────────────────────────────────

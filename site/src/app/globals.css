@@ -698,70 +698,106 @@ img {
   color: var(--color-text-secondary);
 }
 
-/* Phone mock */
+/* Phone mock — modern edge-to-edge design */
 .mock-phone {
   display: flex;
   justify-content: center;
 }
 .mock-phone-frame {
   width: 280px;
-  height: 560px;
-  background: var(--color-dark);
-  border-radius: 36px;
-  padding: 12px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  height: 572px;
+  background: #1a1a1e;
+  border-radius: 48px;
+  padding: 8px;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 24px 64px rgba(0, 0, 0, 0.2),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
   position: relative;
-  overflow: hidden;
 }
-.mock-phone-notch {
-  width: 120px;
-  height: 28px;
-  background: var(--color-dark);
-  border-radius: 0 0 16px 16px;
-  margin: 0 auto 20px;
-  position: relative;
-  z-index: 1;
-}
-.mock-phone-content {
+.mock-phone-screen {
+  width: 100%;
+  height: 100%;
   background: #fff;
-  border-radius: 28px;
-  height: calc(100% - 4px);
-  margin-top: -20px;
-  padding: 48px 24px 32px;
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+/* Dynamic Island */
+.mock-phone-island {
+  width: 100px;
+  height: 28px;
+  background: #1a1a1e;
+  border-radius: 20px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+/* Status bar */
+.mock-phone-statusbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-dark);
+  flex-shrink: 0;
+}
+.mock-phone-time {
+  letter-spacing: 0.02em;
+}
+.mock-phone-indicators {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-dark);
+}
+/* App content */
+.mock-phone-content {
+  flex: 1;
+  padding: 28px 24px 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
+  justify-content: center;
 }
 .mock-phone-header {
   text-align: center;
 }
 .mock-phone-check {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: #22c55e;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   margin: 0 auto 12px;
 }
 .mock-phone-title {
   font-weight: 600;
   font-size: 18px;
+  color: var(--color-dark);
   margin-bottom: 6px;
 }
 .mock-phone-sub {
   font-size: 13px;
   color: var(--color-text-secondary);
   max-width: 200px;
+  line-height: 1.4;
 }
 .mock-qr {
-  width: 160px;
-  height: 160px;
+  width: 152px;
+  height: 152px;
 }
 .mock-qr svg {
   width: 100%;
@@ -783,6 +819,17 @@ img {
   font-family: var(--font-mono-stack);
   font-size: 14px;
   font-weight: 500;
+  color: var(--color-dark);
+}
+/* Home indicator bar */
+.mock-phone-home {
+  width: 120px;
+  height: 4px;
+  background: var(--color-dark);
+  border-radius: 2px;
+  margin: 8px auto 12px;
+  opacity: 0.2;
+  flex-shrink: 0;
 }
 
 /* ===== Retailer CTA ===== */
@@ -1222,7 +1269,7 @@ img {
   }
   .mock-phone-frame {
     width: 240px;
-    height: 480px;
+    height: 490px;
   }
   .mock-qr {
     width: 120px;

@@ -1065,6 +1065,12 @@ img {
   font-size: clamp(28px, 4vw, 40px);
   margin-bottom: 32px;
 }
+.bel-article-hero {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
 .bel-article-content {
   font-size: 18px;
   line-height: 1.7;

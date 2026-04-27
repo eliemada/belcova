@@ -9,6 +9,7 @@ export interface BlogPost {
   title: string;
   description: string;
   date: string;
+  image?: string;
   readingTime: number;
   locale: string;
   content: string;
@@ -36,6 +37,7 @@ export function getAllPosts(locale: string): BlogPost[] {
         title: data.title ?? "",
         description: data.description ?? "",
         date: data.date ?? "",
+        image: data.image,
         readingTime: estimateReadingTime(content),
         locale,
         content,
@@ -60,6 +62,7 @@ export function getPostBySlug(
     title: data.title ?? "",
     description: data.description ?? "",
     date: data.date ?? "",
+    image: data.image,
     readingTime: estimateReadingTime(content),
     locale,
     content,

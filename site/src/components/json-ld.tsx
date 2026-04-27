@@ -4,7 +4,7 @@ export function OrganizationJsonLd() {
     "@type": "Organization",
     name: "Belcova",
     url: "https://belcova.fr",
-    logo: "https://belcova.fr/og.png",
+    logo: "https://belcova.fr/og.webp",
     address: {
       "@type": "PostalAddress",
       streetAddress: "58 rue de Monceau",
@@ -96,7 +96,7 @@ export function ArticleJsonLd({
     publisher: {
       "@type": "Organization",
       name: "Belcova",
-      logo: { "@type": "ImageObject", url: "https://belcova.fr/og.png" },
+      logo: { "@type": "ImageObject", url: "https://belcova.fr/og.webp" },
     },
   };
 

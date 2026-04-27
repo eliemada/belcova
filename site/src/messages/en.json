@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "title": "Belcova — VAT Refund for Tourists in France",
+    "description": "Belcova simplifies VAT refunds for tourists shopping in France. Get up to 80% back, tracked in real-time from purchase to payout."
+  },
+  "nav": {
+    "getStarted": "Get started",
+    "blog": "Blog"
+  },
+  "hero": {
+    "headlineA": "Get your VAT back.",
+    "headlineB": "Instantly.",
+    "subtitle": "Belcova handles your tax-free refund from purchase to payout.",
+    "cta": "Start your refund",
+    "scroll": "Scroll"
+  },
+  "social": {
+    "a": "Agrément Douanes pending",
+    "b": "GDPR compliant",
+    "c": "Secure payments"
+  },
+  "how": {
+    "title": "How it works",
+    "s1n": "Step 01",
+    "s1t": "Shop",
+    "s1d": "Buy from any partnered store in France.",
+    "s2n": "Step 02",
+    "s2t": "Scan",
+    "s2d": "Scan your receipts at the airport PABLO kiosk.",
+    "s3n": "Step 03",
+    "s3t": "Get paid",
+    "s3d": "Refund hits your account within 5 days."
+  },
+  "value": {
+    "r1t": "Track every euro.",
+    "r1d": "See your refund status in real-time. From purchase to payout, nothing is hidden.",
+    "r2t": "Up to 80% back.",
+    "r2d": "The industry gives you 50–60%. Belcova gives you more. Transparent fees, no surprises.",
+    "r3t": "5 minutes at the airport.",
+    "r3d": "Scan at any PABLO kiosk. We handle the rest before your flight boards.",
+    "mock": {
+      "dashTitle": "Refund #BLC-4821",
+      "store": "Galeries Lafayette · Paris",
+      "purchased": "Purchased",
+      "validated": "Validated",
+      "paid": "Paid",
+      "amount": "Amount refunded",
+      "eta": "Estimated payout",
+      "days": "2 days",
+      "chartOthers": "Others",
+      "chartUs": "Belcova",
+      "phoneTitle": "Ready to scan",
+      "phoneSub": "Show this QR code to the PABLO kiosk",
+      "phoneRef": "Refund reference"
+    }
+  },
+  "retail": {
+    "title": "Partner with Belcova",
+    "body": "Offer tax-free shopping to every tourist who walks through your door. Zero hardware, zero complexity.",
+    "cta": "Contact our team",
+    "or": "Or email partners@belcova.com"
+  },
+  "footer": {
+    "tagline": "The modern way to get your VAT back.",
+    "productH": "Product",
+    "product": ["How it works", "For retailers", "FAQ"],
+    "companyH": "Company",
+    "company": ["About", "Contact"],
+    "legalH": "Legal",
+    "legal": ["Privacy", "Terms", "Cookies"],
+    "langH": "Language",
+    "copy": "© 2026 Belcova · Paris, France"
+  },
+  "modal": {
+    "title": "Get notified at launch.",
+    "body": "Belcova opens the moment our Douanes agrément clears. Drop your email — you'll be first in line.",
+    "placeholder": "you@email.com",
+    "cta": "Notify me",
+    "success": "Thanks. We'll be in touch soon.",
+    "consent": "By submitting, you agree to be contacted by Belcova. No spam."
+  },
+  "blog": {
+    "title": "The Belcova journal",
+    "sub": "Guides, analysis, and behind the scenes on VAT refunds in France.",
+    "readMin": "min read",
+    "backToAll": "All articles"
+  }
+}

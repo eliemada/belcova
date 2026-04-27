@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { getAllPosts } from "@/lib/blog";
 import { Link } from "@/i18n/navigation";
@@ -67,11 +68,24 @@ export default async function BlogIndex({
                 href={`/blog/${post.slug}`}
                 className="bel-blog-card"
               >
-                <div className="bel-blog-card-meta">
-                  {post.date} · {post.readingTime} {t("readMin")}
+                {post.image && (
+                  <div className="bel-blog-card-img">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      width={800}
+                      height={450}
+                      sizes="(max-width: 768px) 100vw, 400px"
+                    />
+                  </div>
+                )}
+                <div className="bel-blog-card-body">
+                  <div className="bel-blog-card-meta">
+                    {post.date} · {post.readingTime} {t("readMin")}
+                  </div>
+                  <h3>{post.title}</h3>
+                  <p>{post.description}</p>
                 </div>
-                <h3>{post.title}</h3>
-                <p>{post.description}</p>
               </Link>
             ))}
           </div>

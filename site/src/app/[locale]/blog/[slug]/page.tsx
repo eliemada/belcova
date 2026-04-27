@@ -5,6 +5,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import { getPostBySlug, getAllSlugs } from "@/lib/blog";
 import { ArticleJsonLd } from "@/components/json-ld";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 
@@ -40,6 +41,9 @@ export async function generateMetadata({
       url,
       type: "article",
       publishedTime: post.date,
+      ...(post.image && {
+        images: [{ url: `${baseUrl}${post.image}`, width: 2752, height: 1536 }],
+      }),
     },
   };
 }
@@ -80,6 +84,16 @@ export default async function BlogPost({
           {post.date} · {post.readingTime} {t("readMin")}
         </div>
         <h1>{post.title}</h1>
+        {post.image && (
+          <Image
+            src={post.image}
+            alt={post.title}
+            width={2752}
+            height={1536}
+            className="bel-article-hero"
+            priority
+          />
+        )}
         <div className="bel-article-content">
           <MDXRemote
             source={post.content}

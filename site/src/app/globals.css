@@ -995,7 +995,7 @@ img {
 
 /* ===== Blog ===== */
 .bel-blog {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 120px var(--gutter) var(--section-padding);
 }
@@ -1004,8 +1004,13 @@ img {
 }
 .bel-blog-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+}
+@media (max-width: 980px) {
+  .bel-blog-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .bel-blog-card {
   background: var(--color-surface);

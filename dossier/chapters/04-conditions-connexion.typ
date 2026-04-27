@@ -129,7 +129,7 @@ Notre plateforme repose sur une architecture web moderne, conçue pour la fiabil
 === Schéma d'architecture
 
 #figure(
-  image("../diagrams/architecture.png", width: 90%),
+  image("../diagrams/rendered/architecture.png", width: 90%),
   caption: [Architecture technique de la plateforme EDI],
 )
 

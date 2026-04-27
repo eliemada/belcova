@@ -10,17 +10,17 @@
 Ce chapitre décrit le fonctionnement technique de notre plateforme pour chacun des processus d'échange avec PABLO, incluant les flux de traitement, la gestion des erreurs, la logique de reprise et les procédures de secours. Les diagrammes ci-dessous illustrent les trois flux principaux.
 
 #figure(
-  image("../diagrams/flux-creation.png", width: 75%),
+  image("../diagrams/rendered/flux-creation.png", width: 75%),
   caption: [Diagramme de séquence — Création de BVE (A\_E\_C01)],
 )
 
 #figure(
-  image("../diagrams/flux-secours.png", width: 75%),
+  image("../diagrams/rendered/flux-secours.png", width: 75%),
   caption: [Diagramme de séquence — Procédure de secours (A\_E\_P01)],
 )
 
 #figure(
-  image("../diagrams/flux-apurement.png", width: 75%),
+  image("../diagrams/rendered/flux-apurement.png", width: 75%),
   caption: [Diagramme de séquence — Apurement des BVE (R\_E\_A01 → A\_AR\_A02 / A\_EC\_A03)],
 )
 
@@ -29,7 +29,7 @@ Ce chapitre décrit le fonctionnement technique de notre plateforme pour chacun 
 ]
 
 #figure(
-  image("../diagrams/flux-suppression-visa.png", width: 75%),
+  image("../diagrams/rendered/flux-suppression-visa.png", width: 75%),
   caption: [Diagramme de séquence — Suppression de BVE (A\_E\_S01) et visa UE (A\_E\_U01)],
 )
 

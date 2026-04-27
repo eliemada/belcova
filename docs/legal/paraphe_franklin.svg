@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 220" width="450" height="220">
+  <g fill="none" stroke="black" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- F - elegant flowing cursive capital -->
+    <path d="M 85,30 C 82,50 75,80 70,110 C 65,140 58,165 50,175 C 45,182 38,185 35,180" />
+    <!-- F top crossbar with entry flourish -->
+    <path d="M 45,35 C 55,28 70,25 90,27 C 110,29 125,35 130,42" />
+    <!-- F middle crossbar -->
+    <path d="M 60,95 C 75,90 90,88 108,92" />
+
+    <!-- Dot -->
+    <circle cx="145" cy="140" r="3.5" fill="black" stroke="none" />
+
+    <!-- T - elegant flowing cursive capital -->
+    <!-- T crossbar -->
+    <path d="M 170,48 C 190,38 215,33 240,35 C 260,37 280,42 295,50 C 300,53 302,57 298,60" />
+    <!-- T vertical stem flowing down -->
+    <path d="M 235,35 C 233,60 228,90 222,120 C 218,140 212,158 205,168 C 198,178 190,182 185,178" />
+  </g>
+</svg>

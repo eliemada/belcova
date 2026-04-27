@@ -97,9 +97,15 @@
         grid(
           columns: (1fr, auto, 1fr),
           align: (left, center, right),
-          [],
+          if paraphe-path != none {
+            image(paraphe-path, height: paraphe-height)
+          },
           [#counter(page).display() / #counter(page).final().first()],
-          [#text(style: "italic", size: 7pt)[#founder-last · #cofounder-last]],
+          if cofounder-paraphe-path != none {
+            image(cofounder-paraphe-path, height: cofounder-paraphe-height)
+          } else {
+            text(style: "italic", size: 7pt)[#founder-last · #cofounder-last]
+          },
         )
       }
     },

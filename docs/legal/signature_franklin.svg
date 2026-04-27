@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 280" width="700" height="280">
+  <g fill="none" stroke="black" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- F capital - large flourished -->
+    <!-- Entry swoosh above F -->
+    <path d="M 80,45 C 100,30 130,22 155,25 C 170,27 178,35 170,42" />
+    <path d="M 85,55 C 115,48 140,45 160,50" />
+    <!-- F vertical stroke -->
+    <path d="M 115,30 C 112,55 105,90 98,125 C 93,150 85,175 75,190 C 68,200 60,205 55,198" />
+    <!-- F middle bar -->
+    <path d="M 95,105 C 110,100 125,98 140,102" />
+
+    <!-- Dot after F -->
+    <circle cx="160" cy="170" r="3" fill="black" stroke="none" />
+
+    <!-- T - beginning of "Tranié" -->
+    <!-- T crossbar -->
+    <path d="M 190,85 C 210,78 235,75 260,78 C 275,80 285,85 282,90" />
+    <!-- T stem going down and connecting to r -->
+    <path d="M 240,75 C 238,95 234,115 228,135 C 224,150 218,162 212,168" />
+
+    <!-- r-a-n connecting strokes -->
+    <path d="M 212,168 C 220,155 230,148 240,150 C 248,152 252,160 250,170" />
+    <!-- a -->
+    <path d="M 250,170 C 255,158 265,150 275,152 C 282,154 285,162 280,172 C 278,178 272,182 268,180" />
+    <!-- n -->
+    <path d="M 280,172 C 285,158 295,150 305,155 C 312,158 315,168 310,178" />
+    <!-- i -->
+    <path d="M 310,178 C 315,165 320,160 322,165 C 324,170 322,178 318,182" />
+    <!-- i dot -->
+    <circle cx="320" cy="148" r="2.5" fill="black" stroke="none" />
+    <!-- é -->
+    <path d="M 318,182 C 330,170 340,162 348,165 C 354,168 352,178 345,185 C 340,190 332,192 328,188" />
+    <!-- é accent -->
+    <path d="M 348,152 C 354,148 360,146 362,148" />
+
+    <!-- Grand underline swoosh -->
+    <path d="M 40,210 C 80,218 160,222 280,215 C 380,208 460,192 520,170 C 550,158 565,148 558,142" />
+  </g>
+</svg>

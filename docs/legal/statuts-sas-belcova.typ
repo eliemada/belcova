@@ -815,8 +815,34 @@ Les présents statuts sont soumis au droit français. Toute question non prévue
 #v(1.5cm)
 
 // ════════════════════════════════════════════════════════════════════════════
+//  ANNEXE — APPORTS (clause Qonto)
+// ════════════════════════════════════════════════════════════════════════════
+
+#align(center)[
+  #text(size: 12pt, weight: "bold", fill: primary)[Apports]
+  #v(4pt)
+  #line(length: 40%, stroke: 0.5pt + accent)
+]
+
+#v(0.5cm)
+
+La clause relative aux apports figurant dans les statuts de la société est complétée par les stipulations de la présente Annexe.
+
+En cas de contradiction entre les stipulations de ladite clause et celles de la présente Annexe, les stipulations de l'Annexe prévalent.
+
+*Apport en numéraire :*
+
+Les fonds correspondants aux apports en numéraire ont été déposés préalablement à ce jour au crédit d'un compte ouvert via d'Qonto SAS (« Qonto »), dûment mandatée à cet effet par chacun des associé(s), au nom de la société en formation, sur le compte ouvert auprès de l'étude Maître Quentin FOUREZ - Notaires au 1 Place Marechal Gallieni, 27500, Pont-Audemer, FRANCE, ainsi que l'atteste l'attestation du dépositaire établi auprès de l'office notarial, mentionnant les sommes versées par les associés.
+
+L'état des souscriptions joint aux présents statuts est certifié sincère et véritable par le représentant légal de la société.
+
+#v(1cm)
+
+// ════════════════════════════════════════════════════════════════════════════
 //  ANNEXE — ÉTAT DES ACTES ACCOMPLIS POUR LE COMPTE DE LA SOCIÉTÉ EN FORMATION
 // ════════════════════════════════════════════════════════════════════════════
+
+#pagebreak()
 
 #align(center)[
   #text(size: 12pt, weight: "bold", fill: primary)[État des actes accomplis au nom de la Société en formation avant la signature des statuts]
@@ -828,9 +854,11 @@ Les présents statuts sont soumis au droit français. Toute question non prévue
 
 Les actes suivants ont été accomplis pour le compte de la Société en formation :
 
-- Dépôt du capital social auprès d'un office notarial ;
+- Dépôt du capital social auprès d'une étude notariale ;
 
-- Ouverture d'un compte courant professionnel au nom de la Société en formation, auprès d'un établissement de paiement agréé par l'Autorité de Contrôle Prudentiel et de Résolution (ACPR).
+- Ouverture d'un compte de transit à leurs noms auprès de Qonto SAS (QONTO), établissement de paiement agréé auprès de l'ACPR ;
+
+- Ouverture d'un compte de paiement au nom de la Société auprès de QONTO SA (Qonto), établissement de paiement agréé auprès de l'ACPR.
 
 Les soussignés déclarent approuver ces actes et les engagements qui en résultent, lesquels seront repris par la Société dès son immatriculation au Registre du Commerce et des Sociétés.
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
 import { getPostBySlug, getAllSlugs } from "@/lib/blog";
 import { ArticleJsonLd } from "@/components/json-ld";
 import { Link } from "@/i18n/navigation";
@@ -80,7 +81,10 @@ export default async function BlogPost({
         </div>
         <h1>{post.title}</h1>
         <div className="bel-article-content">
-          <MDXRemote source={post.content} />
+          <MDXRemote
+            source={post.content}
+            options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
+          />
         </div>
       </article>
     </>

@@ -6,6 +6,8 @@ import { getMessages, getTranslations } from "next-intl/server";
 import { Geist, Geist_Mono } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import { OrganizationJsonLd, WebSiteJsonLd } from "@/components/json-ld";
+import { GoogleTagManager } from "@/components/gtm";
+import { CookieConsent } from "@/components/cookie-consent";
 import "@/app/globals.css";
 
 const geist = Geist({
@@ -79,10 +81,12 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${geist.variable} ${geistMono.variable}`}>
       <body>
+        <GoogleTagManager />
         <OrganizationJsonLd />
         <WebSiteJsonLd />
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
+          <CookieConsent />
         </NextIntlClientProvider>
       </body>
     </html>

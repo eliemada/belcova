@@ -84,5 +84,11 @@
     "sub": "Guides, analyses et coulisses sur la détaxe en France.",
     "readMin": "min de lecture",
     "backToAll": "Tous les articles"
+  },
+  "cookies": {
+    "title": "Préférences cookies",
+    "message": "Nous utilisons des cookies d'analyse pour améliorer votre expérience. Aucune donnée personnelle n'est revendue.",
+    "accept": "Accepter",
+    "reject": "Refuser"
   }
 }

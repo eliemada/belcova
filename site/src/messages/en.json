@@ -84,5 +84,11 @@
     "sub": "Guides, analysis, and behind the scenes on VAT refunds in France.",
     "readMin": "min read",
     "backToAll": "All articles"
+  },
+  "cookies": {
+    "title": "Cookie preferences",
+    "message": "We use cookies for analytics to improve your experience. No personal data is sold.",
+    "accept": "Accept",
+    "reject": "Decline"
   }
 }

@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "title": "Belcova — Remboursement TVA pour touristes en France",
+    "description": "Belcova simplifie le remboursement de TVA pour les touristes en France. Récupérez jusqu'à 80 %, suivi en temps réel de l'achat au paiement."
+  },
+  "nav": {
+    "getStarted": "Commencer",
+    "blog": "Blog"
+  },
+  "hero": {
+    "headlineA": "Récupérez votre TVA.",
+    "headlineB": "Instantanément.",
+    "subtitle": "Belcova s'occupe de votre détaxe, de l'achat au remboursement.",
+    "cta": "Démarrer ma détaxe",
+    "scroll": "Faites défiler"
+  },
+  "social": {
+    "a": "Agrément Douanes en cours",
+    "b": "Conforme RGPD",
+    "c": "Paiements sécurisés"
+  },
+  "how": {
+    "title": "Comment ça marche",
+    "s1n": "Étape 01",
+    "s1t": "Achetez",
+    "s1d": "Achetez chez n'importe quel commerçant partenaire en France.",
+    "s2n": "Étape 02",
+    "s2t": "Scannez",
+    "s2d": "Scannez vos reçus à la borne PABLO de l'aéroport.",
+    "s3n": "Étape 03",
+    "s3t": "Recevez",
+    "s3d": "Le remboursement arrive sur votre compte sous 5 jours."
+  },
+  "value": {
+    "r1t": "Suivez chaque euro.",
+    "r1d": "Visualisez l'état de votre remboursement en temps réel. De l'achat au paiement, rien n'est caché.",
+    "r2t": "Jusqu'à 80 % récupérés.",
+    "r2d": "L'industrie vous rend 50 à 60 %. Belcova vous en rend plus. Frais transparents, sans surprise.",
+    "r3t": "5 minutes à l'aéroport.",
+    "r3d": "Scannez à n'importe quelle borne PABLO. On s'occupe du reste avant l'embarquement.",
+    "mock": {
+      "dashTitle": "Remboursement #BLC-4821",
+      "store": "Galeries Lafayette · Paris",
+      "purchased": "Acheté",
+      "validated": "Validé",
+      "paid": "Payé",
+      "amount": "Montant remboursé",
+      "eta": "Versement estimé",
+      "days": "2 jours",
+      "chartOthers": "Autres",
+      "chartUs": "Belcova",
+      "phoneTitle": "Prêt à scanner",
+      "phoneSub": "Présentez ce QR code à la borne PABLO",
+      "phoneRef": "Référence détaxe"
+    }
+  },
+  "retail": {
+    "title": "Devenez partenaire Belcova",
+    "body": "Proposez la détaxe à chaque touriste qui franchit votre porte. Aucun matériel, aucune complexité.",
+    "cta": "Contacter notre équipe",
+    "or": "Ou écrivez à partners@belcova.com"
+  },
+  "footer": {
+    "tagline": "La manière moderne de récupérer votre TVA.",
+    "productH": "Produit",
+    "product": ["Comment ça marche", "Pour les commerçants", "FAQ"],
+    "companyH": "Société",
+    "company": ["À propos", "Contact"],
+    "legalH": "Légal",
+    "legal": ["Confidentialité", "Conditions d'utilisation", "Cookies"],
+    "langH": "Langue",
+    "copy": "© 2026 Belcova · Paris, France"
+  },
+  "modal": {
+    "title": "Soyez prévenu du lancement.",
+    "body": "Belcova ouvre ses portes dès l'obtention de notre agrément Douanes. Laissez-nous votre email — vous serez parmi les premiers servis.",
+    "placeholder": "votre@email.com",
+    "cta": "Me prévenir",
+    "success": "Merci. On vous écrit très bientôt.",
+    "consent": "En soumettant, vous acceptez d'être contacté par Belcova. Pas de spam."
+  },
+  "blog": {
+    "title": "Le journal Belcova",
+    "sub": "Guides, analyses et coulisses sur la détaxe en France.",
+    "readMin": "min de lecture",
+    "backToAll": "Tous les articles"
+  }
+}

@@ -40,10 +40,13 @@ typst compile "$ROOT/docs/financial/previsionnel-financier.typ" "$BUILD/previsio
 echo "2/4  Compilation du bilan d'ouverture..."
 typst compile "$ROOT/docs/financial/bilan-ouverture.typ" "$BUILD/bilan-ouverture.pdf"
 
-echo "3/4  Préparation du Kbis (suppression protection copie)..."
+echo "3/5  Compilation du formulaire d'agrément..."
+typst compile "$ROOT/docs/legal/formulaire-agrement.typ" "$BUILD/formulaire-agrement.pdf"
+
+echo "4/5  Préparation du Kbis (suppression protection copie)..."
 gs -dNOPAUSE -dBATCH -dQUIET -sDEVICE=pdfwrite -sOutputFile="$BUILD/kbis.pdf" "$ROOT/docs/legal/kbis_104126727.pdf"
 
-echo "4/4  Compilation du dossier de certification EDI..."
+echo "5/5  Compilation du dossier de certification EDI..."
 typst compile "$ROOT/dossier/main.typ" "$BUILD/dossier-certification-edi.pdf"
 
 # ── 2. Vérifier que toutes les pièces existent ───────────────────────────────
@@ -51,6 +54,7 @@ echo ""
 echo "=== Vérification des pièces ==="
 
 PIECES=(
+  "$BUILD/formulaire-agrement.pdf"
   "$BUILD/kbis.pdf"
   "$BUILD/bilan-ouverture.pdf"
   "$BUILD/previsionnel-financier.pdf"
@@ -60,6 +64,7 @@ PIECES=(
 )
 
 LABELS=(
+  "Formulaire de demande d'agrément (à signer)"
   "Pièce 1 — Extrait Kbis (SIREN 104 126 727)"
   "Pièce 2a — Bilan d'ouverture au 27/04/2026"
   "Pièce 2b — Prévisionnel financier 2026–2028"

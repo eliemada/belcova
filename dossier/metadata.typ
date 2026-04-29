@@ -6,7 +6,7 @@
 #let entreprise-nom = "BELCOVA"
 #let entreprise-siren = "104 126 727"
 #let entreprise-siret = "104 126 727 00015"
-#let entreprise-tva-intra = "En attente — demande SIE en cours"
+#let entreprise-tva-intra = "FR 35 104 126 727"
 #let entreprise-adresse = "58 rue de Monceau"
 #let entreprise-code-postal = "75008"
 #let entreprise-ville = "Paris"

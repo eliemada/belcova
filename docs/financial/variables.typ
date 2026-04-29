@@ -9,18 +9,22 @@
 #let rcs-number          = "104 126 727"
 #let siege-social        = "58 Rue de Monceau, 75008 Paris"
 #let capital-initial     = "100"
-#let date-document       = "27 avril 2026"
+#let date-document       = "29 avril 2026"
 #let representant-nom    = "Elie BRUNO"
 #let representant-fonction = "Président"
 
 // ── Marché ──────────────────────────────────────────────────────────────────
 #let panier-moyen-detaxe   = 580       // € TTC — achat moyen éligible détaxe
-#let remboursement-moyen   = 97        // € — TVA remboursée par bordereau (≈16,7% du TTC)
+#let tva-moyenne           = 97        // € — TVA par bordereau (20% de 483,33 HT)
+#let remboursement-moyen   = 97        // € — alias pour compatibilité
 #let delai-remboursement-dgddi = "45"  // jours — délai remb. DGDDI → opérateur
 
 // ── Tarification ────────────────────────────────────────────────────────────
-#let commission-par-bvx  = 5           // € — commission facturée au commerçant / bordereau
+#let taux-retrocession   = "80"        // % — part de TVA remboursée au voyageur
+#let avance-voyageur     = 78          // € — montant avancé au voyageur (97 × 80%, arrondi)
+#let marge-tva-par-bvx   = 19          // € — marge TVA conservée par Belcova (97 − 78)
 #let frais-voyageur      = 3           // € — frais de service facturés au voyageur
+#let commission-commercant = 2         // € — commission versée AU commerçant / bordereau
 
 // ── Volumes ─────────────────────────────────────────────────────────────────
 // Commerçants actifs (fin d'année)
@@ -34,26 +38,31 @@
 #let nb-bvx-2028         = "18 000"
 
 // ── Revenus calculés ────────────────────────────────────────────────────────
-// Commissions bordereaux
-#let rev-commissions-2026 = 1750       // 350 × 5 €
-#let rev-commissions-2027 = 21000      // 4 200 × 5 €
-#let rev-commissions-2028 = 90000      // 18 000 × 5 €
+// Marge TVA (écart DGDDI − remboursement voyageur)
+#let rev-marge-tva-2026   = 6650       // 350 × 19 €
+#let rev-marge-tva-2027   = 79800      // 4 200 × 19 €
+#let rev-marge-tva-2028   = 342000     // 18 000 × 19 €
 
 // Frais de service voyageur
 #let rev-service-2026     = 1050       // 350 × 3 €
 #let rev-service-2027     = 12600      // 4 200 × 3 €
 #let rev-service-2028     = 54000      // 18 000 × 3 €
 
-// Totaux produits (commissions + frais de service uniquement)
-#let total-produits-2026  = 2800       // 1750 + 1050
-#let total-produits-2027  = 33600      // 21000 + 12600
-#let total-produits-2028  = 144000     // 90000 + 54000
+// Totaux produits
+#let total-produits-2026  = 7700       // 6650 + 1050
+#let total-produits-2027  = 92400      // 79800 + 12600
+#let total-produits-2028  = 396000     // 342000 + 54000
 
 // ── CA (alias pour synthèse) ────────────────────────────────────────────────
-#let ca-2027             = 33600
-#let ca-2028             = 144000
+#let ca-2027             = 92400
+#let ca-2028             = 396000
 
 // ── Charges détaillées ──────────────────────────────────────────────────────
+
+// Commissions commerçants (charge variable — Belcova PAIE le commerçant)
+#let comm-merchant-2026  = 700         // 350 × 2 €
+#let comm-merchant-2027  = 8400        // 4 200 × 2 €
+#let comm-merchant-2028  = 36000       // 18 000 × 2 €
 
 // Hébergement cloud (OVH / Scaleway)
 #let cloud-2026          = 1350        // 150 €/mois × 9 mois
@@ -127,40 +136,40 @@
 #let amortissements-2027 = 5000        // début amortissement plateforme
 #let amortissements-2028 = 5000
 
-// Total charges
-#let total-charges-2026  = 7715        // 7715 + 0 + 0
-#let total-charges-2027  = 19360       // 14360 + 0 + 5000
-#let total-charges-2028  = 30530       // 25530 + 0 + 5000
+// Total charges (ext + merchant comm + personnel + amort)
+#let total-charges-2026  = 8415        // 7715 + 700 + 0 + 0
+#let total-charges-2027  = 27760       // 14360 + 8400 + 0 + 5000
+#let total-charges-2028  = 66530       // 25530 + 36000 + 0 + 5000
 
 // ── Résultats ───────────────────────────────────────────────────────────────
 
 // Résultat d'exploitation
-#let rex-2026            = -4915       // 2800 - 7715
-#let rex-2027            = 14240       // 33600 - 19360
-#let rex-2028            = 113470      // 144000 - 30530
+#let rex-2026            = -715        // 7700 - 8415
+#let rex-2027            = 64640       // 92400 - 27760
+#let rex-2028            = 329470      // 396000 - 66530
 
 // Marges (string pour affichage)
-#let pct-rex-2027        = "42,4 %"
-#let pct-rex-2028        = "78,8 %"
+#let pct-rex-2027        = "69,9 %"
+#let pct-rex-2028        = "83,2 %"
 
 // IS (25 % — prudence, pas de taux réduit appliqué)
 #let is-2026             = 0           // déficitaire
-#let is-2027             = 3560        // 25% de 14 240
-#let is-2028             = 28368       // 25% de 113 470
+#let is-2027             = 16160       // 25% de 64 640
+#let is-2028             = 82368       // 25% de 329 470
 
 // Résultat net
-#let rn-2026             = -4915
-#let rn-2027             = 10680       // 14240 - 3560
-#let rn-2028             = 85102       // 113470 - 28368
+#let rn-2026             = -715
+#let rn-2027             = 48480       // 64640 - 16160
+#let rn-2028             = 247103      // 329470 - 82368
 
 // ── Seuil de rentabilité (break-even) ───────────────────────────────────────
-#let mois-breakeven      = "mars 2027"
+#let mois-breakeven      = "octobre 2026"
 #let annee-net-positif   = "2027"
-#let revenu-par-bvx      = 8           // commission + frais service = 5 + 3
+#let revenu-net-par-bvx  = 20          // marge TVA (19) + frais service (3) − comm merchant (2)
 #let total-fixes-mensuel = 1270        // charges fixes mensuelles hors personnel
-#let seuil-bvx-mensuel   = "159"       // 1270 / 8
-#let seuil-bvx-jour      = "6"         // 159 / 26 jours ouvrés
-#let seuil-merchants     = "8–10"      // commerçants nécessaires pour le point mort
+#let seuil-bvx-mensuel   = "64"        // 1270 / 20
+#let seuil-bvx-jour      = "3"         // 64 / 22 jours ouvrés
+#let seuil-merchants     = "3–4"       // commerçants nécessaires pour le point mort
 
 // ── Charges fixes mensuelles (détail seuil de rentabilité) ──────────────────
 #let cloud-mensuel-croisiere = 200
@@ -185,27 +194,29 @@
 #let total-ressources      = 15100     // 100 + 15000
 
 // ── BFR détaxe ──────────────────────────────────────────────────────────────
-#let bfr-max-2026          = 4850      // pic de trésorerie mobilisée pour avances TVA
+#let bfr-max-2026          = 3900      // pic de trésorerie mobilisée pour avances TVA (80%)
 
 // ── Plan de trésorerie mensuel 2026 (Avr–Déc) ──────────────────────────────
 
 // Apport CCA initial
 #let apport-cca            = 15000
 
-// Commissions mensuelles (montée progressive, premiers bordereaux en juillet)
-#let cash-comm-jul         = 100
-#let cash-comm-aug         = 175
-#let cash-comm-sep         = 200
-#let cash-comm-oct         = 250
-#let cash-comm-nov         = 350
-#let cash-comm-dec         = 400
+// BVE mensuels : Jul=20, Aug=30, Sep=35, Oct=45, Nov=55, Dec=60
 
-// Remboursements DGDDI (décalé de ~45 jours)
-#let cash-dgddi-aug        = 1940      // remb. bordereaux juin–juillet
-#let cash-dgddi-sep        = 2910      // bordereaux juillet–août
-#let cash-dgddi-oct        = 3395      // août–septembre
-#let cash-dgddi-nov        = 4365      // septembre–octobre
-#let cash-dgddi-dec        = 5335      // octobre–novembre
+// Frais de service voyageur (encaissés au moment du service)
+#let cash-service-jul      = 60        // 20 × 3 €
+#let cash-service-aug      = 90        // 30 × 3 €
+#let cash-service-sep      = 105       // 35 × 3 €
+#let cash-service-oct      = 135       // 45 × 3 €
+#let cash-service-nov      = 165       // 55 × 3 €
+#let cash-service-dec      = 180       // 60 × 3 €
+
+// Remboursements DGDDI (TVA intégrale, décalé ~45 jours)
+#let cash-dgddi-aug        = 1940      // remb. bordereaux juillet (20 × 97 €)
+#let cash-dgddi-sep        = 2910      // bordereaux août (30 × 97 €)
+#let cash-dgddi-oct        = 3395      // bordereaux septembre (35 × 97 €)
+#let cash-dgddi-nov        = 4365      // bordereaux octobre (45 × 97 €)
+#let cash-dgddi-dec        = 5335      // bordereaux novembre (55 × 97 €)
 
 // Charges fixes mensuelles (simplifiées)
 #let dec-fixes-apr         = 950       // constitution + premiers frais
@@ -218,13 +229,21 @@
 #let dec-fixes-nov         = 750
 #let dec-fixes-dec         = 750
 
-// Avances TVA aux voyageurs (commence en juillet)
-#let avance-tva-jul        = 1940      // ~20 bordereaux × 97 €
-#let avance-tva-aug        = 2910      // ~30 bordereaux
-#let avance-tva-sep        = 3395      // ~35 bordereaux
-#let avance-tva-oct        = 4365      // ~45 bordereaux
-#let avance-tva-nov        = 5335      // ~55 bordereaux
-#let avance-tva-dec        = 5820      // ~60 bordereaux
+// Avances TVA aux voyageurs (80% de la TVA, au moment du service)
+#let avance-tva-jul        = 1560      // 20 × 78 €
+#let avance-tva-aug        = 2340      // 30 × 78 €
+#let avance-tva-sep        = 2730      // 35 × 78 €
+#let avance-tva-oct        = 3510      // 45 × 78 €
+#let avance-tva-nov        = 4290      // 55 × 78 €
+#let avance-tva-dec        = 4680      // 60 × 78 €
+
+// Commissions commerçants (versées au moment du service)
+#let dec-comm-jul          = 40        // 20 × 2 €
+#let dec-comm-aug          = 60        // 30 × 2 €
+#let dec-comm-sep          = 70        // 35 × 2 €
+#let dec-comm-oct          = 90        // 45 × 2 €
+#let dec-comm-nov          = 110       // 55 × 2 €
+#let dec-comm-dec          = 120       // 60 × 2 €
 
 // Marketing mensuel
 #let dec-mkt-apr           = 0
@@ -239,46 +258,46 @@
 
 // ── Totaux mensuels ─────────────────────────────────────────────────────────
 
-// Encaissements (commissions + remboursements DGDDI uniquement)
+// Encaissements (frais service + remboursements DGDDI)
 #let enc-apr               = 15100     // capital 100 + CCA 15000
 #let enc-mai               = 0
 #let enc-jun               = 0
-#let enc-jul               = 100       // commissions uniquement
-#let enc-aug               = 2115      // 175 + 1940
-#let enc-sep               = 3110      // 200 + 2910
-#let enc-oct               = 3645      // 250 + 3395
-#let enc-nov               = 4715      // 350 + 4365
-#let enc-dec               = 5735      // 400 + 5335
+#let enc-jul               = 60        // frais service uniquement
+#let enc-aug               = 2030      // 90 + 1940
+#let enc-sep               = 3015      // 105 + 2910
+#let enc-oct               = 3530      // 135 + 3395
+#let enc-nov               = 4530      // 165 + 4365
+#let enc-dec               = 5515      // 180 + 5335
 
-// Décaissements
+// Décaissements (fixes + avances TVA + comm merchant + marketing)
 #let dec-apr               = 950
-#let dec-mai               = 850
-#let dec-jun               = 950
-#let dec-jul               = 2940      // 700 + 1940 + 300
-#let dec-aug               = 3910      // 700 + 2910 + 300
-#let dec-sep               = 4395      // 700 + 3395 + 300
-#let dec-oct               = 5515      // 750 + 4365 + 400
-#let dec-nov               = 6485      // 750 + 5335 + 400
-#let dec-dec               = 6970      // 750 + 5820 + 400
+#let dec-mai               = 850       // 650 + 200
+#let dec-jun               = 950       // 650 + 300
+#let dec-jul               = 2600      // 700 + 1560 + 40 + 300
+#let dec-aug               = 3400      // 700 + 2340 + 60 + 300
+#let dec-sep               = 3800      // 700 + 2730 + 70 + 300
+#let dec-oct               = 4750      // 750 + 3510 + 90 + 400
+#let dec-nov               = 5550      // 750 + 4290 + 110 + 400
+#let dec-dec               = 5950      // 750 + 4680 + 120 + 400
 
 // Solde mensuel
 #let solde-apr             = 14150     // 15100 - 950
 #let solde-mai             = -850
 #let solde-jun             = -950
-#let solde-jul             = -2840
-#let solde-aug             = -1795
-#let solde-sep             = -1285
-#let solde-oct             = -1870
-#let solde-nov             = -1770
-#let solde-dec             = -1235
+#let solde-jul             = -2540     // 60 - 2600
+#let solde-aug             = -1370     // 2030 - 3400
+#let solde-sep             = -785      // 3015 - 3800
+#let solde-oct             = -1220     // 3530 - 4750
+#let solde-nov             = -1020     // 4530 - 5550
+#let solde-dec             = -435      // 5515 - 5950
 
-// Trésorerie cumulée (reste positif toute l'année)
+// Trésorerie cumulée
 #let cumul-apr             = 14150
 #let cumul-mai             = 13300
 #let cumul-jun             = 12350
-#let cumul-jul             = 9510
-#let cumul-aug             = 7715
-#let cumul-sep             = 6430
-#let cumul-oct             = 4560
-#let cumul-nov             = 2790
-#let cumul-dec             = 1555
+#let cumul-jul             = 9810      // 12350 - 2540
+#let cumul-aug             = 8440      // 9810 - 1370
+#let cumul-sep             = 7655      // 8440 - 785
+#let cumul-oct             = 6435      // 7655 - 1220
+#let cumul-nov             = 5415      // 6435 - 1020
+#let cumul-dec             = 4980      // 5415 - 435

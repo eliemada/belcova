@@ -244,13 +244,15 @@ BELCOVA SAS est un opérateur de détaxe nouvelle génération dont la plateform
 
 #v(0.5em)
 
-Le modèle économique repose sur deux sources de revenus :
+Le modèle économique repose sur deux sources de revenus et un mécanisme d'incitation commerçant :
 
-+ *Commission par bordereau* — prélevée sur chaque opération de remboursement de TVA traitée via la plateforme (#eur(commission-par-bvx) en moyenne par bordereau, facturée au commerçant).
++ *Marge TVA* — BELCOVA rembourse #taux-retrocession % de la TVA au voyageur et conserve les #eur(marge-tva-par-bvx) restants par bordereau. Ce différentiel entre le remboursement DGDDI (100 % de la TVA) et l'avance au voyageur constitue la source de revenus principale.
 
 + *Frais de service voyageur* — contribution forfaitaire du voyageur pour le traitement dématérialisé et l'accompagnement (#eur(frais-voyageur) par opération).
 
-Ce modèle *sans abonnement* supprime toute barrière à l'entrée pour les commerçants : l'inscription et l'accès à la plateforme sont gratuits, BELCOVA ne se rémunère qu'à la transaction.
++ *Commission commerçant* — à contre-courant du marché, BELCOVA *verse* une commission de #eur(commission-commercant) par bordereau au commerçant partenaire, là où les opérateurs historiques ne leur reversent rien ou avec un délai de ~100 jours. Ce modèle aligne les intérêts et accélère l'acquisition de commerçants.
+
+Ce modèle *sans abonnement ni frais d'entrée* supprime toute barrière pour les commerçants : l'inscription est gratuite et le commerçant est rémunéré à la transaction.
 
 La Société atteint le *seuil de rentabilité opérationnelle en #mois-breakeven* et dégage un résultat net positif dès l'exercice #annee-net-positif.
 
@@ -284,10 +286,12 @@ Le marché est actuellement dominé par deux acteurs historiques (Global Blue et
     [#nb-merchants-2026], [#nb-merchants-2027], [#nb-merchants-2028],
   [Bordereaux traités],
     [#nb-bvx-2026], [#nb-bvx-2027], [#nb-bvx-2028],
-  [Commission moyenne / bordereau],
-    [#eur(commission-par-bvx)], [#eur(commission-par-bvx)], [#eur(commission-par-bvx)],
-  [Frais de service / bordereau],
+  [Marge TVA / bordereau (20 %)],
+    [#eur(marge-tva-par-bvx)], [#eur(marge-tva-par-bvx)], [#eur(marge-tva-par-bvx)],
+  [Frais de service voyageur],
     [#eur(frais-voyageur)], [#eur(frais-voyageur)], [#eur(frais-voyageur)],
+  [Commission versée au commerçant],
+    [#eur(commission-commercant)], [#eur(commission-commercant)], [#eur(commission-commercant)],
 )
 
 == Hypothèses de charges
@@ -346,7 +350,7 @@ Le marché est actuellement dominé par deux acteurs historiques (Global Blue et
   table.cell(colspan: 4, fill: cream)[
     #text(weight: "bold", size: 9pt)[Produits d'exploitation]
   ],
-  [Commissions bordereaux], [#eur(rev-commissions-2026)], [#eur(rev-commissions-2027)], [#eur(rev-commissions-2028)],
+  [Marge TVA (20 % conservés)], [#eur(rev-marge-tva-2026)], [#eur(rev-marge-tva-2027)], [#eur(rev-marge-tva-2028)],
   [Frais de service voyageur], [#eur(rev-service-2026)], [#eur(rev-service-2027)], [#eur(rev-service-2028)],
   total-cell[*Total produits*],
     total-cell[*#eur(total-produits-2026)*],
@@ -358,6 +362,7 @@ Le marché est actuellement dominé par deux acteurs historiques (Global Blue et
     #text(weight: "bold", size: 9pt)[Charges d'exploitation]
   ],
   [Achats & charges externes], [#eur(charges-ext-2026)], [#eur(charges-ext-2027)], [#eur(charges-ext-2028)],
+  [Commissions commerçants], [#eur(comm-merchant-2026)], [#eur(comm-merchant-2027)], [#eur(comm-merchant-2028)],
   [Charges de personnel], [#eur(charges-personnel-2026)], [#eur(charges-personnel-2027)], [#eur(charges-personnel-2028)],
   [Dotations aux amortissements], [#eur(amortissements-2026)], [#eur(amortissements-2027)], [#eur(amortissements-2028)],
   total-cell[*Total charges*],
@@ -395,10 +400,10 @@ Le plan de trésorerie mensuel détaille les flux d'encaissements et décaisseme
 
 == Flux spécifiques à l'activité de détaxe
 
-L'opérateur de détaxe avance le remboursement de TVA au voyageur au moment de la validation du bordereau en bureau de douane. La DGDDI rembourse ensuite l'opérateur via un mécanisme de compensation. Le *décalage de trésorerie* entre l'avance au voyageur et le remboursement par l'État est estimé à *#delai-remboursement-dgddi jours* en moyenne.
+L'opérateur de détaxe avance *#taux-retrocession % de la TVA* au voyageur au moment de la validation du bordereau en bureau de douane. La DGDDI rembourse ensuite *100 % de la TVA* à l'opérateur via un mécanisme de compensation. Le *décalage de trésorerie* entre l'avance au voyageur et le remboursement intégral par l'État est estimé à *#delai-remboursement-dgddi jours* en moyenne. L'écart de 20 % entre le remboursement DGDDI et l'avance au voyageur constitue la marge TVA de l'opérateur.
 
 #hyp-box[
-  *Gestion du décalage* : Le montant moyen avancé par bordereau est de #eur(remboursement-moyen) (TVA à 20 % sur un panier moyen de #eur(panier-moyen-detaxe) TTC). Avec #nb-bvx-2026 bordereaux sur 9 mois et un délai de remboursement de #delai-remboursement-dgddi jours, le besoin de trésorerie lié à ce décalage est maîtrisé et ne dépasse pas #eur(bfr-max-2026) à son pic.
+  *Gestion du décalage* : Le montant avancé par bordereau est de #eur(avance-voyageur) (#taux-retrocession % de #eur(tva-moyenne) de TVA, sur un panier moyen de #eur(panier-moyen-detaxe) TTC). Avec #nb-bvx-2026 bordereaux sur 9 mois et un délai de remboursement de #delai-remboursement-dgddi jours, le besoin de trésorerie lié à ce décalage est maîtrisé et ne dépasse pas #eur(bfr-max-2026) à son pic.
 ]
 
 == Tableau de trésorerie simplifié
@@ -420,11 +425,11 @@ L'opérateur de détaxe avance le remboursement de TVA au voyageur au moment de 
     [#eur(100)], [—], [—], [—], [—], [—], [—], [—], [—],
   [Apport CCA],
     [#eur(apport-cca)], [—], [—], [—], [—], [—], [—], [—], [—],
-  [Commissions + frais],
+  [Frais service voyageur],
     [—], [—], [—],
-    [#eur(cash-comm-jul)], [#eur(cash-comm-aug)], [#eur(cash-comm-sep)],
-    [#eur(cash-comm-oct)], [#eur(cash-comm-nov)], [#eur(cash-comm-dec)],
-  [Remb. DGDDI],
+    [#eur(cash-service-jul)], [#eur(cash-service-aug)], [#eur(cash-service-sep)],
+    [#eur(cash-service-oct)], [#eur(cash-service-nov)], [#eur(cash-service-dec)],
+  [Remb. DGDDI (TVA 100 %)],
     [—], [—], [—],
     [—], [#eur(cash-dgddi-aug)], [#eur(cash-dgddi-sep)],
     [#eur(cash-dgddi-oct)], [#eur(cash-dgddi-nov)], [#eur(cash-dgddi-dec)],
@@ -441,10 +446,14 @@ L'opérateur de détaxe avance le remboursement de TVA au voyageur au moment de 
     [#eur(dec-fixes-apr)], [#eur(dec-fixes-mai)], [#eur(dec-fixes-jun)],
     [#eur(dec-fixes-jul)], [#eur(dec-fixes-aug)], [#eur(dec-fixes-sep)],
     [#eur(dec-fixes-oct)], [#eur(dec-fixes-nov)], [#eur(dec-fixes-dec)],
-  [Avances TVA voyageurs],
+  [Avances TVA voyageurs (#taux-retrocession %)],
     [—], [—], [—],
     [#eur(avance-tva-jul)], [#eur(avance-tva-aug)], [#eur(avance-tva-sep)],
     [#eur(avance-tva-oct)], [#eur(avance-tva-nov)], [#eur(avance-tva-dec)],
+  [Comm. commerçants],
+    [—], [—], [—],
+    [#eur(dec-comm-jul)], [#eur(dec-comm-aug)], [#eur(dec-comm-sep)],
+    [#eur(dec-comm-oct)], [#eur(dec-comm-nov)], [#eur(dec-comm-dec)],
   [Marketing],
     [#eur(dec-mkt-apr)], [#eur(dec-mkt-mai)], [#eur(dec-mkt-jun)],
     [#eur(dec-mkt-jul)], [#eur(dec-mkt-aug)], [#eur(dec-mkt-sep)],
@@ -543,9 +552,9 @@ L'opérateur de détaxe avance le remboursement de TVA au voyageur au moment de 
 == Calcul du point mort
 
 #hyp-box[
-  *Revenu moyen par bordereau* = commission (#eur(commission-par-bvx)) + frais de service (#eur(frais-voyageur)) = *#eur(revenu-par-bvx)* \
+  *Revenu net par bordereau* = marge TVA (#eur(marge-tva-par-bvx)) + frais de service (#eur(frais-voyageur)) − commission commerçant (#eur(commission-commercant)) = *#eur(revenu-net-par-bvx)* \
   *Charges fixes mensuelles* = #eur(total-fixes-mensuel) (hors personnel) \
-  *Point mort mensuel* = #total-fixes-mensuel / #revenu-par-bvx = *#seuil-bvx-mensuel bordereaux/mois* \
+  *Point mort mensuel* = #total-fixes-mensuel / #revenu-net-par-bvx = *#seuil-bvx-mensuel bordereaux/mois* \
   Soit environ *#seuil-bvx-jour bordereaux/jour* — un volume atteignable avec #seuil-merchants commerçants actifs.
 ]
 

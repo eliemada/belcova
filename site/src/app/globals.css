@@ -832,6 +832,90 @@ img {
   flex-shrink: 0;
 }
 
+/* ===== Comparison Table ===== */
+.bel-cmp {
+  background: var(--color-surface);
+  padding: var(--section-padding) var(--gutter);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity var(--duration-slow) var(--ease-out),
+    transform var(--duration-slow) var(--ease-out);
+}
+.bel-cmp.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+.bel-cmp-heading {
+  font-size: var(--section-h2);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.bel-cmp-sub {
+  font-size: 17px;
+  color: var(--color-text-secondary);
+  margin-bottom: 48px;
+  line-height: 1.6;
+}
+.bel-cmp-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.bel-cmp-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.bel-cmp-th {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 16px 20px;
+  border-bottom: 2px solid var(--color-line);
+}
+.bel-cmp-th.bel-cmp-label {
+  width: 40%;
+}
+.bel-cmp-th.bel-cmp-col-other {
+  color: var(--color-text-secondary);
+}
+.bel-cmp-th.bel-cmp-col-us {
+  color: var(--color-accent);
+}
+.bel-cmp-row:last-child .bel-cmp-cell {
+  border-bottom: none;
+}
+.bel-cmp-cell {
+  padding: 18px 20px;
+  font-size: 16px;
+  border-bottom: 1px solid var(--color-line);
+  vertical-align: middle;
+}
+.bel-cmp-cell.bel-cmp-label {
+  font-weight: 500;
+  color: var(--color-text);
+}
+.bel-cmp-cell.bel-cmp-col-other {
+  color: var(--color-text-secondary);
+}
+.bel-cmp-cell.bel-cmp-col-us {
+  font-weight: 600;
+  color: var(--color-text);
+}
+.bel-cmp-icon {
+  display: inline-block;
+}
+.bel-cmp-check {
+  color: var(--color-accent);
+}
+.bel-cmp-cross {
+  color: var(--color-text-tertiary);
+}
+
 /* ===== Retailer CTA ===== */
 .bel-retail {
   background: var(--color-dark);
@@ -1247,6 +1331,11 @@ img {
   }
   .bel-value-row.side-right .bel-value-text {
     order: 0;
+  }
+  .bel-cmp-th,
+  .bel-cmp-cell {
+    padding: 14px 12px;
+    font-size: 14px;
   }
   .bel-footer-grid {
     grid-template-columns: 1fr 1fr;

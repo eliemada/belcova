@@ -19,14 +19,14 @@ echo "=== BELCOVA — Préparation du dossier d'agrément ==="
 echo ""
 
 # ── Vérifier les dépendances ─────────────────────────────────────────────────
-for cmd in typst pdfunite; do
+for cmd in typst pdfunite gs; do
   if ! command -v "$cmd" &>/dev/null; then
     echo "ERREUR : '$cmd' non trouvé. Installez-le :"
-    if [[ "$cmd" == "pdfunite" ]]; then
-      echo "  brew install poppler"
-    else
-      echo "  brew install typst"
-    fi
+    case "$cmd" in
+      pdfunite) echo "  brew install poppler" ;;
+      gs)       echo "  brew install ghostscript" ;;
+      *)        echo "  brew install $cmd" ;;
+    esac
     exit 1
   fi
 done
@@ -41,7 +41,7 @@ echo "2/4  Compilation du bilan d'ouverture..."
 typst compile "$ROOT/docs/financial/bilan-ouverture.typ" "$BUILD/bilan-ouverture.pdf"
 
 echo "3/4  Préparation du Kbis (suppression protection copie)..."
-sips -s format pdf "$ROOT/docs/legal/kbis_104126727.pdf" --out "$BUILD/kbis-unlocked.pdf" &>/dev/null
+gs -dNOPAUSE -dBATCH -dQUIET -sDEVICE=pdfwrite -sOutputFile="$BUILD/kbis.pdf" "$ROOT/docs/legal/kbis_104126727.pdf"
 
 echo "4/4  Compilation du dossier de certification EDI..."
 typst compile "$ROOT/dossier/main.typ" "$BUILD/dossier-certification-edi.pdf"
@@ -51,7 +51,7 @@ echo ""
 echo "=== Vérification des pièces ==="
 
 PIECES=(
-  "$BUILD/kbis-unlocked.pdf"
+  "$BUILD/kbis.pdf"
   "$BUILD/bilan-ouverture.pdf"
   "$BUILD/previsionnel-financier.pdf"
   "$ROOT/docs/personal/casier-elie.pdf"

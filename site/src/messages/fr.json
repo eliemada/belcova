@@ -68,8 +68,8 @@
       },
       "merchantFee": {
         "label": "Commission commerçant",
-        "other": "1–2 %",
-        "belcova": "0 %"
+        "other": "–1 à –2 % (coût)",
+        "belcova": "Gagnez une commission"
       },
       "mobileApp": {
         "label": "Application mobile touriste",

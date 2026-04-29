@@ -54,6 +54,40 @@
       "phoneRef": "Refund reference"
     }
   },
+  "compare": {
+    "title": "Belcova vs. traditional operators",
+    "subtitle": "See how we stack up against legacy VAT refund services.",
+    "feature": "Feature",
+    "others": "Traditional operators",
+    "us": "Belcova",
+    "rows": {
+      "refundRate": {
+        "label": "Tourist refund rate",
+        "other": "50–60% of VAT",
+        "belcova": "Up to 80%"
+      },
+      "merchantFee": {
+        "label": "Merchant revenue",
+        "other": "None or delayed ~100 days",
+        "belcova": "Earn a commission"
+      },
+      "mobileApp": {
+        "label": "Tourist mobile app",
+        "other": "Rare",
+        "belcova": "Yes"
+      },
+      "tracking": {
+        "label": "Real-time tracking",
+        "other": "No",
+        "belcova": "Yes"
+      },
+      "delay": {
+        "label": "Refund delay",
+        "other": "10–15 days",
+        "belcova": "3–5 days"
+      }
+    }
+  },
   "retail": {
     "title": "Partner with Belcova",
     "body": "Offer tax-free shopping to every tourist who walks through your door. Zero hardware, zero complexity.",

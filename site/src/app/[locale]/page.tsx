@@ -6,6 +6,7 @@ import { Hero } from "@/components/hero";
 import { SocialProof } from "@/components/social-proof";
 import { HowItWorks } from "@/components/how-it-works";
 import { ValueProps } from "@/components/value-props";
+import { ComparisonTable } from "@/components/comparison-table";
 import { RetailerCTA } from "@/components/retailer-cta";
 import { Footer } from "@/components/footer";
 import { EmailModal } from "@/components/email-modal";
@@ -21,6 +22,7 @@ export default function LandingPage() {
         <SocialProof />
         <HowItWorks />
         <ValueProps />
+        <ComparisonTable />
         <RetailerCTA />
       </main>
       <Footer />

@@ -54,6 +54,40 @@
       "phoneRef": "Référence détaxe"
     }
   },
+  "compare": {
+    "title": "Belcova vs. opérateurs traditionnels",
+    "subtitle": "Comparez notre service avec les opérateurs historiques de la détaxe.",
+    "feature": "Critère",
+    "others": "Opérateurs traditionnels",
+    "us": "Belcova",
+    "rows": {
+      "refundRate": {
+        "label": "Taux de remboursement touriste",
+        "other": "50–60 % de la TVA",
+        "belcova": "Jusqu'à 80 %"
+      },
+      "merchantFee": {
+        "label": "Revenu commerçant",
+        "other": "Aucun ou versé à ~100 jours",
+        "belcova": "Gagnez une commission"
+      },
+      "mobileApp": {
+        "label": "Application mobile touriste",
+        "other": "Rare",
+        "belcova": "Oui"
+      },
+      "tracking": {
+        "label": "Suivi en temps réel",
+        "other": "Non",
+        "belcova": "Oui"
+      },
+      "delay": {
+        "label": "Délai de remboursement",
+        "other": "10–15 jours",
+        "belcova": "3–5 jours"
+      }
+    }
+  },
   "retail": {
     "title": "Devenez partenaire Belcova",
     "body": "Proposez la détaxe à chaque touriste qui franchit votre porte. Aucun matériel, aucune complexité.",

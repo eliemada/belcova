@@ -67,8 +67,8 @@
         "belcova": "Up to 80%"
       },
       "merchantFee": {
-        "label": "Merchant commission",
-        "other": "–1 to –2% (cost)",
+        "label": "Merchant revenue",
+        "other": "None or delayed ~100 days",
         "belcova": "Earn a commission"
       },
       "mobileApp": {

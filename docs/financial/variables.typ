@@ -65,34 +65,34 @@
 #let comm-merchant-2028  = 36000       // 18 000 × 2 €
 
 // Hébergement cloud (OVH / Scaleway)
-#let cloud-2026          = 1350        // 150 €/mois × 9 mois
-#let cloud-2027          = 2400        // 200 €/mois
+#let cloud-2026          = 0           // pas d'hébergement en phase pré-lancement
+#let cloud-2027          = 2400        // 200 €/mois (backend PABLO en production)
 #let cloud-2028          = 4800        // 400 €/mois (scaling)
 
-// Domiciliation (Les Tricolores — facture connue)
-#let domiciliation-2026  = 520         // 173,80 €/trimestre × 3 trim.
-#let domiciliation-2027  = 700         // 4 trimestres
-#let domiciliation-2028  = 700
+// Domiciliation (Les Tricolores)
+#let domiciliation-2026  = 126         // 14 €/mois × 9 mois
+#let domiciliation-2027  = 168         // 14 €/mois × 12
+#let domiciliation-2028  = 168
 
 // Assurance RC Pro
-#let assurance-2026      = 375         // 500 €/an prorata 9 mois
-#let assurance-2027      = 600
+#let assurance-2026      = 0           // pas encore souscrite
+#let assurance-2027      = 600         // à souscrire avant mise en production
 #let assurance-2028      = 900         // augmente avec le CA
 
 // Expert-comptable
-#let comptable-2026      = 1500        // tarif startup
-#let comptable-2027      = 2400
-#let comptable-2028      = 3600        // complexité croissante
+#let comptable-2026      = 0           // comptabilité gérée en interne (Dolibarr)
+#let comptable-2027      = 1200        // 100 €/mois — complexité croissante
+#let comptable-2028      = 2400        // 200 €/mois
 
 // Marketing & acquisition commerçants
 #let marketing-2026      = 2700        // 300 €/mois × 9 mois
 #let marketing-2027      = 6000        // 500 €/mois
 #let marketing-2028      = 12000       // 1000 €/mois
 
-// Licences & outils SaaS (GitHub, monitoring, etc.)
-#let licences-2026       = 675         // 75 €/mois × 9 mois
-#let licences-2027       = 1200        // 100 €/mois
-#let licences-2028       = 1800        // 150 €/mois
+// Licences & outils SaaS (Claude Code, GitHub, monitoring)
+#let licences-2026       = 2700        // 300 €/mois × 9 mois (Claude Code principalement)
+#let licences-2027       = 4800        // 400 €/mois
+#let licences-2028       = 4800        // 400 €/mois
 
 // Rémunération dirigeants (président + DG)
 #let remun-dirigeants-2026  = 0        // pas de rémunération — fondateurs bénévoles
@@ -110,21 +110,21 @@
 #let salaries-2028       = 0
 
 // Frais bancaires (Qonto)
-#let banque-2026         = 225         // 25 €/mois × 9
-#let banque-2027         = 360         // 30 €/mois
-#let banque-2028         = 480         // 40 €/mois
+#let banque-2026         = 150         // ~17 €/mois × 9
+#let banque-2027         = 200         // ~17 €/mois
+#let banque-2028         = 200
 
 // Divers & imprévus (5 % des charges externes hors divers)
-#let divers-2026         = 370         // 5% de 7345
-#let divers-2027         = 700         // 5% de 13660
-#let divers-2028         = 1250        // 5% de 24280
+#let divers-2026         = 290         // 5% de 5676
+#let divers-2027         = 770         // 5% de 15368
+#let divers-2028         = 1270        // 5% de 25368
 
 // ── Charges agrégées (pour le compte de résultat) ───────────────────────────
 
 // Charges externes = cloud + domiciliation + assurance + comptable + marketing + licences + banque + divers
-#let charges-ext-2026    = 7715        // 1350+520+375+1500+2700+675+225+370
-#let charges-ext-2027    = 14360       // 2400+700+600+2400+6000+1200+360+700
-#let charges-ext-2028    = 25530       // 4800+700+900+3600+12000+1800+480+1250
+#let charges-ext-2026    = 5966        // 0+126+0+0+2700+2700+150+290
+#let charges-ext-2027    = 16138       // 2400+168+600+1200+6000+4800+200+770
+#let charges-ext-2028    = 26538       // 4800+168+900+2400+12000+4800+200+1270
 
 // Charges de personnel = 0 (fondateurs bénévoles, pas de salariés)
 #let charges-personnel-2026 = 0
@@ -137,48 +137,48 @@
 #let amortissements-2028 = 5000
 
 // Total charges (ext + merchant comm + personnel + amort)
-#let total-charges-2026  = 8415        // 7715 + 700 + 0 + 0
-#let total-charges-2027  = 27760       // 14360 + 8400 + 0 + 5000
-#let total-charges-2028  = 66530       // 25530 + 36000 + 0 + 5000
+#let total-charges-2026  = 6666        // 5966 + 700 + 0 + 0
+#let total-charges-2027  = 29538       // 16138 + 8400 + 0 + 5000
+#let total-charges-2028  = 67538       // 26538 + 36000 + 0 + 5000
 
 // ── Résultats ───────────────────────────────────────────────────────────────
 
 // Résultat d'exploitation
-#let rex-2026            = -715        // 7700 - 8415
-#let rex-2027            = 64640       // 92400 - 27760
-#let rex-2028            = 329470      // 396000 - 66530
+#let rex-2026            = 1034        // 7700 - 6666
+#let rex-2027            = 62862       // 92400 - 29538
+#let rex-2028            = 328462      // 396000 - 67538
 
 // Marges (string pour affichage)
-#let pct-rex-2027        = "69,9 %"
-#let pct-rex-2028        = "83,2 %"
+#let pct-rex-2027        = "68,0 %"
+#let pct-rex-2028        = "82,9 %"
 
 // IS (25 % — prudence, pas de taux réduit appliqué)
-#let is-2026             = 0           // déficitaire
-#let is-2027             = 16160       // 25% de 64 640
-#let is-2028             = 82368       // 25% de 329 470
+#let is-2026             = 259         // 25% de 1034
+#let is-2027             = 15716       // 25% de 62 862
+#let is-2028             = 82116       // 25% de 328 462
 
 // Résultat net
-#let rn-2026             = -715
-#let rn-2027             = 48480       // 64640 - 16160
-#let rn-2028             = 247103      // 329470 - 82368
+#let rn-2026             = 775         // 1034 - 259
+#let rn-2027             = 47147       // 62862 - 15716
+#let rn-2028             = 246347      // 328462 - 82116
 
 // ── Seuil de rentabilité (break-even) ───────────────────────────────────────
-#let mois-breakeven      = "octobre 2026"
-#let annee-net-positif   = "2027"
+#let mois-breakeven      = "juillet 2026"
+#let annee-net-positif   = "2026"
 #let revenu-net-par-bvx  = 20          // marge TVA (19) + frais service (3) − comm merchant (2)
-#let total-fixes-mensuel = 1270        // charges fixes mensuelles hors personnel
-#let seuil-bvx-mensuel   = "64"        // 1270 / 20
-#let seuil-bvx-jour      = "3"         // 64 / 22 jours ouvrés
-#let seuil-merchants     = "3–4"       // commerçants nécessaires pour le point mort
+#let total-fixes-mensuel = 351         // charges fixes mensuelles hors personnel
+#let seuil-bvx-mensuel   = "18"        // 351 / 20
+#let seuil-bvx-jour      = "1"         // 18 / 22 jours ouvrés
+#let seuil-merchants     = "1–2"       // commerçants nécessaires pour le point mort
 
 // ── Charges fixes mensuelles (détail seuil de rentabilité) ──────────────────
-#let cloud-mensuel-croisiere = 200
-#let domiciliation-mensuel   = 58      // 700 / 12
-#let assurance-mensuel       = 50      // 600 / 12
-#let comptable-mensuel       = 200     // 2400 / 12
-#let licences-mensuel        = 100
-#let banque-mensuel          = 30
-#let divers-mensuel          = 130
+#let cloud-mensuel-croisiere = 0       // pas d'hébergement en phase actuelle
+#let domiciliation-mensuel   = 14
+#let assurance-mensuel       = 0       // pas encore souscrite
+#let comptable-mensuel       = 0       // Dolibarr en interne
+#let licences-mensuel        = 300     // Claude Code principalement
+#let banque-mensuel          = 17      // Qonto / 12
+#let divers-mensuel          = 20
 
 // ── Plan de financement initial ─────────────────────────────────────────────
 #let frais-constitution    = 670       // greffe (54,40) + JAL (238,80) + domiciliation (173,80) + Qonto (202,80)
@@ -218,16 +218,16 @@
 #let cash-dgddi-nov        = 4365      // bordereaux octobre (45 × 97 €)
 #let cash-dgddi-dec        = 5335      // bordereaux novembre (55 × 97 €)
 
-// Charges fixes mensuelles (simplifiées)
-#let dec-fixes-apr         = 950       // constitution + premiers frais
-#let dec-fixes-mai         = 650
-#let dec-fixes-jun         = 650
-#let dec-fixes-jul         = 700
-#let dec-fixes-aug         = 700
-#let dec-fixes-sep         = 700
-#let dec-fixes-oct         = 750
-#let dec-fixes-nov         = 750
-#let dec-fixes-dec         = 750
+// Charges fixes mensuelles (simplifiées — hors marketing)
+#let dec-fixes-apr         = 670       // frais de constitution
+#let dec-fixes-mai         = 350       // domiciliation + licences + banque + divers
+#let dec-fixes-jun         = 350
+#let dec-fixes-jul         = 350
+#let dec-fixes-aug         = 350
+#let dec-fixes-sep         = 350
+#let dec-fixes-oct         = 350
+#let dec-fixes-nov         = 350
+#let dec-fixes-dec         = 350
 
 // Avances TVA aux voyageurs (80% de la TVA, au moment du service)
 #let avance-tva-jul        = 1560      // 20 × 78 €
@@ -270,34 +270,34 @@
 #let enc-dec               = 5515      // 180 + 5335
 
 // Décaissements (fixes + avances TVA + comm merchant + marketing)
-#let dec-apr               = 950
-#let dec-mai               = 850       // 650 + 200
-#let dec-jun               = 950       // 650 + 300
-#let dec-jul               = 2600      // 700 + 1560 + 40 + 300
-#let dec-aug               = 3400      // 700 + 2340 + 60 + 300
-#let dec-sep               = 3800      // 700 + 2730 + 70 + 300
-#let dec-oct               = 4750      // 750 + 3510 + 90 + 400
-#let dec-nov               = 5550      // 750 + 4290 + 110 + 400
-#let dec-dec               = 5950      // 750 + 4680 + 120 + 400
+#let dec-apr               = 670       // frais de constitution
+#let dec-mai               = 550       // 350 + 200 (mkt)
+#let dec-jun               = 650       // 350 + 300
+#let dec-jul               = 2250      // 350 + 1560 + 40 + 300
+#let dec-aug               = 3050      // 350 + 2340 + 60 + 300
+#let dec-sep               = 3450      // 350 + 2730 + 70 + 300
+#let dec-oct               = 4350      // 350 + 3510 + 90 + 400
+#let dec-nov               = 5150      // 350 + 4290 + 110 + 400
+#let dec-dec               = 5550      // 350 + 4680 + 120 + 400
 
 // Solde mensuel
-#let solde-apr             = 14150     // 15100 - 950
-#let solde-mai             = -850
-#let solde-jun             = -950
-#let solde-jul             = -2540     // 60 - 2600
-#let solde-aug             = -1370     // 2030 - 3400
-#let solde-sep             = -785      // 3015 - 3800
-#let solde-oct             = -1220     // 3530 - 4750
-#let solde-nov             = -1020     // 4530 - 5550
-#let solde-dec             = -435      // 5515 - 5950
+#let solde-apr             = 14430     // 15100 - 670
+#let solde-mai             = -550
+#let solde-jun             = -650
+#let solde-jul             = -2190     // 60 - 2250
+#let solde-aug             = -1020     // 2030 - 3050
+#let solde-sep             = -435      // 3015 - 3450
+#let solde-oct             = -820      // 3530 - 4350
+#let solde-nov             = -620      // 4530 - 5150
+#let solde-dec             = -35       // 5515 - 5550
 
 // Trésorerie cumulée
-#let cumul-apr             = 14150
-#let cumul-mai             = 13300
-#let cumul-jun             = 12350
-#let cumul-jul             = 9810      // 12350 - 2540
-#let cumul-aug             = 8440      // 9810 - 1370
-#let cumul-sep             = 7655      // 8440 - 785
-#let cumul-oct             = 6435      // 7655 - 1220
-#let cumul-nov             = 5415      // 6435 - 1020
-#let cumul-dec             = 4980      // 5415 - 435
+#let cumul-apr             = 14430
+#let cumul-mai             = 13880
+#let cumul-jun             = 13230
+#let cumul-jul             = 11040     // 13230 - 2190
+#let cumul-aug             = 10020     // 11040 - 1020
+#let cumul-sep             = 9585      // 10020 - 435
+#let cumul-oct             = 8765      // 9585 - 820
+#let cumul-nov             = 8145      // 8765 - 620
+#let cumul-dec             = 8110      // 8145 - 35

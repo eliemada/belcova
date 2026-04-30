@@ -3,40 +3,40 @@
 // =============================================================================
 
 // Identité de l'opérateur
-#let entreprise-nom = "[ NOM DE LA SOCIÉTÉ ]"
-#let entreprise-siren = "[ 000 000 000 ]"
-#let entreprise-siret = "[ 00000000000000 ]"
-#let entreprise-tva-intra = "[ FR00000000000 ]"
-#let entreprise-adresse = "[ Adresse du siège social ]"
-#let entreprise-code-postal = "[ 00000 ]"
-#let entreprise-ville = "[ Ville ]"
+#let entreprise-nom = "BELCOVA"
+#let entreprise-siren = "104 126 727"
+#let entreprise-siret = "104 126 727 00015"
+#let entreprise-tva-intra = "FR 35 104 126 727"
+#let entreprise-adresse = "58 rue de Monceau"
+#let entreprise-code-postal = "75008"
+#let entreprise-ville = "Paris"
 #let entreprise-pays = "France"
-#let entreprise-telephone = "[ +33 0 00 00 00 00 ]"
-#let entreprise-email = "[ contact@exemple.fr ]"
-#let entreprise-site-web = "[ https://www.exemple.fr ]"
+#let entreprise-telephone = "+33 7 85 63 57 01"
+#let entreprise-email = "contact@belcova.fr"
+#let entreprise-site-web = "https://belcova.fr"
 
 // Représentant légal
-#let representant-nom = "[ Prénom NOM ]"
-#let representant-fonction = "[ Fonction ]"
-#let representant-email = "[ representant@exemple.fr ]"
+#let representant-nom = "Elie BRUNO"
+#let representant-fonction = "Président"
+#let representant-email = "contact@belcova.fr"
 
 // Contact technique
-#let contact-technique-nom = "[ Prénom NOM ]"
-#let contact-technique-email = "[ technique@exemple.fr ]"
-#let contact-technique-telephone = "[ +33 0 00 00 00 00 ]"
+#let contact-technique-nom = "Elie BRUNO"
+#let contact-technique-email = "contact@belcova.fr"
+#let contact-technique-telephone = "+33 7 85 63 57 01"
 
 // Identifiants PABLO / GUN
-#let identifiant-operateur = "[ ID_OPERATEUR ]"
-#let prefixe-identifiant-detaxe = "[ 00 ]"  // 2 premiers chiffres attribués par la DGDDI
-#let url-webhook = "[ https://api.exemple.fr/webhooks/pablo ]"
+#let identifiant-operateur = "En attente — attribué lors de l'interconnexion GUN"
+#let prefixe-identifiant-detaxe = "En attente — attribué par la DGDDI"
+#let url-webhook = "https://api.belcova.fr/webhooks/pablo"
 
 // Informations sur la plateforme
-#let plateforme-nom = "[ Nom de la plateforme ]"
-#let plateforme-version = "[ 1.0.0 ]"
+#let plateforme-nom = "Belcova EDI Platform"
+#let plateforme-version = "1.0.0"
 #let plateforme-environnement = "Production"
 
 // Document
-#let document-version = "1.0"
-#let document-date = "février 2026"
-#let document-date-iso = "2026-02-21"
+#let document-version = "2.0"
+#let document-date = "avril 2026"
+#let document-date-iso = "2026-04-27"
 #let document-classification = "DIFFUSION LIMITÉE"

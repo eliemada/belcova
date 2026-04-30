@@ -34,19 +34,22 @@ done
 mkdir -p "$BUILD"
 
 # ── 1. Compiler les documents Typst ──────────────────────────────────────────
-echo "1/4  Compilation du prévisionnel financier..."
+echo "1/6  Compilation du prévisionnel financier..."
 typst compile "$ROOT/docs/financial/previsionnel-financier.typ" "$BUILD/previsionnel-financier.pdf"
 
-echo "2/4  Compilation du bilan d'ouverture..."
+echo "2/6  Compilation du bilan d'ouverture..."
 typst compile "$ROOT/docs/financial/bilan-ouverture.typ" "$BUILD/bilan-ouverture.pdf"
 
-echo "3/5  Compilation du formulaire d'agrément..."
+echo "3/6  Compilation du formulaire d'agrément..."
 typst compile "$ROOT/docs/legal/formulaire-agrement.typ" "$BUILD/formulaire-agrement.pdf"
 
-echo "4/5  Préparation du Kbis (suppression protection copie)..."
-gs -dNOPAUSE -dBATCH -dQUIET -sDEVICE=pdfwrite -sOutputFile="$BUILD/kbis.pdf" "$ROOT/docs/legal/kbis_104126727.pdf"
+echo "4/6  Compilation de l'attestation sur l'honneur (régularité fiscale et sociale)..."
+typst compile "$ROOT/docs/legal/attestation-regularite-fiscale-sociale.typ" "$BUILD/attestation-regularite-fiscale-sociale.pdf"
 
-echo "5/5  Compilation du dossier de certification EDI..."
+echo "5/6  Préparation du Kbis (suppression protection copie)..."
+gs -dNOPAUSE -dBATCH -dQUIET -sDEVICE=pdfwrite -sOutputFile="$BUILD/kbis.pdf" "$ROOT/accounting/2026/legal-certificates/2026-04-27_extrait-kbis_greffe-paris.pdf"
+
+echo "6/6  Compilation du dossier de certification EDI..."
 typst compile "$ROOT/dossier/main.typ" "$BUILD/dossier-certification-edi.pdf"
 
 # ── 2. Vérifier que toutes les pièces existent ───────────────────────────────
@@ -58,6 +61,7 @@ PIECES=(
   "$BUILD/kbis.pdf"
   "$BUILD/bilan-ouverture.pdf"
   "$BUILD/previsionnel-financier.pdf"
+  "$BUILD/attestation-regularite-fiscale-sociale.pdf"
   "$ROOT/docs/personal/casier-elie.pdf"
   "$ROOT/docs/personal/casier-franklin.pdf"
   "$BUILD/dossier-certification-edi.pdf"
@@ -68,6 +72,7 @@ LABELS=(
   "Pièce 1 — Extrait Kbis (SIREN 104 126 727)"
   "Pièce 2a — Bilan d'ouverture au 27/04/2026"
   "Pièce 2b — Prévisionnel financier 2026–2028"
+  "Pièce 2c — Attestation sur l'honneur — régularité fiscale et sociale"
   "Pièce 3a — Bulletin n°3 — Elie BRUNO (Président)"
   "Pièce 3b — Bulletin n°3 — Franklin TRANIÉ (DG)"
   "Pièce 4 — Dossier de certification EDI — PABLO"

@@ -169,7 +169,7 @@
     A : *Paris*
   ],
   [
-    Le : *29 avril 2026*
+    Le : *4 mai 2026*
   ],
 )
 
@@ -182,7 +182,11 @@ Nom et Prénom du signataire : *Elie BRUNO*
 #align(center)[
   #text(weight: "bold")[Signature :]
 
-  #v(2.5cm)
+  #v(0.5cm)
+
+  #image("signature_elie.png", height: 1.8cm)
+
+  #v(0.3cm)
 
   #line(length: 40%, stroke: 0.3pt + rgb("#cccccc"))
 ]

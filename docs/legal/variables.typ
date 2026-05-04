@@ -35,7 +35,7 @@
 #let nb-actions          = "10 000"
 #let valeur-nominale     = "0,01"
 #let date-document       = "21 avril 2026"
-#let date-signature      = "21 avril 2026"
+#let date-signature      = "4 mai 2026"
 
 // ── Lock-up ──────────────────────────────────────────────────────────────
 #let lock-up-duree       = "trois (3)"                           // ans

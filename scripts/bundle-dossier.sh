@@ -34,22 +34,25 @@ done
 mkdir -p "$BUILD"
 
 # ── 1. Compiler les documents Typst ──────────────────────────────────────────
-echo "1/6  Compilation du prévisionnel financier..."
+echo "1/7  Compilation du prévisionnel financier..."
 typst compile "$ROOT/docs/financial/previsionnel-financier.typ" "$BUILD/previsionnel-financier.pdf"
 
-echo "2/6  Compilation du bilan d'ouverture..."
+echo "2/7  Compilation du bilan d'ouverture..."
 typst compile "$ROOT/docs/financial/bilan-ouverture.typ" "$BUILD/bilan-ouverture.pdf"
 
-echo "3/6  Compilation du formulaire d'agrément..."
+echo "3/7  Compilation du formulaire d'agrément..."
 typst compile "$ROOT/docs/legal/formulaire-agrement.typ" "$BUILD/formulaire-agrement.pdf"
 
-echo "4/6  Compilation de l'attestation sur l'honneur (régularité fiscale et sociale)..."
+echo "4/7  Compilation de l'attestation sur l'honneur (régularité fiscale et sociale)..."
 typst compile "$ROOT/docs/legal/attestation-regularite-fiscale-sociale.typ" "$BUILD/attestation-regularite-fiscale-sociale.pdf"
 
-echo "5/6  Préparation du Kbis (suppression protection copie)..."
+echo "5/7  Préparation du Kbis (suppression protection copie)..."
 gs -dNOPAUSE -dBATCH -dQUIET -sDEVICE=pdfwrite -sOutputFile="$BUILD/kbis.pdf" "$ROOT/accounting/2026/legal-certificates/2026-04-27_extrait-kbis_greffe-paris.pdf"
 
-echo "6/6  Compilation du dossier de certification EDI..."
+echo "6/7  Copie du relevé bancaire Qonto (avril 2026)..."
+cp "$ROOT/docs/financial/releve-bancaire-avril-2026.pdf" "$BUILD/releve-bancaire.pdf"
+
+echo "7/7  Compilation du dossier de certification EDI..."
 typst compile "$ROOT/dossier/main.typ" "$BUILD/dossier-certification-edi.pdf"
 
 # ── 2. Vérifier que toutes les pièces existent ───────────────────────────────
@@ -62,6 +65,7 @@ PIECES=(
   "$BUILD/bilan-ouverture.pdf"
   "$BUILD/previsionnel-financier.pdf"
   "$BUILD/attestation-regularite-fiscale-sociale.pdf"
+  "$BUILD/releve-bancaire.pdf"
   "$ROOT/docs/personal/casier-elie.pdf"
   "$ROOT/docs/personal/casier-franklin.pdf"
   "$BUILD/dossier-certification-edi.pdf"
@@ -73,6 +77,7 @@ LABELS=(
   "Pièce 2a — Bilan d'ouverture au 27/04/2026"
   "Pièce 2b — Prévisionnel financier 2026–2028"
   "Pièce 2c — Attestation sur l'honneur — régularité fiscale et sociale"
+  "Pièce 2d — Relevé de compte Qonto (avril 2026) — solde 109,36 €"
   "Pièce 3a — Bulletin n°3 — Elie BRUNO (Président)"
   "Pièce 3b — Bulletin n°3 — Franklin TRANIÉ (DG)"
   "Pièce 4 — Dossier de certification EDI — PABLO"
